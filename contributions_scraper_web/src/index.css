@@ -44,9 +44,23 @@ body {
   box-sizing: border-box; */
 }
 
+button{
+  border-radius: 5px;
+  border: 1px solid #242424d7;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
+  background-color: rgb(230, 230, 230);
+
+}
+
 button:hover {
   cursor: pointer;
+  background-color: rgb(206, 219, 224);
+  border-radius: 5px;
+  border: 1px solid #242424;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
+
 }
+
 
 h1,
 h2 {
@@ -58,17 +72,17 @@ h2 {
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  /* margin: 32px 0; */
   @media (max-width: 1024px) {
     font-size: 36px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
 }
 h2 {
   font-size: 24px;
   line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0 0 8px;
+  /* margin: 0 0 8px; */
   @media (max-width: 1024px) {
     font-size: 20px;
   }
