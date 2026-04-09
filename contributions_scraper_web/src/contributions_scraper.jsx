@@ -86,11 +86,11 @@ function ContributionsScraper() {
             {fileNames.map((fileName, index) => (
                 <React.Fragment key={fileName}>
                     <div className='results'>
-                        <h4>{fileName.replace(".pdf", "")}</h4>
+                        <h3>{fileName.replace(".pdf", "")}</h3>
                         {/* insert logic for each aquarim contribution */}
-                        <h4 className={results[index] === "None Found\n" ? 'none-found' : 'contributions'}>
+                        <h3 className={results[index] === "None Found\n" ? 'none-found' : 'contributions'}>
                             {results[index]}
-                        </h4>
+                        </h3>
                     </div>
                     {/* puts a separator line after each line excluding the final line */}
                     {index < fileNames.length - 1 && <div className='separator-line'></div>} 
