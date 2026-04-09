@@ -9,7 +9,7 @@
     display: flex;
     gap: 2px;
     flex-direction: row;
-    height: calc(100vh - 10rem);
+    min-height: calc(100vh - 10rem);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -90,4 +90,13 @@
 
 .file-svg {
     flex-shrink: 0;
+}
+
+.none-found{
+    color:rgb(212, 58, 58);
+}
+
+.contributions{
+    max-width: 450px;
+    /* overflow: hidden; */
 }

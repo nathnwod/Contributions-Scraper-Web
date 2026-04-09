@@ -1,0 +1,742 @@
+https://doi.org/10.11646/zootaxa.5501.2.6
+http://zoobank.org/urn:lsid:zoobank.org:pub:2DAEA60F-A0DC-47D8-B704-7F689ED9814E
+334   Accepted by G. Short: 30 Jul. 2024; published: 30 Aug. 2024
+Article
+ZOOTAXA 
+ISSN 1175-5326 (print edition)
+ISSN 1175-5334 (online edition)
+Zootaxa 5501 (2): 334–344
+https://www.mapress.com/zt/
+Copyright © 2024 Magnolia Press
+Licensed under Creative Commons Attribution-N.C. 4.0 International https://creativecommons.org/licenses/by-nc/4.0/
+A new distributional record of Hippocampus kuda Bleeker, 1852 (Teleostei, 
+Syngnathidae) from Saudi Arabia in the South-Central Red Sea 
+Santhosh Charles1, Graham Short2 & MARK DIMECH1
+1KAUST Beacon Development, King Abdullah University of Science and Technology (KAUST), Thuwal 23955-6900, Saudi Arabia.
+ santhosh.charles@kaust.edu.sa; 
+https://orcid.org/0000-0001-5409-838X
+ mark.dimech@kaust.edu.sa
+2Department of Ichthyology, California Academy of Sciences, 55 Music Concourse Dr, San Francisco, CA 94118, United States.
+ gshort@calacademy.org; 
+https://orcid.org/0000-0002-4691-1913
+Abstract
+The common seahorse, Hippocampus kuda, is widely distributed throughout the Indo-Pacific region, occurring from East 
+Africa to Hawaii, where it typically inhabits diverse ecosystems such as estuaries, lagoons, coastal zones, and seagrass 
+beds. Despite its extensive geographic range, reports of its occurrence in the Red Sea remains limited, primarily restricted 
+to the northern region of the Red Sea. Here, we report a new distributional record of H. kuda in Saudi Arabian waters 
+within the south-central Red Sea. A single female specimen of H. kuda was collected through trawling conducted off the 
+coast of Al Qunfudah at depths ranging from 15 to 20 meters. Morphological and molecular examination confirmed the 
+identity of the specimen as H. kuda. The new record of H. kuda represents the second occurrence of this species in south-
+central Red Sea and expands its known distribution range 367 kilometers further south than the first reported record off 
+Jeddah in 1838.
+Key words: Seahorse, Al Qunfudah, trawl bycatch, COI, Gulf of Suez, Gulf of Aqaba, Indian Ocean
+ 
+Introduction
+ 
+The seahorse genus Hippocampus Rafinesque, 1810 is represented by three species recorded in the Red Sea: H. 
+jayakari Boulenger, 1900, H. debelius Gomon & Kuiter, 2009, and H. kuda Bleeker, 1852 (GBIF 2024; iNaturalist, 
+2024). Among these, H. kuda is distinguished by its wide distribution across the Indo-Pacific, ranging from the 
+eastern coast of Africa to Hawaii. Within the Western Indian Ocean, H. kuda has been recorded along the eastern 
+African coast in South Africa, Kenya, and Madagascar, as well as in the Red Sea spanning Egypt, Israel, and 
+Saudi Arabia, and in the Persian Gulf in Iran, United Arab Emirates, and Oman (GBIF 2024; iNaturalist, 2024). 
+Hippocampus kuda is typically found in estuaries, lagoons, harbors, and coastal seagrass beds, with a tendency to 
+inhabit shallow waters not exceeding fifty-five meters in depth (Choo and Liew, 2003; Lourie et al., 2004; Lipton 
+and Thangaraj, 2013; Dody et al., 2021; Kalisiak et al., 2022).
+Despite its widespread distribution, H. kuda faces conservation challenges, leading to its classification as vulnerable 
+by the International Union for Conservation of Nature (IUCN, 2004), primarily due to threats posed by bycatch in 
+shrimp trawling, targeted capture for aquarium and traditional medicine trade, habitat degradation, and its low fecundity 
+attributed to the extensive parental brood care it undertakes. Additionally, internationally, H. kuda is listed under 
+Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES, 2003). 
+Although numerous records of H. kuda are reported in the Red Sea, they primarily occur from the northern regions, 
+specifically the Gulf of Aqaba and Gulf of Suez in Egypt and Israel, respectively (GBIF, 2024; iNaturalist, 2024). 
+The first record of H. kuda in the Red Sea was recorded in Saudi Arabian waters in 1838. However, it was 
+originally reported as the first record of the seahorse H. fuscus Rüppell, 1838, at the type locality of Jeddah. 
+Subsequent taxonomic reassessment led to the reclassification of H. fuscus as a synonym of H. kuda, as no discernible 
+morphological, genetic, or geographic disparities were found between H. fuscus and H. kuda from Southeast Asia 
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  335
+(Lourie et al., 2016). Despite these regional observations, records of H. kuda from the Red Sea are absent in the 
+literature, particularly in Saudi Arabia.
+In this study, we report a new distributional record of H. kuda within the south-central Red Sea, representing 
+only the second record of this species in Saudi Arabia. During trawling activities off the coast of Al Qunfudah along 
+the Southeast Red Sea Coast of Saudi Arabia in 2023, we collected a single female specimen of H. kuda at depths 
+ranging from 15 to 20 meters. Morphological and molecular analyses confirmed the specimen’s identification as H. 
+kuda. The new record expands the southern range of H. kuda within the Red Sea, extending 367 kilometers further 
+south from the first known record in Jeddah.
+ 
+Methods
+Study area and sample collection
+Trawling operations were conducted aboard a standard commercial shrimp trawler off the coastline of Al Qunfudah 
+in the Southeast Red Sea Coast of Saudi Arabia (Fig. 1). During a one-hour trawl session conducted in the early hours 
+FIGURE 1. Sampling location of the yellow sea horse H. kuda collected off Al Qunfudah.
+Charles et al.
+336  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+of August 2023 at approximately 04:10 AM, a seahorse specimen was collected from depths ranging between 15 to 
+20 meters in a heavily disturbed shrimp trawl ground consisting of seagrass beds (Sargassum sp.). Upon collection, 
+the specimen underwent photographic documentation both onboard the vessel and subsequently in the laboratory. 
+Species identification was carried out based on external morphological features following the field identification 
+guide by Lourie et al. (2004) and on meristic characters (Lourie at al., 2016). Records and observations of H. kuda in 
+the Red Sea were obtained from multiple databases including the Global Biodiversity Information Facility (GBIF), 
+Oceanic Biodiversity Information System (OBIS), and iNaturalist. Morphological and morphometric characters, 
+and genetic analyses at the COI gene, were obtained from a comprehensive examination of the specimen and used 
+to confirm the identity of the specimen as H. kuda. The specimen was accessioned in the fish collections at the 
+Australian Museum under voucher number AM I.51371-001.
+ 
+DNA extraction and genetic divergence
+ 
+DNA extraction, primers, PCR conditions, sequence alignment, and analysis of CO1 sequence data generated for 
+this study were performed following protocols described in Hamilton et al. (2017). 
+The COI sequence data generated from the collected specimen (Genbank accession number PP992517) were 
+compared with publicly available barcoding sequences from GenBank and BOLD for H. kuda species sampled from 
+the Indian Ocean. Some samples sourced from GenBank are designated as H. fuscus due to their collection predating 
+the synonymisation with H. kuda or misclassification as H. fuscus (Appendix 1). Genetic distances (uncorrected 
+p-distances) were calculated using MEGA v. 7.0.26 (Kumar et al., 2008).
+ 
+ 
+Results
+ 
+Diagnosis
+ 
+The collected specimen was identified as an adult female of H. kuda based on external morphological characters 
+following the field identification guide by Lourie et al. (2004). General body shape and size as seen in Fig 2. 
+Morphometric, meristic, and morphological characters are listed in Table 1. Distinct, angular and flat coronet; 
+dorsal fin rays sixteen; pectoral-fin rays fifteen; anal fin rays four; trunk rings eleven; dorsal fin base raised dorsally; 
+subdorsal rings four, dorsal fin base starting immediately posterior to ninth trunk ring and ending immediately 
+posterior to first tail ring; tail rings 37. Body ornamentation: spines low and rounded, small spine above eye; 
+lateral head spine ventral of coronet; small spine behind eye; double low spines below eye; cleithral spines small, 
+uppermost at gill-opening, central spine at level of last pectoral-fin ray, lowermost single and not enlarged; snout 
+spine absent; superior trunk ridge with enlarged spines on first, third, and fifth rings; superior trunk ridge on tail 
+with small spines on each ridge, becoming gradually smaller posteriorly along the length of the tail; all inferior trunk 
+ridge spines absent; caudal fin absent.
+ 
+ 
+Color
+ 
+Post collection, the fresh specimen of H. kuda exhibits yellow coloration of the body: head, trunk, and tail (Fig. 2). 
+In preservation, the specimen retains a pale yellow coloration.
+  
+Generic divergence
+ 
+Appendix 1 summarizes uncorrected p-distances at the COI gene, listing the genetic divergences between our 
+collected specimen (AM I.51371-001) and previously sequenced H. kuda specimens from the Western Indian 
+Ocean. The collected specimen diverges by 0.0% to 0.61% among Western Indian H. kuda, including South Africa, 
+Tanzania, Egypt, Israel, and Iran.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  337
+FIGURE 2. Yellow sea horse H. kuda collected off Al Qunfudah.
+Table 1. Relative measurements and counts obtained for H. kuda
+Hippocampus kuda
+Voucher
+AM I.51371-001
+Trunk rings
+11
+Tail rings
+37
+Dorsal fin-rays
+16
+Pectoral fin-rays
+15
+SL (mm)
+105.2
+%SL
+Head length (HL)
+17.00
+Trunk length (TrL)
+29.40
+Tail length (TaL)
+53.60
+Trunk depth (TD4)
+6.70
+Trunk depth (TD9)
+8.80
+%HL
+Head depth (HD)
+53.97
+Snout length (SnL)
+40.74
+Post orbital (PO)
+38.10
+Coronet height (CH)
+34.92
+SnL%
+Snout depth (SnD)
+27.79
+Charles et al.
+338  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Discussion
+ 
+Despite its extensive geographic range, reports of its occurrence in the Red Sea remains sparse, primarily restricted 
+to the northern region of Egypt and Israel in the Gulf of Aqaba and the Gulf of Suez (GBIF, 2024; iNaturalist, 2024). 
+Museum records are restricted to specimens collected in the Gulf of Suez in Egypt between 1869-1933 (MNHN IC 
+0000-5632, 1869; MNHN IC 1966-0357, 1928; MNHN IC 1966-0359, 1928; MNHN IC 1966-0358, 1929; MNHN 
+IC 1966-0360, 1933). Photographic observations of H. kuda in the Red Sea, however, are more recent, all of which 
+have been recorded in Egypt and Israel in the 2000’s on iNaturalist (Table 2).
+Table 2. iNaturalist observations of H. kuda in the Red Sea 
+Location
+Country
+iNaturalist observation
+Year
+Gulf of Aqaba
+Egypt
+110831036
+2003
+Gifton Islands
+Egypt
+1485195
+2004
+Gifton Islands
+Egypt
+1443456
+2005
+Gulf of Aqaba
+Egypt
+110831031
+2010
+Gulf of Suez
+Egypt
+126860728
+2024
+Gulf of Suez
+Egypt
+1092696
+2004
+Gulf of Aqaba
+Israel
+146471415
+2007
+Gulf of Aqaba
+Israel
+124753659
+2019
+Gulf of Aqaba
+Israel
+121227875
+2021
+The first record of H. kuda in the Red Sea was recorded in Jeddah, Saudi Arabia in 1838. This record was 
+originally based on the first description of H. fuscus (Rüppell, 1840), which was later synonymized with H. kuda due 
+to the lack of discernible morphological, genetic, or geographic differences from H. kuda (type locality Singapore) 
+in a revision of Hippocampus (Lourie et al., 2016). The holotype of H. fuscus (specimen SMF 4914) is housed in the 
+fish collections at the Senckenberg Nature Museum, Frankfurt, Germany. Therefore, we treat all previous records of 
+H. fuscus in the Red Sea as H. kuda in this study. Similarly, H. suezensis, first described by Duncker in 1940 (type 
+locality Hurghada, Egypt) is considered synonymous with H. fuscus for the scope of this study.
+Our collected specimen represents the second record of H. kuda reported in Saudi Arabia and a new distributional 
+record in the south-central Red Sea. This new record expands the southern range of H. kuda within the Red Sea, 
+extending 367 kilometers further south from the first known record in Jeddah. Mehanna and Al-Mahdawi (2006) 
+reported the first record of H. kuda from the Yemeni coast of the Red Sea, which would extend the range of the 
+species to the southern extremity of the Red Sea. However, scrutiny of their study reveals numerous instances 
+of misidentification among the seahorse species listed in their study. Furthermore, the photographic images 
+accompanying their descriptions lack clarity, posing challenges in accurately identifying the species at the species 
+level.
+Meristic, morphometric, and morphological characters documented in our collected specimen of H. kuda agree 
+with those documented for H. kuda following the field identification guide by Lourie et al. (2004) and the taxonomic 
+revision of Hippocampus (Lourie et al., 2016) for this species. The general appearance of the specimen is quite 
+distinct from the other two species of seahorses, H. jayakari and H. debelius, occurring in the Red Sea, including 
+differences in the aforementioned characters and size. 
+Genetic analysis of the COI gene, as listed in Appendix 1, indicates minimal divergence between the sequences 
+obtained from our collected specimen and H. kuda originating from the Western Indian Ocean, including the Red 
+Sea and Persian Gulf. Specifically, the genetic variation ranges from 0.00 to 0.31 when compared to sequences from 
+South Africa. In contrast, divergence ranges from 0.0 to 0.61 when compared to sequences from Egypt and Israel in 
+the Red Sea. A sequence retrieved from Saudi Arabia in the Persian Gulf (Genbank accession number KU236029) 
+exhibits a divergence of 0.74 from our specimen.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  339
+Implications for conservation 
+ 
+In the Red Sea, there is currently no comprehensive data available on the trade or exploitation of seahorses. It 
+is essential to gather data on various aspects of this trade, including the species involved, trade routes, volumes 
+traded, and monetary values associated with syngnathid trade, particularly from countries bordering the Red Sea. 
+The existing records on the distribution of H. kuda in the Red Sea highlights the urgent need for further research 
+into the fishing impact on seahorses throughout the Red Sea, especially in areas like the southern Red Sea off 
+Al Qunfudah and Jizan, where shrimp trawlers operate. It is crucial to assess the effects of trawling on seahorse 
+populations and their sustainability. Efforts should be made to raise awareness among trawl fishermen about the 
+importance of conserving seahorse species. The fishermen should be educated about the significance of avoiding 
+seagrass beds during their harvesting activities, as this can significantly enhance the prospects of protecting this 
+vulnerable species in the Red Sea. Furthermore, expanding knowledge about the distribution of specific seahorse 
+species, such as H. kuda, in the Red Sea has significant conservation implications. Newly documented occurrences 
+should be considered in the formulation of conservation strategies and management efforts for seahorse populations 
+in the region.
+ 
+Acknowledgement
+The authors express their profound gratitude to the Ministry of Environment, Water and Agriculture of Saudi 
+Arabia for funding the project “Assessment and Management of Shrimp Trawl Fisheries in the Red Sea Waters 
+of the Kingdom” and for their continuous support in getting permits for surveys at sea. Thanks to Viktor Nunes 
+Peinemann (Red Sea Research Centre, KAUST), for his assistance in generating a COI sequence from the specimen. 
+Thanks to Rawiyah Alhassan for providing the sampling map. We also thank KAUST Beacon Development (KBD) 
+for providing the essential laboratory facilities, as well as the staff of the KBD Fisheries team. Fisheries Field 
+specialists Mr. Nawaf Alfaqi and Mr. Osama Alsheri, and the crew of the trawl vessel “Abu Salem 3” are gratefully 
+acknowledged for their assistance during the scientific surveys at sea. Special thanks to the staff of the Australian 
+University Museum for their assistance with logistics during the shipment of the sample.
+ 
+References
+Choo, C.K. & Liew, H.C. (2003) Spatial distribution, substrate assemblages and size composition of sea horses (Family 
+Syngnathidae) in the coastal waters of Peninsular Malaysia. Journal of the Marine Biological Association of the United 
+Kingdom, 83 (2), 271–276.
+	
+https://doi.org/10.1017/S0025315403007069h
+CITES (2003) Proposals for amendment of Appendices I and II at 12th meeting of Conference of the Parties—results. CITES 
+Secretariat, Geneva. [unknown pagination]
+Dody, S., Manuputty, G.D. & Limmon, G.V. (2021) Habitat characteristics and density of spotted seahorse Hippocampus kuda at 
+waters of Ternate Island and surroundings, Maluku Utara, Indonesia. In: IOP Conference Series: Earth and Environmental 
+Science. Vol. 805. No. 1. IOP Publishing, Bristol, 012006.
+	
+https://doi.org/10.1088/1755-1315/805/1/012006
+GBIF.org (2024) GBIF Occurrence Download. Available from: https://doi.org/10.15468/dl.w3u6c9 (accessed 8 April 2024)
+Hamilton, D.J., Wheeler, D.W., White, C.M., Rees, C.L., Komendantov, A.O., Bergamino, M. & Ascoli, G.A. (2017) Name-
+calling in the hippocampus (and beyond): coming to terms with neuron types and properties. Brain Informatics, 4 (1), 
+1–12. 
+	
+https://doi.org/10.1007/s40708-016-0053-3
+IUCN (2004) 2004 IUCN Red List of Threatened Species. The World Conservation Union, Gland. Available from: https://www.
+iucnredlist.org/ (accessed 30 July 2024) 
+iNaturalist (2024) Available from: https://www.inaturalist.org (accessed 30 April 2024)
+Kalisiak, J., Gray, I., Bruget, R. & Correia, M. (2022) The use of non-invasive sampling to estimate long-term abundance of 
+Hippocampus kuda in the Koh Sdach Archipelago, Cambodia. Cambodian Journal of Natural History, 47–58.
+Kumar, S., Nei, M., Dudley, J. & Tamura, K. (2008) MEGA: a biologist-centric software for evolutionary analysis of DNA and 
+protein sequences. Briefings in bioinformatics, 9 (4), 299–306.
+	
+https://doi.org/10.1093/bib/bbn017
+Charles et al.
+340  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Lipton, A.P. & Thangaraj, M. (2013) Distribution pattern of seahorse species (Genus: Hippocampus) in Tamilnadu and Kerala 
+coasts of India. Notulae Scientia Biologicae, 5 (1), 20–24.
+	
+https://doi.org/10.15835/nsb518298
+Lourie, S.A., Foster, S.J., Cooper, E.W. & Vincent, A.C. (2004) A guide to the identification of seahorses. Project Seahorse and 
+TRAFFIC North America, 114 (1), 1–120.
+Lourie, S.A., Pollom, R.A. & Foster, S.J. (2016) A global revision of the seahorses Hippocampus Rafinesque 1810 (Actinopterygii: 
+Syngnathiformes): taxonomy and biogeography with recommendations for further research. Zootaxa, 4146 (1), 1–66.
+	
+https://doi.org/10.11646/zootaxa.4146.1.1
+Mehanna, S.F. & Al-Mahdawi, G.J. (2006) First record for syngnathid species (seahorses and pipefishes, Family: Syngnathidae) 
+from Yemeni coast of the Red Sea. African Journal of Biological Sciences, 2 (2), 121–128.
+Rüppell, W.P.E.S. (1840) Neue Wirbelthiere zu der Fauna von Abyssinien gehörig Fische des Rothen Meeres. S. Schmerber, 
+Frankfurt am Main, 40 pp., 14 taf, 116 pp., 42 taf, 18 pp., 6 taf, 148 pp., 33 taf.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  341
+Appendix 1.
+Hippocampus_
+kuda_PP992517_
+Saudi_Arabia
+Hippocampus_
+kuda_KU236029_
+Saudi_Arabia
+Hippocampus_
+fuscus_
+KY066107_Egypt
+Hippocampus_
+kuda_
+MF123924_Isreal
+Hippocampus_
+fuscus_
+MG875005_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875006_Red_
+Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_
+MG875008_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875009_Red_
+Sea
+Hippocampus_kuda_
+PP992517_Saudi_
+Arabia
+Hippocampus_kuda_
+KU236029_Saudi_
+Arabia
+0.0061
+Hippocampus_
+fuscus_KY066107_
+Egypt
+0.0032
+0.0095
+Hippocampus_kuda_
+MF123924_Isreal
+0
+0.0061
+0.0032
+Hippocampus_
+fuscus_MG875005_
+Red_Sea
+0.0032
+0.0078
+0.0033
+0.0032
+Hippocampus_
+fuscus_MG875006_
+Red_Sea
+0
+0.0047
+0.0033
+0
+0.0031
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+0.0016
+0.0062
+0.0016
+0.0016
+0.0015
+0.0015
+Hippocampus_
+fuscus_MG875008_
+Red_Sea
+0.0032
+0.0078
+0.0016
+0.0032
+0.0031
+0.0031
+0.0016
+Hippocampus_
+fuscus_MG875009_
+Red_Sea
+0.0016
+0.0062
+0.0049
+0.0016
+0.0047
+0.0016
+0.0031
+0.0047
+Hippocampus_
+fuscus_MG875011_
+Red_Sea
+0.0032
+0.0078
+0.0033
+0.0032
+0.0031
+0.0031
+0.0016
+0.0031
+0.0047
+Hippocampus_
+fuscus_MG8750010_
+Red_Sea
+0.0032
+0.0094
+0.0065
+0.0032
+0.0078
+0.0047
+0.0062
+0.0078
+0.0062
+Hippocampus_kuda_
+AB983272_Iran
+0.0032
+0.0032
+0.0067
+0.0032
+0.008
+0.0048
+0.0064
+0.008
+0.0064
+......continued on the next page
+Charles et al.
+342  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Appendix 1. (Continued)
+Hippocampus_
+kuda_PP992517_
+Saudi_Arabia
+Hippocampus_
+kuda_KU236029_
+Saudi_Arabia
+Hippocampus_
+fuscus_
+KY066107_Egypt
+Hippocampus_
+kuda_
+MF123924_Isreal
+Hippocampus_
+fuscus_
+MG875005_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875006_Red_
+Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_
+MG875008_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875009_Red_
+Sea
+Hippocampus_kuda_
+ADC09-087_BOLD_
+South_Africa
+0.0031
+0.0095
+0.0063
+0.0031
+0.0065
+0.0032
+0.0048
+0.0048
+0.0048
+Hippocampus_kuda_
+GU805014_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805015_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805016_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805017_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_
+fuscus_GQ502132_
+Tanzania
+0.0015
+0.0077
+0.0047
+0.0015
+0.0048
+0.0016
+0.0032
+0.0048
+0.0032
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_kuda_
+PP992517_Saudi_
+Arabia
+Hippocampus_kuda_
+KU236029_Saudi_
+Arabia
+Hippocampus_
+fuscus_KY066107_
+Egypt
+Hippocampus_kuda_
+MF123924_Isreal
+......continued on the next page
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  343
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_
+fuscus_MG875005_
+Red_Sea
+Hippocampus_
+fuscus_MG875006_
+Red_Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_MG875008_
+Red_Sea
+Hippocampus_
+fuscus_MG875009_
+Red_Sea
+Hippocampus_
+fuscus_MG875011_
+Red_Sea
+Hippocampus_
+fuscus_MG8750010_
+Red_Sea
+0.0078
+Hippocampus_kuda_
+AB983272_Iran
+0.008
+0.0096
+Hippocampus_kuda_
+ADC09-087_BOLD_
+South_Africa
+0.0065
+0.0065
+0.0067
+Hippocampus_kuda_
+GU805014_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+Hippocampus_kuda_
+GU805015_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+Hippocampus_kuda_
+GU805016_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+0
+......continued on the next page
+Charles et al.
+344  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_kuda_
+GU805017_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+0
+0
+Hippocampus_
+fuscus_GQ502132_
+Tanzania
+0.0048
+0.0048
+0.0049
+0.0047
+0.0015
+0.0015
+0.0015
+0.0015
+

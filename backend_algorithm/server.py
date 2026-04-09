@@ -21,6 +21,7 @@ def scrape():
     for file in files:
         temp = tempfile.NamedTemporaryFile(delete=False, suffix='.pdf')
         file.save(temp.name)
+        temp.close()
         temp_paths.append(temp.name)
         
 

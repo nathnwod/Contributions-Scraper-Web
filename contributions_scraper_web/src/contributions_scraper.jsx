@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './contributions_scraper.css'
 
 function ContributionsScraper() {
@@ -23,13 +23,18 @@ function ContributionsScraper() {
                 body: formData
             })
             const data = await response.json()
+            console.log(data)  
+
             setResults(data)
-            console.log({ results })
+
 
         } catch (err) {
             console.error('Error:', err)
         }
     }
+
+
+
 
   return (
     <div className='main-container'>
@@ -55,7 +60,7 @@ function ContributionsScraper() {
 
             {/* insert logic to display each filename here */}
             {fileNames.map((fileName) => (
-                <h3 className='article-filename-header'>
+                <h3 className='article-filename-header' key={fileName}>
                     <svg className='file-svg' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
                     <span>&nbsp;{fileName}</span>
                 </h3>
@@ -74,31 +79,30 @@ function ContributionsScraper() {
             <div className='title-contributions-header'>
                 <h3>Title</h3>
                 <h3>Contribution</h3>
-            </div>    
+            </div>
+            <div className='separator-line'></div>
 
             {/* insert same logic to display each filename */}
-            <div className='results'>
-                <h4>fishy_placeholder.pdf</h4>
-                {/* insert logic for each aquarim contribution */}
-                <h4>national aquarium</h4>
-            </div>
-            <div className='separator-line'></div>
-                        <div className='results'>
-                <h4>fishy_placeholder.pdf</h4>
-                {/* insert logic for each aquarim contribution */}
-                <h4>national aquarium</h4>
-            </div>
-            <div className='separator-line'></div>
-                        <div className='results'>
-                <h4>fishy_placeholder.pdf</h4>
-                {/* insert logic for each aquarim contribution */}
-                <h4>national aquarium</h4>
-            </div>
-            <div className='separator-line'></div>
-                
+            {fileNames.map((fileName, index) => (
+                <React.Fragment key={fileName}>
+                    <div className='results'>
+                        <h4>{fileName.replace(".pdf", "")}</h4>
+                        {/* insert logic for each aquarim contribution */}
+                        <h4 className={results[index] === "None Found\n" ? 'none-found' : 'contributions'}>
+                            {results[index]}
+                        </h4>
+                    </div>
+                    {/* puts a separator line after each line excluding the final line */}
+                    {index < fileNames.length - 1 && <div className='separator-line'></div>} 
 
+                </React.Fragment>
+
+            ))}
             
+            
+                            
         </div>
+
 
     </div>
   )

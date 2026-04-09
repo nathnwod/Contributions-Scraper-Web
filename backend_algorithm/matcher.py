@@ -134,16 +134,16 @@ def findContributions(files):
         #results.append("File Name: " + os.path.basename(f) + "\n")
         if detected_zoos:
             for zoo in detected_zoos:
-                text_block.append(f"Zoo/Aquarium detected: {zoo}\n")
+                text_block.append(zoo)
         else:
-            text_block.append("No Zoo/Aquarium detected\n")
+            text_block.append("None Found")
 
-        if detected_seahorse:
-            text_block.append(f"Seahorses mentioned {seahorse_mentions} times\n")
-        else:
-            text_block.append("Seahorses not mentioned\n")
+        # if detected_seahorse:
+        #     text_block.append(f"Seahorses mentioned {seahorse_mentions} times\n")
+        # else:
+        #     text_block.append("Seahorses not mentioned\n")
 
-        block = "".join(text_block) + "\n"
+        block = ", ".join(text_block) + "\n"
 
         results.append(block)
 
