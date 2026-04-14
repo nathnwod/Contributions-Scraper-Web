@@ -1,0 +1,5 @@
+pdfrw==0.4
+pymupdf==1.26.6
+pandas==2.3.3
+openpyxl==3.1.5
+pykml==0.2.0
