@@ -27,13 +27,33 @@ function ContributionsScraper() {
 
             setResults(data)
 
-
         } catch (err) {
             console.error('Error:', err)
         }
     }
 
+    
+    const [exportStatus, setExportStatus] = useState('') 
 
+    const handleExport = async () => {
+        if(!results.length) return
+
+        setExportStatus('Downloading...')
+
+        try {
+            const response = await fetch('http://127.0.0.1:5000/exportExcel', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(results)
+            })
+            const data = await response.json()
+            setExportStatus('Downloaded!')
+            setTimeout(() => setExportStatus(''), 3000) // clears after 3 seconds
+        } catch (err) {
+            console.error('Error:', err)
+            setExportStatus('Error downloading')
+        }
+    }
 
 
   return (
@@ -71,8 +91,13 @@ function ContributionsScraper() {
         <div className='contributions-results-container'>
             <div className='contributions-header'>
                 <h2>Contributions</h2>
-                <button className='download-results-btn'>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+
+                {/* temporary */}
+                {exportStatus && <p>{exportStatus}</p>} 
+
+                
+                <button className='download-results-btn' onClick={handleExport}>
+                    Export as Excel <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
 
@@ -88,8 +113,8 @@ function ContributionsScraper() {
                     <div className='results'>
                         <h3>{fileName.replace(".pdf", "")}</h3>
                         {/* insert logic for each aquarim contribution */}
-                        <h3 className={results[index] === "None Found\n" ? 'none-found' : 'contributions'}>
-                            {results[index]}
+                        <h3 className={results[index]?.["detected zoos/aquariums"] === "None Found" ? 'none-found' : 'contributions'}>
+                            {results[index]?.["detected zoos/aquariums"]}
                         </h3>
                     </div>
                     {/* puts a separator line after each line excluding the final line */}

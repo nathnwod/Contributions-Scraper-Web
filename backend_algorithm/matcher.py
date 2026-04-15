@@ -34,9 +34,7 @@ def get_downloads_folder():
     
     
 def findContributions(files):
-    #ending = "" # Initialize an empty string to store results
     results = []
-    dataframeDict = {'Article Name': [], 'DOI': [], 'Detected Zoos/Aquariums': [], 'Seahorse Mentions': []}
 
     def renameFileToPDFTitle(fileName):
         fullName = fileName
@@ -101,10 +99,7 @@ def findContributions(files):
             # This pattern is a common way to identify DOIs
             doi_pattern = r'\b(10\.\d{4,}\/[^\s]+)\b'
             match = re.search(doi_pattern, text, re.IGNORECASE)
-            if match:
-                dataframeDict['DOI'].append(match.group(1))
-            else:
-                dataframeDict['DOI'].append("DOI not found")
+ 
             
             detected_zoos = []
             for zoo in zoo_list:
@@ -138,21 +133,25 @@ def findContributions(files):
         else:
             text_block.append("None Found")
 
-        # if detected_seahorse:
-        #     text_block.append(f"Seahorses mentioned {seahorse_mentions} times\n")
-        # else:
-        #     text_block.append("Seahorses not mentioned\n")
 
-        block = ", ".join(text_block) + "\n"
+        block = ", ".join(text_block)
 
-        results.append(block)
-
-        #n = renameFileToPDFTitle(f)
-        dataframeDict['Article Name'].append(name)
-        dataframeDict['Detected Zoos/Aquariums'].append(", ".join(detected_zoos) if detected_zoos else "None")
-        dataframeDict['Seahorse Mentions'].append(seahorse_mentions)
-    df = pd.DataFrame(dataframeDict)
-    df.to_excel(get_downloads_folder() + "\\contribution_results.xlsx", index=False)
+        results.append({
+            "title": name,
+            "doi": match.group(1) if match else "DOI not found",
+            "detected zoos/aquariums": block,
+            "seahorseMentions": seahorse_mentions if detected_seahorse else 0
+        })
 
     return results
+
+
+def exportExcel(results):
+    df = pd.DataFrame({
+        'Title': [r['title'] for r in results],
+        'DOI': [r['doi'] for r in results],
+        'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
+        'Seahorse Mentions': [r['seahorseMentions'] for r in results]
+    })
+    df.to_excel(get_downloads_folder() + "\\contribution_sharty.xlsx", index=False)
 

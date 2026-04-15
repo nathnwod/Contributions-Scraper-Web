@@ -3,6 +3,7 @@ from flask_cors import CORS
 import os
 import tempfile
 from matcher import findContributions
+from matcher import exportExcel as runExportExcel
 
 # backend flask server that takes files and runs them through a python function findContributions 
 
@@ -34,6 +35,18 @@ def scrape():
         # clean up temp files after we're done
         for path in temp_paths:
             os.unlink(path)
+
+
+@app.route('/exportExcel', methods=['POST'])
+def exportExcel():
+    data = request.json
+
+    try:
+        runExportExcel(data)
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
