@@ -2,15 +2,14 @@
     background-color: rgb(228, 228, 228);
     max-width: 1800px;
     width: calc(100% - clamp(2rem, 8vw, 10rem));
-
-    
     margin: clamp(1rem, 4vw, 5rem) auto;
+    min-height: calc(100vh - clamp(2rem, 8vw, 10rem));
+
 
     display: flex;
     gap: 2px;
     flex-direction: row;
     
-    min-height: calc(100vh - 10rem);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
@@ -74,12 +73,10 @@
 }
 
 .download-results-btn{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    font-family: inherit;
-    font-size: clamp(1rem, 2vw, 1.1rem);
+
 }
+
+
 
 .article-filename-header {
     max-width: 400px; 
@@ -136,10 +133,8 @@
     }
 }
 
-/* @media (max-width: 800px) {
-    .results{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+@media (max-width: 450px) {
+    .download-txt{
+        display: none;
     }
-} */
+}

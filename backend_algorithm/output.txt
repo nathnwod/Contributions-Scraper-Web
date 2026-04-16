@@ -1,1531 +1,742 @@
-Developmental and Comparative Immunology 153 (2024) 105136
-Available online 5 January 2024
-0145-305X/© 2024 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-
-nc-nd/4.0/).
-The effects of primary and secondary bacterial exposure on the seahorse 
-(Hippocampus erectus) immune response 
-Jamie Parker a,*, Silke-Mareike Marten a, Tadhg C. ´O Corcora b, Jelena Rajkov b, Arseny Dubin a, 
-Olivia Roth a 
-a Marine Evolutionary Biology, Christian-Albrechts-University, D-24118, Kiel, Germany 
-b Marine Evolutionary Ecology, GEOMAR Helmholtz Centre for Ocean Research Kiel, D-24105, Kiel, Germany   
-A R T I C L E  I N F O   
-Keywords: 
-Immunity 
-Seahorse 
-Vibrio aestuarianus 
-Tenacibaculum maritimum 
-Adaptive immunity 
-Innate immunity 
-A B S T R A C T   
-Evolutionary adaptations in the Syngnathidae teleost family (seahorses, pipefish and seadragons) culminated in 
-an array of spectacular morphologies, key immune gene losses, and the enigmatic male pregnancy. In seahorses, 
-genome modifications associated with immunoglobulins, complement, and major histocompatibility complex 
-(MHC II) pathway components raise questions concerning their immunological efficiency and the evolution of 
-compensatory measures that may act in their place. In this investigation heat-killed bacteria (Vibrio aestuarianus 
-and Tenacibaculum maritimum) were used in a two-phased experiment to assess the immune response dynamics of 
-Hippocampus erectus. Gill transcriptomes from double and single-exposed individuals were analysed in order to 
-determine the differentially expressed genes contributing to immune system responses towards immune priming. 
-Double-exposed individuals exhibited a greater adaptive immune response when compared with single-exposed 
-individuals, while single-exposed individuals, particularly with V. aestuarianus replicates, associated more with 
-the innate branch of the immune system. T. maritimum double-exposed replicates exhibited the strongest immune 
-reaction, likely due to their immunological naivety towards the bacterium, while there are also potential signs of 
-innate trained immunity. MHC II upregulated expression was identified in selected V. aestuarianus-exposed 
-seahorses, in the absence of other pathway constituents suggesting a possible alternative or non-classical MHC II 
-immune function in seahorses. Gene Ontology (GO) enrichment analysis highlighted prominent angiogenesis 
-activity following secondary exposure, which could be linked to an adaptive immune process in seahorses. This 
-investigation highlights the prominent role of T-cell mediated adaptive immune responses in seahorses when 
-exposed to sequential foreign bacteria exposures. If classical MHC II pathway function has been lost, innate 
-trained immunity in syngnathids could be a potential compensatory mechanism.   
-1. Introduction 
-The vertebrate immune system consists of two interactive branches: 
-the innate, characterised by rapid, non-specific responses, and the 
-adaptive, which drives slower but highly specific pathogen recognition, 
-assisted cellular activation, and immunological memory. (Bonilla and 
-Oettgen, 2010; Medzhitov and Janeway Jr, 2000). These two facets are 
-bridged and provided with further amplification potential by the com­
-plement system (Lo and Woodruff, 2020). Innate immune defences are 
-conserved from invertebrates to vertebrates whilst the RAG1/RAG2 
-driven adaptive immune system, which evolved subsequently in gna­
-thostomes, has become a hallmark of vertebrate evolution (Cooper and 
-Alder, 2006; Flajnik and Kasahara, 2010; Fujita et al., 2004). Until 
-recently, the concept of fundamental adaptive immune remodelling was 
-inconceivable in gnathostomes due to the perceived ramifications that 
-would drastically hinder immune function through the development of 
-immunodeficiency and potential autoimmune conditions. However, this 
-interpretation has softened following numerous discoveries of adaptive 
-immune system restructuring and key gene losses in marine vertebrates 
-(Buonocore and Gerdol, 2016; Dubin et al., 2019; Magadan et al., 2015; 
-Roth et al., 2020; Star et al., 2011). The convergent loss of major his­
-tocompatibility complex II (MHC II) pathway components in codfishes, 
-anglerfish, and the elephant shark have been identified, as well as in 
-some syngnathids, which are in addition asplenic and miss crucial 
-complement and immunoglobulin-related genes (Dubin et al., 2019; Liu 
-et al., 2022; Roth et al., 2020; Star et al., 2011; Swann et al., 2020; 
-* Corresponding author. 
-E-mail address: jparker@zoologie.uni-kiel.de (J. Parker).  
-Contents lists available at ScienceDirect 
-Developmental and Comparative Immunology 
-journal homepage: www.elsevier.com/locate/devcompimm 
-https://doi.org/10.1016/j.dci.2024.105136 
-Received 24 October 2023; Received in revised form 21 December 2023; Accepted 4 January 2024   
-Developmental and Comparative Immunology 153 (2024) 105136
-2
-Venkatesh et al., 2014). These instances not only confirm that immune 
-systems have evolved with a high degree of flexibility including adaptive 
-immune system remodelling, but are potentially commonplace among 
-marine fishes, while also appearing to circumvent any debilitating 
-immunological issues. 
-Previous work has suggested that the innate immune system could be 
-of greater importance in teleosts compared with the slower-acting 
-adaptive immune branch (Magnad´ottir, 2010). In codfishes, the loss of 
-MHC II, CD4, and the invariant chain (CD74) is theorized to be due to 
-the MHC II pathway being surplus to requirements based on environ­
-mental and microbial demands, metabolic costs, and/or other historical 
-disease-related events (Star et al., 2011; Malmstrøm et al., 2016). Re­
-ports have highlighted relatively slow adaptive immune response times 
-in cold-blooded species compared with homeotherms (Abram et al., 
-2017; Scharsack and Franke, 2022). Slower adaptive immune activity 
-could attributed in part to slower metabolic rates that exist among 
-poikilothermic animals such as teleosts (Abram et al., 2017; Du Pasqu­
-ier, 1982). Under hypothermic water conditions, innate immune system 
-components have shown capabilities of enhancement following 
-long-term exposure, compared with a more consistent suppression of the 
-adaptive immune branch in similar conditions (Collazos et al., 1994; Le 
-Morvan et al., 1997). Therefore, innate defences in fish consistently 
-exposed to lower temperatures may compensate for other immunolog­
-ical deficits (Abram et al., 2017). So far, modifications to the 
-RAG1/RAG2 adaptive immune system have been identified in the 
-coelacanth, elephant shark, and a few teleost species, with little un­
-derstanding of the driving forces behind these alterations (Buonocore 
-et al., 2016; Dubin et al., 2019; Roth et al., 2020; Saha et al., 2014; Star 
-et al., 2011; Venkatesh et al., 2014). A reliance on the innate immune 
-system that led teleosts down an alternative evolutionary path to 
-mammals, which rely heavily on the adaptive branch, may have 
-rendered the adaptive immune system more evolutionarily flexible than 
-the innate repertoire (Roth et al., 2020; Star et al., 2011). Innate immune 
-derived memory coined as ‘trained immunity’ has been proposed in 
-vertebrates and invertebrates (Kurtz, 2005; Netea et al., 2011), while 
-pathogen-specific priming in invertebrates has also been observed (Roth 
-et al., 2009; Sadd and Schmid-Hempel, 2006). These mechanisms, in­
-dependent from the adaptive branch, highlight the complexities of im­
-mune system processes across the animal kingdom and should be 
-considered when discussing immunological dependencies and the 
-interpretation of functional importance. Immunological research on 
-organisms with altered immune fundamentals should be encouraged as 
-they can provide important insights into the evolutionary flexibility that 
-can shape the immune system. 
-Syngnathid fishes (seahorses, pipefish, and seadragons) are the only 
-group to have evolved the enigmatic male pregnancy and represent an 
-intriguing study group when it comes to understanding the mechanisms 
-of evolutionary innovation (Herald, 1959; Roth et al., 2020; St¨olting and 
-Wilson, 2007). Genomic modifications in some group members have led 
-to a suggested functionally compromised MHC II (antigen presentation) 
-pathway, as well as C4 (complement) and CD5 (B-cell function) gene 
-absences (Haase et al., 2013; Liu et al., 2022; Luo et al., 2016; Roth et al., 
-2020). Gut-associated lymphoid tissue (GALT) is also deemed missing in 
-seahorses and pipefish (Matsunaga and Rahman, 1998), while 
-gill-associated lymphoid tissue (GIALT) is likely present based on studies 
-pertaining to angiogenic and mucosal-related immune activities in the 
-tissue (Luo et al., 2016; Parker and Roth, 2022). In turn, drastic evolu­
-tionary alterations and the genomic variability among syngnathids 
-render them fascinating subjects for evolutionary immunology research. 
-Since these discoveries, research has focused on exploring the potential 
-evolutionary repercussions concerning the syngnathid immune capa­
-bilities, immune cell population dynamics, and the influence on male 
-pregnancy evolution within the lineage (Haase et al., 2013; Keller and 
-Roth, 2020; Parker et al., 2023a; Parker and Roth, 2022; Roth et al., 
-2020). Assessing the immunological vigilance of syngnathid fishes has 
-often been limited to singular bacterial effectors or exposures 
-(Beemelmanns and Roth, 2016b; Kang et al., 2022; Lin et al., 2016; 
-Martins et al., 2010; Roth et al., 2012b). Understanding how alternative 
-immune strategies with modified defence repertoires respond to 
-sequential homologous and heterologous bacteria exposure, and how 
-they evoke immune priming can provide an intriguingly different 
-perspective on immune function. Moreover, disentangling how these 
-unconventional 
-model 
-organisms 
-approach 
-and 
-adapt 
-to 
-immune-deficiencies, could benefit the progression of contemporary 
-vaccinations and autoimmune treatments. 
-This investigation aimed to assess the bacterial immune responses 
-and priming capacities of the seahorse Hippocampus erectus upon expo­
-sure to heat-killed bacteria isolates. Unlike some of its pipefish relatives, 
-the functionality and immunological relevance of the seahorse MHC II 
-pathway is still largely undetermined. Potentially, the modification of 
-CD74 in seahorses led to the dysfunctionality of the MHC II pathway 
-(Roth et al., 2020). If the classical function of the MHC II pathway has 
-not been conserved, it raises questions regarding alternative immune 
-pathways accommodating this deficiency, as well as its capabilities in 
-immune memory formation. Primary and secondary bacterial exposures 
-to either heat-killed Vibrio aestuarianus or Tenacibaculum maritimum 
-were conducted and individual immune response was assessed in the 
-context of whether fish had been exposed previously or not, and to 
-which bacteria combination. Adaptive and innate immune-related gene 
-expression was assessed to elucidate the influence of bacterial specificity 
-and exposure number. The first hypothesis of this study was that (i) 
-treatment replicates cluster based on their overall gene expression 
-profiles, with the largest disparities found between exposed and 
-non-exposed treatments. In light of the fact that initial exposure to a 
-bacterium elicits an innate immune response, it was hypothesized that 
-(ii) fish not subjected to a primary exposure exhibit a greater innate 
-immune response than fish with a homologous and heterologous double 
-exposure. Secondary exposure to a bacterium was expected to be asso­
-ciated with an accelerated and stronger adaptive immune response 
-owing to the establishment of immunological memory. In turn, the third 
-hypothesis of this study was that (iii) homologous and heterologous 
-double-exposed replicates, compared with single-exposed individuals, 
-elicit a stronger adaptive immune response and that this is enhanced in 
-homologous compared with heterologous treatments. Due to the 
-deduced loss of MHC II functionality in H. erectus, it was hypothesized 
-that (iv) the MHC I pathway is upregulated in exposed individuals as a 
-compensatory consequence. Lastly, from what is known about 
-syngnathid-bacterial co-evolutionary relationships, it was hypothesized 
-that (v) T. maritimum evokes a stronger immune response overall than 
-V. aestuarianus due to the immunological naivety of the host. 
-2. Material & methods 
-2.1. Ethics statement 
-This study was conducted according to German animal welfare law 
-and the ethical approval afforded by the Ministerium für Energiewende, 
-Landwirtschaft, Umwelt, Natur und Ditgitalisierung (MELUND) 
-Schleswig-Holstein (Permit no: V24257982/2018). No endangered fish 
-species caught from the wild were used in this study. 
-2.2. Fish 
-Captive-bred Hippocampus erectus males were initially obtained from 
-qualified aquarium breeders (Seepferdchen24, Meeresaquaristik GmbH, 
-Ottersberg), then bred for several generations and maintained at 25 ◦C in 
-the GEOMAR aquaria facilities. Fish were kept in tanks containing Baltic 
-Sea water and supplemented with additional marine salt to increase 
-salinity to 30% (Qin et al., 2020). Seahorses were fed live mysids from 
-aquarium stocks and frozen mysids (Fischfutter Erdmann, Germany) 
-twice a day. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-3
-2.3. Bacterial strains and culture preparation 
-Vibrio spp. are a diverse group of opportunistic Gram-negative bac­
-teria omnipresent in the Baltic Sea, as well as one of the most prevalent 
-bacteria in the natural biome and seahorse gut (Colwell and Grimes, 
-1984; Pappert et al., 2023; Thompson et al., 2004). While often harm­
-less, under certain conditions Vibrio strains can become pathogenic and 
-instigate disease development in seahorses (Alcaide et al., 2001; Qin 
-et al., 2017; Xie et al., 2020) and pipefishes (Goehlich et al., 2021; Haase 
-et al., 2013; Roth et al., 2012a), especially within the fish trade (Kang 
-et al., 2022). The strain used in this investigation was V. aestuarianus, a 
-known occupant of Baltic Sea brackish waters (Eiler et al., 2006). 
-T. maritimum is a marine bacterium implicated in skin and mucosal- 
-related infections in fish such as Pagrus major and Acanthopagrus schlegeli 
-of the Pacific Ocean (Avenda˜no-Herrera et al., 2006; Hikida et al., 1979; 
-Masumura and Wakabayashi, 1977). T. maritimum has been used pre­
-viously in syngnathid immune challenge experiments (Beemelmanns 
-et al., 2019; Beemelmanns and Roth, 2017) despite the strain, to the best 
-of our knowledge, not having come into contact previously with fish of 
-the Baltic Sea region or those within our aquaria system. 
-Cryocultures of V. aestuarianus and T. maritimum originally extracted 
-from healthy broad-nosed pipefish (S. typhle) and pacific seabream, 
-respectively (Beemelmanns and Roth, 2017; Roth et al., 2012a; Suzuki 
-et al., 2001), were thawed and allowed to grow in Medium101 (0.5% 
-(w/v) peptone, 0.3% (w/v) meat extract, 1.5% (w/v) NaCl in MilliQ 
-water). Following exponential growth, bacteria were harvested in ma­
-rine broth by centrifugation (5 min, 5000 rpm) and washed twice using 
-sterile PBS buffer. Estimates for cell counts were determined using two 
-dilution series (V. aestuarianus: 3 × 108 cfu mL−1; T. maritimum: 2.4 ×
-107 cfu mL−1). Cultures were washed with 30 mL of sterile PBS buffer 
-and heat-killed (V. aestuarianus: 75 min at 65 ◦C; T. maritimum: 75 min at 
-60 ◦C). To confirm the heat-killing process, products were plated on 
-Medium101 agar and assessed. Resultant heat-killed cultures were 
-stored at −20 ◦C in preparation for the experimentation. 
-2.4. Experimental design and sampling 
-Seven treatments were used in this investigation consisting of pri­
-mary and secondary exposure, with either heat-killed V. aestuarianus 
-and/or T. maritimum being used, while naïve phases represented those 
-without bacterial introduction. Exposure programmes were as follows: 
-naïve/naïve (control) (NN), Vibrio/Vibrio (VV), Tenacibaculum/Tenaci­
-baculum (TT), Vibrio/Tenacibaculum (VT), Tenacibaculum/Vibrio (TV), 
-naïve/Vibrio (NV) and naïve/Tenacibaculum (NT) (Fig. 1). The sequen­
-tial exposures were separated by a 5-week period. 
-Eight seahorse males were used for each treatment and each fish was 
-weighed and measured (mean: 22.5 g; 15.7 cm) in order to determine 
-the appropriate pathogen load to use. Fish of the same treatment were 
-kept in 20 L tanks for the duration of the experiment. 20 μL per gram 
-body weight of bacteria was the ratio used to establish the appropriate 
-dosage size, resulting in a final injection volume of ~150 μL per sea­
-horse. This dosage ratio is in line with a previous immunological study 
-conducted by Peuss et al. (2020). Fish were monitored for fatalities and 
-behavioural changes during the five weeks leading up to the second 
-exposure phase. Four days after the second treatment phase, all fish were 
-euthanized with an excess of MS-222 (500 mg/L, Sigma-Aldrich), prior 
-to the gills being sampled, preserved in RNAlater, and initially stored at 
-4 ◦C. Samples were relocated to −20 ◦C after 2 weeks. 
-2.5. RNA extraction and sequencing 
-Samples were thawed and homogenized prior to RNA extraction 
-using the RNeasy 96 Kit (Qiagen, Hilden Germany). To ensure that the 
-extracted RNA was of sufficient quality prior to library preparation, a 
-NanoDrop-1000 spectrophotometer (NanoDrop) and Fragment Analyzer 
-(Agilent Technologies) were utilised. Library preparation was carried 
-out at the Beijing Genomics Institute (BGI), as well as paired-end RNA 
-sequencing (RNA-seq) via the DNBseq platform (2 × 150 bp reads). 
-2.6. Orthologous gene identification 
-Orthofinder (v2.4.0) (Emms and Kelly, 2015, 2019) was utilised to 
-identify orthologous genes from 11 fish species acting as references 
-(supplementary; Table S1). DIAMOND (v0.9.21) (Buchfink et al., 2015) 
-and MAFFT (v.7.475) (Katoh and Standley, 2013) were used for multiple 
-sequence alignment prior to adopting FastTree for maximum-likelihood 
-trees. 
-2.7. Read processing and principal component analyses 
-Raw reads were adapter trimmed and quality pruned using Fastp 
-(v0.20.1) (Chen et al., 2018) before being aligned and mapped to the 
-genome using STAR (v2.7.9a) (Dobin et al., 2013). Resultant counts 
-were obtained and consolidated using the TPMCalculator (v0.0.3) (Vera 
-Alvarez et al., 2019). 
-Principal component analysis (PCA) was carried out on all replicates 
-to determine whether replicate group clustering could be observed. 
-Scaled TPM (Transcripts per Million) values were used and filtered for 
-genes that showed expression in at least three replicates. Following the 
-all-replicate comparisons, replicates relating to V. aestuarianus (NN, NV, 
-VV & TV) and T. maritimum exposure (NN, NT, TT & VT) were divided for 
-separate PCAs. Multivariate analysis of variance (MANOVA) followed 
-Fig. 1. Schematic diagram depicting the treatment assignments and workflow used in this investigation.  
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-4
-with treatment as a predictor variable (PC1-PC5), to assess which 
-principal components associate with which treatment type for analysis. 
-The PC1-PC5 range was used because it represents the largest combined 
-degree of variance and, therefore, should be considered when attempt­
-ing to discern differences between sample groups, driven by this varia­
-tion. In order to determine where differences lie between treatment 
-groups, analysis of variance (ANOVA) was carried out on the scores of 
-the most influential PCs (PC1-5), followed by post-hoc Tukey-tests to 
-identify specific treatment differences. PCs with the greatest significant 
-treatment differences (MANOVA; P < 0.05) were used for the visual PCA 
-representations. 
-Influential genes characterising each respective PC were investigated 
-and loadings were displayed to help interpret the drivers. The most 
-influential genes with the greatest loading values (top 10%) were 
-investigated in depth for proposed roles in immune function and phys­
-iology. Immune genes were then displayed on each respective PCA 
-representation, to provide an overarching view of the immune system’s 
-influence in shaping the dispersal of the treatment clusters. The per­
-centage of genes (10%) was in line with a similar previous study (Parker 
-et al., 2023a) and chosen to provide a clearer view of the most important 
-genes charged with contributing to treatment differences. 
-2.8. Pairwise differential gene expression analyses 
-DESeq2 (v.1.36.0) (Love et al., 2014) was adopted for differential 
-gene expression (DGE) analyses in R (v4.2) (R Development Core Team, 
-2013). Pairwise comparisons were carried out between selected repli­
-cate groups. Single-exposure replicates were compared with the naïve 
-(NN/NT & NN/NV), homologous double-exposed (NT/TT & NV/VV), 
-and heterologous double-exposed (NT/VT & NV/TV) replicates. Ho­
-mologous double-exposed groups were also compared with heterolo­
-gous replicate groups (TT/VT & VV/TV), while also being compared 
-with naïve (NN/TT, NN/VV, NN/VT & NN/TV). The Benjamini and 
-Hochberg method was used for multiple testing P-value correction 
-(Benjamini and Hochberg, 1995). Genes with an absolute log-2 fold 
-change (log2FC) expression >0.5 or < −0.5, and an adjusted P-value 
-<0.05 were used. 
-2.9. Functional group enrichment analyses 
-Separate gene ontology (GO) functional group analyses were con­
-ducted on differentially expressed and PCA gene data sets. For the PCA 
-functional enrichment analysis, the top 10% most influential genes were 
-used. Each gene possesses a positive or negative loading value, which 
-relates to its influence on driving differences between treatments for 
-each PC. Therefore, those genes with the most positive/negative values 
-were assessed for each respective PC. For the DGE data sets, genes with 
-the same expression direction (i.e., upregulated or downregulated; 
-log2FC) for each pairwise comparison were analysed concurrently. The 
-bioinformatics resource tool, DAVID (v2021) (Huang et al., 2009; 
-Sherman and Lempicki, 2009), was used to extract GO_FAT biological 
-process functional groups that combine gene pathways into broader 
-functional categories. For background gene references the zebrafish 
-(Danio rerio) library was utilised, while the high DAVID stringency 
-setting was adopted to support group establishment. Each resultant 
-group was given an FDR-corrected value and a functional enrichment 
-score. Gene ontology bubble plots were created for data sets with 
-strongly enriched findings, incorporating gene log2FC, average expres­
-sion, and adjusted P-values to provide a weighted visual assessment. 
-3. Results 
-3.1. Read and ortholog abundances 
-A total of ~145–233 M paired-end reads were attained per treatment 
-group with samples ranging from 25.6 to 29.6 M reads and averaging at 
-29 M, while 16,938 ortholog gene matches (D. rerio) were identified. 
-3.2. Principal component analyses 
-Replicates were conducive to PCA and demonstrated treatment- 
-specific clustering, and an overall difference between all groups was 
-confirmed following MANOVA (PC1:PC5) (supplementary; Table S2). 
-Moreover, individual treatment differences were identified using 
-ANOVA and post-hoc Tukey testing (supplementary; Tables S3–4). The 
-majority of significant treatment differences were found within PC1, 
-which accounted for 41% of the variation within the dataset. In general, 
-PC1 distinguished NT, TV, VV, and NN (positive leaning) from NV, VT, 
-and TT (negative leaning) from each other (Fig. 2). The most significant 
-differences were found between the following treatment pair compari­
-sons: NV/NT, TT/NT, VT/NT and TV/NV. In fact, NT replicates were 
-found to be significantly different from every other treatment type. 
-Intriguingly, the two treatment groups that exhibited the greatest sig­
-nificant difference when compared with NN were both groups that only 
-underwent a single exposure, NT and NV. TT replicates also matched this 
-trend; however, TV, VT, and VV were all shown to have statistically 
-similar expression dynamics to NN when looking at PC1. ANOVA also 
-highlighted significant overall differences in gene expression between 
-the two homologous (VV and TT) and between the heterologous vacci­
-nated treatments (TV and VT). 
-Separated group PCA plots gave a clearer clustering outlook for each 
-bacteria treatment individually in H. erectus and provided bacteria- 
-specific platforms to assess trend differences between treatments. 
-MANOVA confirmed that within PC1-5 significant differences exist be­
-tween V. aestuarianus treatment groups (supplementary; Table S5). PC1 
-(53%) for all replicates that received V. aestuarianus as their final 
-exposure, showed separation of NV from all the other replicates 
-including the control (NN) (Fig. 3). Furthermore, each difference was 
-confirmed to be highly significant using ANOVA and Tukey testing 
-(supplementary; Tables S7–8). PC2 (12%), on the other hand, showed a 
-statistically significant separation of NV, TV, and VV replicates from NN. 
-This trend was supported further when looking at PC2 and PC3 (8%) in 
-combination. Incidentally, PC3 also showed a significant difference 
-between VV and NV, along with an even stronger distinction between VV 
-and TV. Significant differences for all V. aestuarianus treatment com­
-parisons could therefore be explained by PC1-PC3. 
-As with the V. aestuarianus treatments, MANOVA highlighted the 
-presence of an overall expression profile difference between T. maritimum 
-treatment groups (supplementary; Table S5). The T. maritimum-related 
-treatments also yielded similar clustering patterns, with PC1 (52%) ac­
-counting for differences between NT and the two double exposure treat­
-ments (VT and TT); the NN clustering distinction from NT was less 
-pronounced than it was from NV (Fig. 4; supplementary; Tables S6 and 
-S8). In addition, NN-TT and NN-NT comparisons also yielded strong sig­
-nificant differences along PC1, along with the NN and VT clusters, but to a 
-lesser degree. Differences between treatment clusters were also observed 
-in PC2 (8%), with VT expression significantly contrasting both NN and TT, 
-while PC3 (6%) only explained differences between NN and the single and 
-double homologous T. maritimum treatments (NT and TT). Overall, when 
-considering just PC1 and PC2 significant differences were found between 
-all T. maritimum treatment comparisons. 
-3.2.1. PCA influential genes and functional enrichment 
-A total of 55 genes were shown to be significant in inferring differ­
-ences between V. aestuarianus-related replicates (Fig. 5; supplementary; 
-Table S9). As the number of total influential genes was limited, all genes 
-were represented in the V. aestuarianus PCA representations; however, 
-functional enrichment analysis was not carried out for these treatments 
-due to insufficient gene numbers. A large proportion of these genes are 
-positively associated with the NV treatment (PC1). Based on the PCA of 
-PC1 and PC2, three genes are associated with the double exposure 
-replicates (VV and TV), namely capza1a (actin organization activity), 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-5
-c1galt1c1 (transmembrane chaperone) and mgst3a (glutathione peroxi­
-dase activity). The same PCA highlighted six genes with immunological 
-function; bach2b (lymphocyte maturation) and grem2b (inflammation) 
-associated with NN, while huwe1 (inflammation), hivep3b (immune 
-response), sema7a (immune modulation/inflammation) and wdr36 (T- 
-cell activation) associated with NV. 
-For the T. maritimum PCA assessments, a total of 1386 genes were 
-shown to be influential in driving differences between treatments. 
-Considering the top 10% of genes for each PC (139 genes), 85 across all 
-PCs were found to have an immune-related function (Fig. 6, 
-supplementary; Table S10). Unlike in the V. aestuarianus assessment, 
-influential immune genes associated with differences along the PC1 axis 
-in T. maritimum were almost exclusively linked to the homologous and 
-heterologous treatments (TT and VT) and not the single-exposed repli­
-cates (NT). In the PC1-2 combination, no immune genes were strongly 
-associated with NT replicates. A notable number of genes involved in 
-macrophage (ncor2, letm1 & tjp1a), autophagy (usp19), neutrophil and 
-NK-cell function (nbeal2 & rfx7b) were strongly associated with VT and 
-TT replicates, along with several other innate immunity genes (sorl1, 
-itga1, atf7a & huwe1). 
-Fig. 2. Principal component analysis of normalized TPM values for all Hippocampus erectus treatment replicates (naïve/naïve (NN), naïve/Vibrio (NV), Tenacibac­
-ulum/Vibrio (TV) and Vibrio/Vibrio (VV), naïve/Tenacibaculum (NT), Vibrio/Tenacibaculum (VT) and Tenacibaculum/Tenacibaculum (TT). Ellipses represent 
-70% confidence. 
-Fig. 3. Principal component analysis for naïve/naïve (NN), naïve/Vibrio (NV), Tenacibaculum/Vibrio (TV) and Vibrio/Vibrio (VV) Hippocampus erectus treatment 
-replicates. Letter labels indicate respective treatment means. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-6
-GO functional enrichment analysis was carried out on the influential 
-genes for each principal component, separating genes based on their PC 
-loading direction. Due to the limited number of influential genes driving 
-the V. aestuarianus treatment differences, no functional enrichment was 
-identified following DAVID GO analysis. For the T. maritimum replicate 
-analysis, the vast majority of genes influencing PC1 had a negative 
-loading value and are therefore heavily associated with TT and VT 
-replicates rather than NN and NT. Chromatin modification, RNA 
-biosynthesis, catabolism, haematopoiesis, and immune system devel­
-opment were all functionally enriched pathways associated with influ­
-ential genes characterising TT and VT (supplementary; Table S11). 
-Other principal components failed to yield any additional significant 
-functional pathway information (supplementary; Tables S12–17). 
-3.3. Differential gene expression analysis and functional enrichment 
-Pairwise comparisons between treatments yielded 726 and 1467 
-differentially expressed transcripts found in V. aestuarianus and 
-T. maritimum comparisons, respectively (supplementary; Table S18). 
-Among the V. aestuarianus pairwise assessments, NV/TV yielded the 
-largest number of differentially expressed genes. Interestingly, 25 
-differentially expressed genes are shared between NN/VV and NN/TV, 
-while NN/NV only shares two in total (supplementary; Fig. S1). In the 
-equivalent T. maritimum comparison, over half of NN/VT differentially 
-expressed genes are shared with NN/NT. However, NN/TT only accrued 
-a small number of differentially expressed genes overall so little overlap 
-was observed. Differences between single-exposed and double-exposed 
-replicates in T. maritimum comparisons were the greatest, producing 
-the largest number of differentially expressed genes. VV/TV only yielded 
-three significant differentially expressed genes. 
-3.3.1. Vibrio aestuarianus treatments 
-NN/NV: The NN/NV pairwise comparison produced few immune- 
-related differentially expressed genes, aside from the upregulation of 
-thbs1b (inflammation), plgrkt (inflammation regulation), and the fish 
-disease implicated abi1b in NV (Zhou et al., 2017). 
-NN/VV: All but one gene (adcy2a) was shown to be downregulated 
-in VV when compared with NN. Downregulated genes in VV involved in 
-immune system function include sh2d1aa (lymphocyte activation), ptges 
-(inflammation), itgbl1 and gapdh (immune regulation), as well as the 
-angiogenic factor angpt1. 
-NN/TV: The adaptive immune gene lpar1 was downregulated in TV 
-compared with NN, while most genes with a positive immune function 
-such as havcr1 (T- and B-cell activity), spp1 (T-cell activation) usp13 and 
-si:dkey-26c10.5 (innate immunity) were also shown to be downregulated 
-in TV compared with NN. However, a number of immune suppressive/ 
-modulatory (itgbl1, gapdh, prdm16 & sfrp5) genes were also strongly 
-downregulated in TV replicates. Two BMP signalling (sfrp5 & grem2b) 
-and several angiogenic genes (jcada, nme2b.1, tspan12, ptprb & angpt1) 
-were downregulated in TV in comparison with NN. 
-NV/TV: Pairwise comparisons between NV/TV yielded a number of 
-differentially expressed genes, with two of the most notable coding for 
-CD40 and MHC II (mhc2dca) (antigen presentation), both of which 
-showed upregulated expression in TV compared with NV. Conversely, 
-three genes with putative roles in T-cell response inhibition (ildr2, 
-pcdh18a & lrrc8c) were downregulated in the same comparison. Abun­
-dant genes coding for immune-related integrin pathway components 
-(yrk, fn1b, itga4, loxl3a, itga3a, itga1, sema7a & itgbl1) were also identi­
-fied in NV/TV comparison, all of which exhibited downregulated 
-expression in TV. Interestingly, innate immune genes (blk, colec12, ina­
-vaa, tnc, ptk2ab, sema3d, yrk, gapdh, thbs4b & yes1) and most genes 
-involved in inflammation were found in this comparison to be down­
-regulated in TV compared with NV. In line with the NN/TV comparison, 
-all BMP signalling genes (tgfb1b, tbx2b, sost & grem2b) were shown to 
-have downregulated expression in TV compared with NV. Moreover, the 
-same downregulated expression trend concerning angiogenesis genes 
-(serpinf1, cdh5, ppp1r16b, reck, ptk2ab, fli1a, ackr3b, amot, tnn, jcada, 
-adamts3, mmp2, kdrl, robo4, pappa2, clec14a, calcrlb, ptprb & sox18) and 
-integrin signalling genes (itga1, yrk, itga3a, itga4, itga5, itga9, sema7a & 
-itgbl1) was also evident in TV replicates compared with NV. 
-NV/VV: As with the NV/TV comparison, genes coding for MHC II 
-(mhc2dca) were upregulated in VV compared with NV, while mpx 
-(peroxidase) was the only other notable upregulated immune gene. An 
-intriguing number of genes with suppressive roles were identified to be 
-Fig. 4. Principal component analysis for naïve/naïve (NN), naïve/Tenacibaculum (NT), Vibrio/Tenacibaculum (VT) and Tenacibaculum/Tenacibaculum (TT) Hippo­
-campus erectus treatment replicates. Letter labels indicate respective treatment means. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-7
-downregulated in VV compared with NV including, rgs13 (B-cell inhi­
-bition) hivep1, fgfr4 (negative NF-κB regulation), and tgfb1b (immune 
-suppression). Additional immune genes that were downregulated in VV 
-included cxcl12a (neutrophil activity), aplp2 (MHC I interaction), thbs1b, 
-and mrvi1 (inflammation). Once again, BMP signalling related genes 
-(tgfb1b, bmp16 & sost) exhibited downregulated expression in VV 
-compared with NV, in line with the previously mentioned homologous 
-and heterologous V. aestuarianus comparisons. Fermt2 was the only gene 
-with putative angiogenic function to be differentially expressed in the 
-NV/VV comparison, matching the downregulated trend in VV found in 
-previous comparisons in this study. 
-VV/TV: Only three genes were differentially expressed in the VV/TV 
-comparison, all three were upregulated in TV when compared with VV. 
-These include ptdss1 (biosynthesis), klf9 (RNA synthesis), and cbln2b 
-(synapse function). 
-3.3.2. Tenacibaculum maritimum treatments 
-NN/NT: Differentially expressed immune genes in NN/NT were 
-spread when it came to functionality, with a number of inflammatory 
-genes showing upregulated (zgc:195173, CU571081.1 & si:ch73- 
-160i9.3) and downregulated expression (agtr1a, cxcl19 & panx3) in NT 
-compared with NN. Similarly, T- and B-cell activation genes also 
-appeared to split with some exhibiting positive expression differences 
-(mcl1a, si:dkey-70p6.1 & prkcab), while others were downregulated 
-(lpar1 & plcl2) in NT compared with NN. Only two genes with BMP 
-signalling activity were identified in NN/NT, with both tgfb2 and fstb 
-being downregulated in NT. 
-NN/TT: Only six genes were differentially expressed in the NN/TT 
-comparison. The most notable downregulated gene in TT compared with 
-NN was chia3 (immune modulation and tolerance) which codes for a 
-chitinase. 
-NN/VT: A number of immune regulatory genes were shown to be 
-downregulated in VT compared with NN, namely, hsp11 (immune cell 
-infiltration), sema3e (macrophage regulation), itgbl1 (NK-cell inhibition) 
-and prdm16 (hematopoietic cell regulation). Incidentally, itgbl1 and 
-prdm16, along with gapdh (inflammation), usp13, and si:dkey-26c10.5 
-Fig. 5. Principal component analysis plots for naïve/naïve (NN), naïve/Vibrio (NV), Tenacibaculum/Vibrio (TV) and Vibrio/Vibrio (VV) Hippocampus erectus treatment 
-replicates. Based on most influential genes (55 genes). 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-8
-(innate immunity) expression in VT matches the same downregulated 
-expression in TV when compared with NN. No BMP signalling genes 
-were differentially expressed, however, all genes involved in angio­
-genesis or its regulation (sema3e, tspan12, angpt1 & nme2b.1) were 
-strongly downregulated in VT compared with NN. 
-NT/TT: MHC II was not differentially expressed in the T. maritimum 
-treatments, however, the MHC II regulator (rfx1a) and MHC I (mhc1uka) 
-were found to be highly upregulated in TT compared with NT. Inci­
-dentally, a number of genes linked to T-cell activities (lpar1, si:ch211- 
-232i5.3, sema5a, spp1, lrrc8c, pdgfra, stap2a, nfatc4, cd40lg & jakmip1) 
-and antigen binding (cd81b) were also upregulated in TT compared with 
-NT, while cd59 which is purported to interfere with antigen binding was 
-shown to be conversely downregulated (Michielsen et al., 2018). In 
-addition, B-cell-related genes such as plcl2 (B-cell activation), cd40lg 
-(B-cell maturation), and lpar1 (B-cell proliferation) were also upregu­
-lated in TT when compared with the non-vaccinated NT replicates. In 
-total, 28 genes with roles in inflammation were identified with the vast 
-majority exhibiting upregulated expression in TT compared with NT, 
-these included three different metallopeptidases (adamts7, adamts15a & 
-adamts1). Similarly, 8 upregulated genes involved in integrin signalling 
-pathways, including itga3a, itga5, and itgb1a, were also all upregulated 
-in TT. Interestingly, eight upregulated immune genes found in NT/TT 
-were shown to be all downregulated in the NV/VV comparison, 
-including fgfr4 (immune modulation), cxcl12a (neutrophil activity), 
-thbs1b (inflammation), bcl6b (inflammation regulation), pdgfra (growth 
-factor), mrvi1 (inflammation), tgfb1b (immune suppression), aplp2 (MHC 
-I interaction). As with the NN/TT comparison, the chitinase gene, chia3, 
-was also strongly downregulated in TT compared with NT. A mix of BMP 
-regulator (fstb) and negative regulator genes (ccn6, sost, fstb, sostdc1a, 
-zgc:113531 & fstl1a) were shown to be upregulated in TT compared with 
-NT. Unlike the comparisons with NN replicates, angiogenesis-related 
-genes were universally upregulated in TT compared with NT, with 
-angpt1, angptl1b, and robo4 exhibiting the highest expression. 
-NT/VT: The NT/VT pairwise comparison shared a number of 
-Fig. 6. Principal component analysis plots for naïve/naïve (NN), naïve/Tenacibaculum (NT), Vibrio/Tenacibaculum (VT) and Tenacibaculum/Tenacibaculum (TT) 
-Hippocampus erectus treatment replicates. Based on the top 10% most influential genes (139 genes). Genes displayed with loadings have exhibited an im­
-mune function. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-9
-similarly expressed immune genes with the NT/TT comparison, these 
-included the upregulation of rfx1a (MHC II regulation), pcl2 (B-cell 
-activation), lrrc8c (adaptive immunity) and pdgfra (growth factor) in VT 
-compared with NT. However, unlike the NT/TT comparison, genes 
-coding for MHC I were not differentially expressed in the NT/VT as­
-sessments. BMP signalling components (sost, tbx2b, pnpla6 & acvrl1), as 
-with NT/TT, were all shown to be upregulated in VT compared with NT, 
-while positive angiogenic gene expression in VT also matches the trend 
-shown in TT when compared with NT. 
-TT/VT: Among the seven upregulated genes in VT compared with TT 
-include chia3 (immune regulation), dusp2, and dusp1 (innate immunity), 
-while most upregulated genes in TT compared with VT matched those 
-found in the NT/TT comparison. These included immune genes such as 
-jakmip1 (T-cell activity), gapdh (inflammation), and bcl6b (inflammation 
-regulation, adaptive immunity). 
-3.3.3. Functional enrichment 
-Gene ontology functional enrichment analysis on upregulated and 
-downregulated gene sets for each pairwise comparison was conducted. 
-In some cases, gene abundances were not sufficient to carry out robust 
-functional enrichment analysis. Significant enrichment observations are 
-reported henceforth (supplementary; Tables S19–33). 
-All downregulated genes in TV when compared with NN, highlighted 
-a number of enriched functional pathways including those associated 
-with muscle, blood circulation, and metabolism. Cell morphogenesis, 
-growth, and neuron development, as well as heparin-binding processes, 
-were all significantly enriched in upregulated VV genes when compared 
-with NV. Genes downregulated in TV compared with NV exhibited 
-angiogenesis, cell morphogenesis, and cell migration pathway 
-enrichment. 
-In NN/NT, downregulated genes in NT were significantly enriched 
-when it came to muscle-related pathways, cell morphogenesis, and 
-vascular development. The most prominently enriched pathways were 
-attributed to upregulated genes in TT in the NT/TT pairwise comparison. 
-These included pathways involved in angiogenesis and vascularization, 
-muscle and neuron morphogenesis, cell migration, and lymphangiogenesis 
-(Fig. 7). In line with NT/TT, upregulated genes in the NT/VT data set were 
-also associated with vascularization and blood vessel development. 
-4. Discussion 
-The immune response characteristics and transcriptome assessments 
-Fig. 7. Gene ontology bubble plot depicting biological and cellular processes upregulated in the double exposed Tenacibaculum maritimum treatment (TT) compared 
-with unvaccinated Tenacibaculum maritimum replicates (NT) (66 genes) in Hippocampus erectus. Bubble size correlates with gene abundances associated GO term. 
-Labelled bubbles depict the most enriched processes with (-log (adjusted P-value >5). GO terms selected based on their DAVID clustering enrichment score (>2.5) 
-(Sherman and Lempicki, 2009). 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-10
-of primary and secondary bacterial exposures in fish have been well 
-researched, largely due to the drive to improve aquaculture practices of 
-commercially important fish through vaccination development (Espelid 
-et al., 1991; Irie et al., 2005; Lenz et al., 2013; Midtlyng et al., 1996; 
-Raida and Buchmann, 2008; Toranzo et al., 1997). Novel insights into 
-the teleost immune system, concerning genomic rearrangements, losses, 
-and gene expression changes, have highlighted the plastic potential of 
-the teleost immune system (Dubin et al., 2019; Roth et al., 2020; Sol­
-bakken et al., 2016; Star et al., 2011). Giving focus to peculiar evolu­
-tionary instances can provide an understanding of alternative immune 
-strategies and their limitations, while also shedding light on mechanisms 
-or drivers of evolutionary change. By utilising whole-transcriptome 
-profiling, this investigation aimed to elucidate which innate and adap­
-tive immune system pathways are activated following exposure to 
-heat-killed bacteria in H. erectus, building on previous syngnathid im­
-mune studies (Parker et al., 2023b; Roth et al., 2012a, 2012b). The 
-immunological ambiguity that surrounds seahorses, particularly in 
-relation to the MHC II pathway, renders them arguably the most inter­
-esting of syngnathid sub-groups to study. The activation and 
-memory-forming potential of the seahorse MHC II pathway are yet to be 
-understood due to the functional loss of the crucial invariant chain 
-(CD74) (Roth et al., 2020). This study brought to light new information 
-regarding the seahorse adaptive, innate, and memory-inducing immune 
-activities, providing some additional context to the discussion sur­
-rounding MHC II functionality and the potential compensatory mecha­
-nisms that may be at work in its absence. 
-PCAs highlighted that gene expression profiles differ between single 
-(NV & NT) and their double-exposed counterparts (VV, TV, TT & VT), 
-while the highest number of differentially expressed genes as well as the 
-greatest disparities, were also associated with comparisons between 
-single-exposed and double-exposed individuals (NV/TV & NT/TT). In 
-turn, both these observations provide strong support for the first hy­
-pothesis of this study (i). In the context of immunity, immune system 
-development enrichment was significant in its influence when 
-discerning VT and TT, from NT. Genes such as itgb7 and itga1, are linked 
-with lymphocyte migration and motility in humans (Butcher et al., 
-1999; Reilly et al., 2020), and are associated more with double-exposed 
-replicates. This is the first indication that prior bacterial experience and 
-the establishment of immunological memory are occurring in seahorses 
-involved in this investigation. However, acquired immune memory 
-stimulated by epitope-specific recognition via the MHC II pathway, in 
-theory, should only be activated in homologous double-exposed repli­
-cates. Taken that the functional role of MHC II, if any, in seahorses is 
-ambiguous, the inferred presence of immunological memory in VT could 
-be down to alternative machinery. 
-4.1. Innate immunity 
-Both innate and adaptive immune systems are characterised by a va­
-riety of pathways, interacting mechanisms, and immune cell constituents, 
-with the innate immune system tasked with mounting a primary response 
-following bacterial exposure (Akira and Takeda, 2004; Raida and Buch­
-mann, 2009; Rodriguez et al., 2005). Upregulated innate immune re­
-sponses have been recorded previously in syngnathids following exposure 
-to Gram-negative bacteria (Beemelmanns and Roth, 2016a; Jiang et al., 
-2022; Roth et al., 2012a; Roth et al., 2012b; Samaraweera et al., 2019). 
-Some indications of elevated innate immune activity were also observed 
-here in NV when compared with VV and in particular TV. These processes 
-including inflammation, macrophage, and neutrophil-related activity are 
-crucial innate immunity components and have been identified as such in 
-fish species previously upon exposure to Vibrio bacteria (Beemelmanns 
-and Roth, 2016a; Chaves-Pozo et al., 2005; Magnad´ottir, 2006; Wang 
-et al., 2016). However, this trend was not consistent in TT and VT repli­
-cates when compared with NT. Most inflammation and traditionally 
-associated innate immune-related expression, in some cases the same 
-genes, exhibited upregulated expression in double-exposed individuals. 
-Inflammation represents one of the first immunological steps upon 
-infection, in addition to sequestering the invasion and activating the 
-adaptive immune system (Joffre et al., 2009; Newson et al., 2014). The 
-prominent expression of genes, such as clec14a, sema3d, adamts7, and 
-inavaa, which are typically associated with innate and inflammatory 
-processes (Luong et al., 2018; Kanth et al., 2021; Zelensky and Gready, 
-2005; Zhang et al., 2015), could be a sign of the innate immune system 
-assisting the adaptive branch. Nevertheless, these differential gene 
-expression findings match the patterns displayed by the PCA assessments 
-(PC1) which associate innate immune genes strongly with TT and VT but 
-not VV and TV. These discrepancies may also have been influenced by the 
-activation response times required following exposure to novel patho­
-gens, i.e., T. maritimum, and may have benefited from a more delayed 
-sampling point. 
-4.2. Trained immunity 
-The innate branch has traditionally been described as a general, non- 
-specific immune response to infection largely irrespective of the bacterial 
-type, hindering the ability for immune memory establishment. However, 
-for some years now it has been suggested that a degree of bacterial 
-specificity and memory does exist in the innate immune system (Ban­
-nerman et al., 2004; Blischak et al., 2015; Huang et al., 2001; Jenner and 
-Young, 2005; Nau et al., 2002). The term ‘trained immunity’ is used to 
-describe immunological memory derived from the innate defence reper­
-toire, separate from the adaptive branch (Netea et al., 2020). This term 
-was coined following a number of reports advocating the innate immune 
-system’s ability to establish and utilise prior infection knowledge to 
-combat specific and general future pathogen encounters, a trait typically 
-associated with the adaptive immune system (Cheng et al., 2014; Cooper 
-and Eleftherianos, 2017; Netea et al., 2011). Adaptive immune memory 
-begins through antigen-presentation-mediated T-cell activation and ex­
-tends beyond eradication through small populations of persisting lym­
-phocytes, specific to the invading entity (Chaplin, 2010). Contrastingly, 
-trained immunity is orchestrated by a range of innate immune cell types 
-(myeloid, NK-cells, macrophages, dendritic cells, innate lymphoid cells, 
-and monocytes) with different origins and effector functions, and does not 
-rely on the same gene rearrangements and calculated cell differentiation 
-steps (Netea et al., 2020; Vetvicka et al., 2021). Instead, defences are 
-mediated by expression modulation via chromatin remodelling and other 
-restructuring of epigenetic motifs (Quintin et al., 2012; Saeed et al., 
-2014). Histone modification and chromatin modification processes were 
-found to be the most enriched GO terms associated with PC1 in the 
-T. maritimum treatments assessed in this study. Specifically, this enrich­
-ment aligned with TT and VT treatment replicates; fish subjected to sec­
-ondary exposures. Another trained immunity indicator comes in the form 
-of upregulated jakmip1 expression in TT replicates, which was previously 
-marked for NK-cell-related innate immune memory related to the human 
-cytomegalovirus (Rückert et al., 2022). 
-In mammals, trained immunity provides a less specific, broader 
-memory-driven defence than the adaptive equivalent (Vetvicka et al., 
-2021). Moreover, it can be triggered and afford protection against ho­
-mologous and heterologous bacterial exposures (Netea et al., 2011, 
-2016); which potentially explains the close association with VT and TT 
-replicates. This could be an indication that trained immunity through 
-the innate immune system is an active part of the seahorse defence 
-system following sequential infections. It also offers an explanation for 
-upregulated innate gene expression in treatments where adaptive im­
-mune expression indicators were expected to dominate. The adoption of 
-alternative immune strategies would be in line with other peculiar ad­
-aptations that have been proposed in seahorses, such as the immuno­
-genetic losses of c4 (complement) and cd5 (B-cell function), as well as 
-the loss of spleen function. Assessing the role of trained immunity in the 
-context of the functional ambiguity of the MHC II pathway in seahorses 
-is intriguing to contemplate, as from an immune memory standpoint it 
-may provide some compensation for the proposed loss of adaptive 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
+https://doi.org/10.11646/zootaxa.5501.2.6
+http://zoobank.org/urn:lsid:zoobank.org:pub:2DAEA60F-A0DC-47D8-B704-7F689ED9814E
+334   Accepted by G. Short: 30 Jul. 2024; published: 30 Aug. 2024
+Article
+ZOOTAXA 
+ISSN 1175-5326 (print edition)
+ISSN 1175-5334 (online edition)
+Zootaxa 5501 (2): 334–344
+https://www.mapress.com/zt/
+Copyright © 2024 Magnolia Press
+Licensed under Creative Commons Attribution-N.C. 4.0 International https://creativecommons.org/licenses/by-nc/4.0/
+A new distributional record of Hippocampus kuda Bleeker, 1852 (Teleostei, 
+Syngnathidae) from Saudi Arabia in the South-Central Red Sea 
+Santhosh Charles1, Graham Short2 & MARK DIMECH1
+1KAUST Beacon Development, King Abdullah University of Science and Technology (KAUST), Thuwal 23955-6900, Saudi Arabia.
+ santhosh.charles@kaust.edu.sa; 
+https://orcid.org/0000-0001-5409-838X
+ mark.dimech@kaust.edu.sa
+2Department of Ichthyology, California Academy of Sciences, 55 Music Concourse Dr, San Francisco, CA 94118, United States.
+ gshort@calacademy.org; 
+https://orcid.org/0000-0002-4691-1913
+Abstract
+The common seahorse, Hippocampus kuda, is widely distributed throughout the Indo-Pacific region, occurring from East 
+Africa to Hawaii, where it typically inhabits diverse ecosystems such as estuaries, lagoons, coastal zones, and seagrass 
+beds. Despite its extensive geographic range, reports of its occurrence in the Red Sea remains limited, primarily restricted 
+to the northern region of the Red Sea. Here, we report a new distributional record of H. kuda in Saudi Arabian waters 
+within the south-central Red Sea. A single female specimen of H. kuda was collected through trawling conducted off the 
+coast of Al Qunfudah at depths ranging from 15 to 20 meters. Morphological and molecular examination confirmed the 
+identity of the specimen as H. kuda. The new record of H. kuda represents the second occurrence of this species in south-
+central Red Sea and expands its known distribution range 367 kilometers further south than the first reported record off 
+Jeddah in 1838.
+Key words: Seahorse, Al Qunfudah, trawl bycatch, COI, Gulf of Suez, Gulf of Aqaba, Indian Ocean
+ 
+Introduction
+ 
+The seahorse genus Hippocampus Rafinesque, 1810 is represented by three species recorded in the Red Sea: H. 
+jayakari Boulenger, 1900, H. debelius Gomon & Kuiter, 2009, and H. kuda Bleeker, 1852 (GBIF 2024; iNaturalist, 
+2024). Among these, H. kuda is distinguished by its wide distribution across the Indo-Pacific, ranging from the 
+eastern coast of Africa to Hawaii. Within the Western Indian Ocean, H. kuda has been recorded along the eastern 
+African coast in South Africa, Kenya, and Madagascar, as well as in the Red Sea spanning Egypt, Israel, and 
+Saudi Arabia, and in the Persian Gulf in Iran, United Arab Emirates, and Oman (GBIF 2024; iNaturalist, 2024). 
+Hippocampus kuda is typically found in estuaries, lagoons, harbors, and coastal seagrass beds, with a tendency to 
+inhabit shallow waters not exceeding fifty-five meters in depth (Choo and Liew, 2003; Lourie et al., 2004; Lipton 
+and Thangaraj, 2013; Dody et al., 2021; Kalisiak et al., 2022).
+Despite its widespread distribution, H. kuda faces conservation challenges, leading to its classification as vulnerable 
+by the International Union for Conservation of Nature (IUCN, 2004), primarily due to threats posed by bycatch in 
+shrimp trawling, targeted capture for aquarium and traditional medicine trade, habitat degradation, and its low fecundity 
+attributed to the extensive parental brood care it undertakes. Additionally, internationally, H. kuda is listed under 
+Appendix II of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES, 2003). 
+Although numerous records of H. kuda are reported in the Red Sea, they primarily occur from the northern regions, 
+specifically the Gulf of Aqaba and Gulf of Suez in Egypt and Israel, respectively (GBIF, 2024; iNaturalist, 2024). 
+The first record of H. kuda in the Red Sea was recorded in Saudi Arabian waters in 1838. However, it was 
+originally reported as the first record of the seahorse H. fuscus Rüppell, 1838, at the type locality of Jeddah. 
+Subsequent taxonomic reassessment led to the reclassification of H. fuscus as a synonym of H. kuda, as no discernible 
+morphological, genetic, or geographic disparities were found between H. fuscus and H. kuda from Southeast Asia 
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  335
+(Lourie et al., 2016). Despite these regional observations, records of H. kuda from the Red Sea are absent in the 
+literature, particularly in Saudi Arabia.
+In this study, we report a new distributional record of H. kuda within the south-central Red Sea, representing 
+only the second record of this species in Saudi Arabia. During trawling activities off the coast of Al Qunfudah along 
+the Southeast Red Sea Coast of Saudi Arabia in 2023, we collected a single female specimen of H. kuda at depths 
+ranging from 15 to 20 meters. Morphological and molecular analyses confirmed the specimen’s identification as H. 
+kuda. The new record expands the southern range of H. kuda within the Red Sea, extending 367 kilometers further 
+south from the first known record in Jeddah.
+ 
+Methods
+Study area and sample collection
+Trawling operations were conducted aboard a standard commercial shrimp trawler off the coastline of Al Qunfudah 
+in the Southeast Red Sea Coast of Saudi Arabia (Fig. 1). During a one-hour trawl session conducted in the early hours 
+FIGURE 1. Sampling location of the yellow sea horse H. kuda collected off Al Qunfudah.
+Charles et al.
+336  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+of August 2023 at approximately 04:10 AM, a seahorse specimen was collected from depths ranging between 15 to 
+20 meters in a heavily disturbed shrimp trawl ground consisting of seagrass beds (Sargassum sp.). Upon collection, 
+the specimen underwent photographic documentation both onboard the vessel and subsequently in the laboratory. 
+Species identification was carried out based on external morphological features following the field identification 
+guide by Lourie et al. (2004) and on meristic characters (Lourie at al., 2016). Records and observations of H. kuda in 
+the Red Sea were obtained from multiple databases including the Global Biodiversity Information Facility (GBIF), 
+Oceanic Biodiversity Information System (OBIS), and iNaturalist. Morphological and morphometric characters, 
+and genetic analyses at the COI gene, were obtained from a comprehensive examination of the specimen and used 
+to confirm the identity of the specimen as H. kuda. The specimen was accessioned in the fish collections at the 
+Australian Museum under voucher number AM I.51371-001.
+ 
+DNA extraction and genetic divergence
+ 
+DNA extraction, primers, PCR conditions, sequence alignment, and analysis of CO1 sequence data generated for 
+this study were performed following protocols described in Hamilton et al. (2017). 
+The COI sequence data generated from the collected specimen (Genbank accession number PP992517) were 
+compared with publicly available barcoding sequences from GenBank and BOLD for H. kuda species sampled from 
+the Indian Ocean. Some samples sourced from GenBank are designated as H. fuscus due to their collection predating 
+the synonymisation with H. kuda or misclassification as H. fuscus (Appendix 1). Genetic distances (uncorrected 
+p-distances) were calculated using MEGA v. 7.0.26 (Kumar et al., 2008).
+ 
+ 
+Results
+ 
+Diagnosis
+ 
+The collected specimen was identified as an adult female of H. kuda based on external morphological characters 
+following the field identification guide by Lourie et al. (2004). General body shape and size as seen in Fig 2. 
+Morphometric, meristic, and morphological characters are listed in Table 1. Distinct, angular and flat coronet; 
+dorsal fin rays sixteen; pectoral-fin rays fifteen; anal fin rays four; trunk rings eleven; dorsal fin base raised dorsally; 
+subdorsal rings four, dorsal fin base starting immediately posterior to ninth trunk ring and ending immediately 
+posterior to first tail ring; tail rings 37. Body ornamentation: spines low and rounded, small spine above eye; 
+lateral head spine ventral of coronet; small spine behind eye; double low spines below eye; cleithral spines small, 
+uppermost at gill-opening, central spine at level of last pectoral-fin ray, lowermost single and not enlarged; snout 
+spine absent; superior trunk ridge with enlarged spines on first, third, and fifth rings; superior trunk ridge on tail 
+with small spines on each ridge, becoming gradually smaller posteriorly along the length of the tail; all inferior trunk 
+ridge spines absent; caudal fin absent.
+ 
+ 
+Color
+ 
+Post collection, the fresh specimen of H. kuda exhibits yellow coloration of the body: head, trunk, and tail (Fig. 2). 
+In preservation, the specimen retains a pale yellow coloration.
+  
+Generic divergence
+ 
+Appendix 1 summarizes uncorrected p-distances at the COI gene, listing the genetic divergences between our 
+collected specimen (AM I.51371-001) and previously sequenced H. kuda specimens from the Western Indian 
+Ocean. The collected specimen diverges by 0.0% to 0.61% among Western Indian H. kuda, including South Africa, 
+Tanzania, Egypt, Israel, and Iran.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  337
+FIGURE 2. Yellow sea horse H. kuda collected off Al Qunfudah.
+Table 1. Relative measurements and counts obtained for H. kuda
+Hippocampus kuda
+Voucher
+AM I.51371-001
+Trunk rings
 11
-immune memory function. Alternatively, possessing an effective and 
-robust trained immunological memory may have rendered the MHC II 
-pathway surplus to requirements, and contributed to its eventual loss or 
-a shift in function. These proposals are in need of further functional 
-clarification; however, indications here suggest that trained immunity 
-dynamics could be an interesting path for exploration in syngnathids in 
-the future. Similar expression patterns were not observed in the 
-V. aestuarianus treatments due to the lack of significant influential genes 
-required for analysis. A less aggressive seahorse immune response to 
-V. aestuarianus may explain this in part, prompted perhaps by a greater 
-natural familiarity between the host and bacteria. In order to understand 
-the differences between V. aestuarianus and T. maritimum immune re­
-sponses, strain-specific immune response triggers, host-bacteria evolu­
-tionary history, and familiarity need to be considered. 
-4.3. Bacterial familiarity 
-As mentioned, there are reports pertaining to specific bacterial 
-response processes being adopted in the innate immune system (Ban­
-nerman et al., 2004; Blischak et al., 2015; Huang et al., 2001; Jenner and 
-Young, 2005; Nau et al., 2002). Differences in how the innate defences 
-respond to V. aestuarianus exposure compared with T. maritimum are 
-therefore plausible. For example, Gram-negative bacterial triggers can 
-vary and induce different inflammatory reactions depending on the 
-bacterial antigen and would likely also vary between bacterial strains 
-(Heumann and Roger, 2002). Additionally, these expression dissimi­
-larities are likely due, in large part to the differences in the bacterial 
-familiarity with the host. T. maritimum replicates exhibited a far greater 
-number of differentially expressed genes than V. aestuarianus exposed 
-fish, which could be an indication that transcriptionally, more was 
-required to combat the unfamiliar bacterial exposure. To our knowl­
-edge, T. maritimum has never encountered H. erectus prior to this 
-experiment and unlike V. aestuarianus is not a resident of Baltic Sea 
-waters. For this reason, the innate immune responses likely differ be­
-tween microbes, explaining in part the difference between the findings 
-observed here. Consequently, the second (ii) hypothesis of this investi­
-gation, that individuals without a primary exposure treatment show a 
-greater innate immune response than homologous and heterologous 
-double-exposed fish, is only supported by the V. aestuarianus-related 
-replicates. 
-4.4. Adaptive immunity 
-Adaptive immune responses and immunological memory are driven 
-primarily by T- and B- lymphocyte subsets activated by circulating 
-antigen-presenting cells (Bonilla and Oettgen, 2010). Unlike trained 
-immunity, adaptive immunity is highly specific and utilises immuno­
-globulin gene recombination processes to establish long-lasting immu­
-nological memory (Danilova, 2012). Specific antigen receptors 
-corresponding to invading pathogen strains are established during 
-infection; the persistence of these specific receptors provides the foun­
-dation for adaptive immunological memory and rapid response capacity 
-upon re-infection (Janeway et al., 2001). Indications of adaptive im­
-mune activity were observed in a number of pairwise comparisons in 
-this investigation. In particular, in TT where T- and B-cell activation and 
-proliferation genes were upregulated compared with NT. This was one of 
-the key signs of a stronger adaptive immune response in double-exposed 
-individuals compared with single-exposed. In addition, TT’s upregulated 
-expression of MHC I transcripts suggests CD8+ cytotoxic T-cell-related 
-activity upon secondary exposure to T. maritimum. Previous research has 
-propounded that cytotoxic T-cell subsets could be a crucial immune 
-system constituent in syngnathids and in particular the MHC II deficient 
-S. typhle (Parker et al., 2022; Parker and Roth, 2022). Additional evi­
-dence in this investigation that suggests upregulated adaptive immune 
-activity comes in the form of downregulated chia3 (immunological 
-tolerance) expression in TT compared with NN. 
-Gene expression patterns in VV and TV replicates were less defined in 
-terms of an acquired immune response, triggered by secondary expo­
-sure. On the one hand, downregulated expression in VV compared with 
-NV of rgs13, nfil3-6, and tgfb1b, with potential roles in dictating B-cell 
-responsiveness (Shi et al., 2002), regulatory T-cell regulation and T-cell 
-inhibition (Kim et al., 2019; Wahl et al., 1988), respectively, suggest a 
-reaction to re-exposure. However, similar observations were not evident 
-in VV when compared with NN, with most immune genes exhibiting 
-downregulated expression in VV. In addition, alternative immune genes 
-were downregulated in VV compared with NV, further confusing the 
-general immunological status of the VV double-exposed individuals. The 
-lack of a clear-cut immunological direction in V. aestuarianus replicates 
-could be due to the seahorse’s regular prior experiences with 
-V. aestuarianus derived antigens in the environment. Also consider that 
-Vibrio strains, including V. aestuarianus, which are commonly isolated 
-from fish and mollusc microbiomes, have been suggested to be capable 
-of existing in a mutualistic state without imparting harm on the host 
-(Halpern and Izhaki, 2017; Tison and Seidler, 1983; Senderovich et al., 
-2010). It is therefore possible that a mutual relationship exists between 
-V. aestuarianus and the H. erectus used in this study, which may have 
-been rooted in a coevolutionary history that led to immunological 
-tolerance. Moreover, the conversely heightened immune status in TT 
-supports the relevance of immunological naivety in its contribution to 
-the response dynamics of fish in this investigation. In turn, TT replicates 
-support the third hypothesis of this study that homologous 
-double-exposed replicates elicit stronger adaptive immune responses 
-than single-exposed (NT) fish (iii). Conversely, VV observations were 
-not in line with this prediction likely due to the seahorses’ high famil­
-iarity with V. aestuarianus. While limited, upregulated immune genes of 
-VT when compared with homologous replicates (TT), were shown to be 
-linked more with innate functioning dual-specific phosphatases (dusp1 
-and dusp2). Dusp1 has been linked with innate immune regulation, while 
-dusp2 has been suggested to play a role in toll-like receptor function 
-(Abraham and Clark, 2006; Chen et al., 2002; Lang et al., 2006). 
-Conversely, adaptive immune activity in the form of bcl6b (Th2 
-response) and jakmip1 (T-cell and NK-cell activity) upregulation in TT 
-compared with VT could be an indicator of adaptive immune potential 
-(Bilic and Ellmeier, 2007; Libri et al., 2008; Rückert et al., 2022). 
-Moreover, both blcb6b and jakmip1 have been implicated in CD8+
-T-cell-related adaptive immune memory function in mice (Libri et al., 
-2008; Manders et al., 2005). While requiring further functional clarifi­
-cation in syngnathids, the presence and activation of these genes 
-encourage the adoption of adaptive immune recollection. They also 
-support in part the fourth hypothesis of this investigation, that heter­
-ologous (VT) double-exposed replicates elicit a weaker adaptive immune 
-response than homologous (TT) replicates (iii). 
-MHC II presents exogenous antigenic peptides to CD4+ T-lympho­
-cytes and its upregulated expression is indicative of an activated adap­
-tive immune system (Neefjes et al., 2011). MHC II gene upregulation in 
-TV and VV compared with NV was observed here in H. erectus and could 
-indicate MHC II pathway activity and functionality in the species. 
-However, individuals with elevated mhc II expression do not exhibit 
-upregulated expression of other key MHC II pathway constituents, such 
-as the transactivator (ciita), activation-induced cytidine deaminase 
-(aicda), the invariant chain (cd74), and T-cell co-receptor (cd4). The lack 
-of a functional CD74 has been deduced previously and its absence is the 
-foundation for the MHC II pathway’s proposed loss of function in the 
-seahorse (Roth et al., 2020). These points considered, mhc II expression 
-could be redundant or share an alternative unknown function that is 
-independent of CD74. Extracellular non-classical MHC II functions have 
-been proposed previously (Hauschildt et al., 1993; Mourad et al., 1990; 
-Spertini et al., 1992), which in principle would require cellular transport 
-assistance provided by the previously mentioned pathway components. 
-Intracellular MHC II non-classical function has also been proposed by 
-way of promoting TLR-related innate immune responses through in­
-teractions with the tyrosine kinase Btk and CD40 (Liu et al., 2011). CD40 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-12
-gene upregulation was observed in TV along with MHC II when 
-compared with NV, which could indicate a possible non-classical func­
-tion of MHC II, as an adapter for the promotion of TLR-triggered re­
-sponses, relating to innate immunity in seahorses. This theory relies on 
-the assumption that as an intracellular process, assisted transport via 
-CD74 may not be as essential for surface-related functions. The absence 
-of non-classical class II DM molecules in teleost fishes, components 
-tasked with dissociating bound CD74 from classical MHC II in mammals, 
-suggests unique MHC II peptide loading methods, potentially indepen­
-dent of CD74, exist among teleosts and engage in alternative functions 
-(Dijkstra et al., 2013). If the classical MHC II pathway function is absent 
-or has a non-classical function in seahorses, it raises questions regarding 
-the immunological measures that operate in its place. The MHC I 
-pathway, which is mediated via CD8+ cytotoxic T-cell allorecognition, 
-has been a suggested compensatory mechanism to cope with the loss of 
-MHC II in pipefish and codfish (Parker et al., 2022; Parker and Roth, 
-2022; Roth et al., 2020; Star et al., 2011). Higher MHC I diversity in 
-seahorses compared with other non-brooding syngnathids has also been 
-stipulated, further supporting a potential increased dependence on the 
-MHC I pathway (Parker et al., 2023b; Roth et al., 2020). If classical MHC 
-II function is in fact missing in H. erectus, MHC I upregulated expression 
-in TT replicates compared with NT found here could also support this 
-proposition, as well as the fourth hypothesis of this investigation (iv). 
-4.5. Angiogenesis 
-Gills are highly vascularized tissues that allow for optimal respira­
-tory capacity through regular circulation of oxygenated blood; however, 
-this, along with the semi-permeability of the tissue, also renders it sus­
-ceptible to microbial influx (Bjørgen and Koppang, 2021; Evans et al., 
-2005; Koppang et al., 2015). To counter this, dense vascular networks 
-and a rich blood supply establish a conduit for circulating immune cells 
-in the gills, while specialized structures known as the gill-associated 
-lymphoid tissue (GIALT) provide a mucosal hub for immune cell pop­
-ulations (Salinas, 2015). This investigation exhibited signs of angiogenic 
-activity, through GO enrichment and upregulated vascularization genes, 
-in double-exposed replicates compared with single-exposed individuals. 
-In turn, angiogenic processes could be an adaptive response to second­
-ary challenges, which potentially assist with immune cell recruitment. 
-This is supported by previous findings indicating that vascular endo­
-thelial cells are influenced by immune cell derived soluble factors and 
-have adhesion molecules capable of dictating the extravasation of im­
-mune cell types (Mora and Von Andrian, 2006; Young, 2012). Integrins 
-are crucial for such cell-adhesion processes, facilitating vascular im­
-mune cell trafficking, tissue migration, phagocytosis, and the formation 
-of immune synapses, rendering them an integral component in the im­
-mune system in mammals (Luo et al., 2007; Pribila et al., 2004). Uni­
-versal upregulation of integrin genes in TT replicates, as well as itgb7 in 
-TT and VT, propound a similar importance in seahorse gill tissue. 
-Further functional studies should identify if ITGB7, known for its im­
-mune homing role in the gut in humans (Arthos et al., 2008), plays a 
-similar migratory role in syngnathid gills. The absence of these immune 
-reaction traits in VV gives further support that an increased naiveness of 
-the H. erectus immune system exists against T. maritimum. These 
-vascular-related gene expression findings accentuate the growing dis­
-parities between V. aestuarianus and T. maritimum gene expression 
-profiles. Blood vessel formation in seahorse gills appears to be an 
-important process following secondary exposure and could be linked to 
-processes involved in syngnathid immunity. This is in line with previous 
-research in mammals which associates infection with increased angio­
-genetic activity (Noonan et al., 2008; Ribatti and Crivellato, 2009; 
-Takeda and Akira, 2004), as well as in pipefish when in response to 
-allogenic tissue (Parker and Roth, 2022). Genes involved in BMP sig­
-nalling are also linked to angiogenesis and vascular development pro­
-cesses in humans (Cai et al., 2012; de Vinuesa et al., 2016). The 
-upregulated expression of BMP-related genes in TT compared with NT 
-also matches the upregulated angiogenic trend exhibited in the same 
-example, while evidence from previous studies in humans supports a 
-potential role in immune modulation (Chen and Ten Dijke, 2016; Sco­
-nocchia and Sconocchia, 2021; Yoshioka et al., 2012). However, little is 
-known about immune-related BMP signalling in teleosts, and would 
-likely require further research to substantiate the inferences addressed 
-here. 
-4.6. Concluding remarks 
-Deciphering the intricacies of immune activities using transcriptome 
-data can be a challenging prospect, with time of dissection, tissue type, 
-age, species, and environment all potentially influencing the subtle gene 
-expression changes. In particular, immune responses in fish have been 
-shown to be influenced by temperature, environmental factors, antigen 
-characteristics, exposure dose, and time in previous studies (Anderson 
-et al., 1982; Lillehaug et al., 1993; Mota et al., 2019; Rijkers et al., 
-1980). Gene expression findings that concern the NN replicates in this 
-experiment compared with TV and VV replicates were unexpected, 
-based on the unusual downregulation of immune-related genes in VV 
-and TV. Considering that stringent measures were taken to avoid the 
-influence of confounding variables during these experiments, no clear 
-explanation for these unexpected results could be found. Immune 
-defence strategies come at a metabolic cost, therefore, expending 
-excessive energy when dealing with bacterial exposure may not always 
-be the optimal course of action (Lochmiller and Deerenberg, 2000; 
-Sheldon and Verhulst, 1996; Viney et al., 2005). The general immuno­
-logical sedateness characterising V. aestuarianus replicates in this 
-investigation could in part be explained by this energy balancing pro­
-cess; whereby the costs of raising an immune response in response to 
-V. aestuarianus are greater than the benefits. 
-In this investigation, reactions to bacterial exposure were discussed 
-under the umbrella terms of innate and adaptive immunity, despite the 
-knowledge that both branches are intimately linked and constituents 
-often contribute to both processes (Iwasaki and Medzhitov, 2015; Lanier 
-and Sun, 2009; Vivier et al., 2011). However, segregating the terms for 
-the purposes of disentangling the differences between primary and 
-secondary exposures is a robust approach adopted previously (Keller 
-and Roth, 2020). This approach held further importance for interpreting 
-MHC II pathway functionality and potential compensatory gene acti­
-vations. Similarly, using different heat-killed bacteria for this experi­
-ment provided the opportunity to decipher strain-specific characteristics 
-when it comes to immune responses. In turn, disparities were found 
-between the reactions induced by both heat-killed bacteria with 
-T. maritimum treatments, especially TT, exhibiting the most pronounced 
-adaptive defences compared with any other treatment. As mentioned 
-previously, this could largely be due to fish in this investigation being 
-more accustomed to V. aestuarianus infection, resulting in a less inten­
-sive 
-immunological 
-presence, 
-compared 
-with 
-the 
-unknown 
-T. maritimum. The differences in vascular-related growth processes were 
-also an interesting contrast between the two strain effects; future func­
-tional studies should be arranged to investigate angiogenesis’ signifi­
-cance within the context of syngnathid immunity. Overall, bacterial 
-induction of the immune system in both these Gram-negative bacterial 
-strains, by and large, optimises the same pathways and defence mech­
-anisms upon infection, but secondary exposure appears to promote 
-differences between the two, which supports the fifth hypothesis of this 
-study (v). 
-Gene expression differences found between V. aestuarianus and 
-T. maritimum replicates in this investigation highlighted the presence of 
-bacterial-specific immune responses in seahorses, with unfamiliar 
-strains tending to evoke a stronger immune reaction. Adaptive immune 
-response characteristics were observed prominently in replicates twice 
-exposed to unfamiliar bacteria supporting the capacity of adaptive im­
-mune memory in seahorses. Additionally, the first potential indicators of 
-trained immunity in seahorses were observed, which could supplement 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-13
-or compensate for adaptive immune functional losses that may have 
-occurred in this genus. In turn, trying to understand the weight and 
-relevance of innate immunity in syngnathids should be prioritized as it 
-could play a role in offsetting the functional repercussions of adaptive 
-immune gene loss. While the upregulated expression of MHC II requires 
-further clarification as to whether its function relates to antigen- 
-presentation or an alternative non-classical function. Lastly, this study 
-raised the potential significance of angiogenic and vascular processes in 
-mounting syngnathid gill immune responses and should encourage 
-future research tasked with understanding their functional role. 
-Data accessibility 
-All raw sequencing data are available at NCBI SRA under BioProject 
-PRJNA1019256. Genome data are available at NCBI SRA under Bio­
-Project PRJNA613176. 
-Funding 
-This project was supported by funding from the German Research 
-Foundation (DFG) [RO 4628/4-2, WE 5822/1–2, RO 4628/3-1, RO 
-4628/3-3] and from the European Research Council (ERC) under the 
-European Union’s Horizon research and innovation program [MAL­
-EPREG: eu-repo/grantAgreement/EC/H2020/755659] to OR. Bioinfor­
-matics computational work was conducted using the NEC HPC system of 
-the (Christian-Albrechts-University) University Computing Centre in 
-Kiel. 
-CRediT authorship contribution statement 
-Jamie Parker: Formal analysis, Writing – original draft, Writing – 
-review & editing. Silke-Mareike Marten: Methodology. Tadhg C. ´O 
-Corcora: Methodology. Jelena Rajkov: Methodology. Arseny Dubin: 
-Data curation. Olivia Roth: Conceptualization, Funding acquisition, 
-Investigation, Supervision, Visualization, Writing – original draft, 
-Writing – review & editing. 
-Declarations of competing interest 
-None. 
-Data availability 
-Raw read data has been uploaded to NCBI and will be made open for 
-access immediately after the paper is finalized and published. Details 
-can be found at the end of the manuscript. 
-Acknowledgments 
-We would like to thank all members of the Marine Evolutionary 
-Ecology group and those at the GEOMAR institute for their assistance 
-with aquaria maintenance and scientific discussion, namely: Fr´ed´eric 
-Salasc, Freya Pappert, Kim-Sara Wagner, Haqdil Shad, Johannes Hasse, 
-Rebekka Leßke and Fabian Wendt. Additional thanks are given to the 
-DFG and ERC for financing this projects research. 
-Appendix A. Supplementary data 
-Supplementary data to this article can be found online at https://doi. 
-org/10.1016/j.dci.2024.105136. 
-References 
-Abraham, S.M., Clark, A.R., 2006. Dual-specificity phosphatase 1: a critical regulator of 
-innate immune responses. Biochem. Soc. Trans. 34, 1018–1023. 
-Abram, Q.H., Dixon, B., Katzenback, B.A., 2017. Impacts of low temperature on the 
-teleost immune system. Biology 6, 39. 
-Akira, S., Takeda, K., 2004. Toll-like receptor signalling. Nat. Rev. Immunol. 4, 499–511. 
-Alcaide, E., Gil-Sanz, C., Sanjuan, E., Esteve, D., Amaro, C., Silveira, L., 2001. Vibrio 
-harveyi causes disease in seahorse, Hippocampus sp. J. Fish. Dis. 24, 311–313. 
-Anderson, D., Merchant, B., Dixon, O., Lizzio, E., 1982. Investigations of immunological 
-memory in rainbow trout (Salmo gairdneri) to DNP conjugates. Dev. Comp. Immunol. 
-2, 115–122. 
-Arthos, J., Cicala, C., Martinelli, E., Macleod, K., Van Ryk, D., Wei, D., Xiao, Z., 
-Veenstra, T.D., Conrad, T.P., Lempicki, R.A., 2008. HIV-1 envelope protein binds to 
-and signals through integrin α4β7, the gut mucosal homing receptor for peripheral T 
-cells. Nat. Immunol. 9, 301–309. 
-Avenda˜no-Herrera, R., Toranzo, A.E., Magari˜nos, B., 2006. Tenacibaculosis infection in 
-marine fish caused by Tenacibaculum maritimum: a review. Dis. Aquat. Org. 71, 
-255–266. 
-Bannerman, D.D., Paape, M.J., Lee, J.-W., Zhao, X., Hope, J.C., Rainard, P., 2004. 
-Escherichia coli and Staphylococcus aureus elicit differential innate immune responses 
-following intramammary infection. Clin. Vaccine Immunol. 11, 463–472. 
-Beemelmanns, A., Poirier, M., Bayer, T., Kuenzel, S., Roth, O., 2019. Microbial 
-embryonal colonization during pipefish male pregnancy. Sci. Rep. 9, 1–14. 
-Beemelmanns, A., Roth, O., 2016a. Bacteria-type-specific biparental immune priming in 
-the pipefish Syngnathus typhle. Ecol. Evol. 6, 6735–6757. 
-Beemelmanns, A., Roth, O., 2016b. Biparental immune priming in the pipefish 
-Syngnathus typhle. Zoology 119, 262–272. 
-Beemelmanns, A., Roth, O., 2017. Grandparental immune priming in the pipefish 
-Syngnathus typhle. BMC Evol. Biol. 17, 1–15. 
-Benjamini, Y., Hochberg, Y., 1995. Controlling the false discovery rate: a practical and 
-powerful approach to multiple testing. J. R. Stat. Soc. Series. B. Stat. Methodol. 57, 
-289–300. 
-Bilic, I., Ellmeier, W., 2007. The role of BTB domain-containing zinc finger proteins in T 
-cell development and function. Immunol. Lett. 108, 1–9. 
-Bjørgen, H., Koppang, E.O., 2021. Anatomy of teleost fish immune structures and organs. 
-Immunogenetics 73, 53–63. 
-Blischak, J.D., Tailleux, L., Mitrano, A., Barreiro, L.B., Gilad, Y., 2015. Mycobacterial 
-infection induces a specific human innate immune response. Sci. Rep. 5, 1–16. 
-Bonilla, F.A., Oettgen, H.C., 2010. Adaptive immunity. J. Allergy Clin. Immunol. 125, 
-S33–S40. 
-Buchfink, B., Xie, C., Huson, D.H., 2015. Fast and sensitive protein alignment using 
-DIAMOND. Nat. Methods 12, 59–60. 
-Buonocore, F., Gerdol, M., 2016. Alternative adaptive immunity strategies: coelacanth, 
-cod and shark immunity. Mol. Immunol. 69, 157–169. 
-Butcher, E.C., Williams, M., Youngman, K., Rott, L., Briskin, M., 1999. Lymphocyte 
-trafficking and regional immunity. Adv. Immunol. 72, 209–253. 
-Cai, J., Pardali, E., S´anchez-Duffhues, G., ten Dijke, P., 2012. BMP signaling in vascular 
-diseases. FEBS Lett. 586, 1993–2002. 
-Chaplin, D.D., 2010. Overview of the immune response. J. Allergy Clin. Immunol. 125, 
-S3–S23. 
-Chaves-Pozo, E., Mu˜noz, P., L´opez-Mu˜noz, A., Pelegrín, P., García Ayala, A., Mulero, V., 
-Meseguer, J., 2005. Early innate immune response and redistribution of 
-inflammatory cells in the bony fish gilthead seabream experimentally infected with 
-Vibrio anguillarum. Cell Tissue Res. 320, 61–68. 
-Chen, P., Li, J., Barnes, J., Kokkonen, G.C., Lee, J.C., Liu, Y., 2002. Restraint of 
-proinflammatory cytokine biosynthesis by mitogen-activated protein kinase 
-phosphatase-1 in lipopolysaccharide-stimulated macrophages. J. Immunol. 169, 
-6408–6416. 
-Chen, S., Zhou, Y., Chen, Y., Gu, J., 2018. fastp: an ultra-fast all-in-one FASTQ 
-preprocessor. Bioinformatics 34, i884–i890. 
-Chen, W., Ten Dijke, P., 2016. Immunoregulation by members of the TGFβ superfamily. 
-Nat. Rev. Immunol. 16, 723–740. 
-Cheng, S.-C., Quintin, J., Cramer, R.A., Shepardson, K.M., Saeed, S., Kumar, V., 
-Giamarellos-Bourboulis, E.J., Martens, J.H., Rao, N.A., Aghajanirefah, A., 2014. 
-mTOR-and HIF-1α–mediated aerobic glycolysis as metabolic basis for trained 
-immunity. Science 345, 1250684. 
-Collazos, M.E., Ortega, E., Barriga, C., 1994. Effect of temperature on the immune system 
-of a cyprinid fish (Tinca tinca, L). Blood phagocyte function at low temperature. Fish 
-Shellfish Immunol. 4, 231–238. 
-Colwell, R., Grimes, D., 1984. Vibrio diseases of marine fish populations. Helgol. 
-Meeresunters. 37, 265–287. 
-Cooper, M.D., Alder, M.N., 2006. The evolution of adaptive immune systems. Cell 124, 
-815–822. 
-Cooper, D., Eleftherianos, I., 2017. Memory and specificity in the insect immune system: 
-current perspectives and future challenges. Front. Immunol. 8, 539. 
-de Vinuesa, A.G., Abdelilah-Seyfried, S., Knaus, P., Zwijsen, A., Bailly, S., 2016. BMP 
-signaling in vascular biology and dysfunction. Cytokine Growth Factor Rev. 27, 
-65–79. 
-Danilova, N., 2012. The Evolution of Adaptive Immunity. Advances in Experimental 
-Medicine and Biology, pp. 218–235. Springer.  
-Dijkstra, J.M., Grimholt, U., Leong, J., Koop, B.F., Hashimoto, K., 2013. Comprehensive 
-analysis of MHC class II genes in teleost fish genomes reveals dispensability of the 
-peptide-loading DM system in a large part of vertebrates. BMC Evol. Biol. 13, 1–14. 
-Dobin, A., Davis, C.A., Schlesinger, F., Drenkow, J., Zaleski, C., Jha, S., Batut, P., 
-Chaisson, M., Gingeras, T.R., 2013. STAR: ultrafast universal RNA-seq aligner. 
-Bioinformatics 29, 15–21. 
-Dubin, A., Jørgensen, T.E., Moum, T., Johansen, S.D., Jakt, L.M., 2019. Complete loss of 
-the MHC II pathway in an anglerfish, Lophius piscatorius. Biol. Lett. 15, 20190594. 
-Du Pasquier, L., 1982. Antibody diversity in lower vertebrates—why is it so restricted? 
-Nature 296, 311–313. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
-14
-Eiler, A., Johansson, M., Bertilsson, S., 2006. Environmental influences on Vibrio 
-populations in northern temperate and boreal coastal waters (Baltic and Skagerrak 
-Seas). Appl. Environ. Microbiol. 72, 6004–6011. 
-Emms, D.M., Kelly, S., 2015. OrthoFinder: solving fundamental biases in whole genome 
-comparisons dramatically improves orthogroup inference accuracy. Genome Biol. 
-16, 157. 
-Emms, D.M., Kelly, S., 2019. OrthoFinder: phylogenetic orthology inference for 
-comparative genomics. Genome Biol. 20, 1–14. 
-Espelid, S., Rødseth, O., Jørgensen, T., 1991. Vaccination experiments and studies of the 
-humoral immune responses in cod, Gadus morhua L., to four strains of monoclonal- 
-defined Vibrio anguillarum. J. Fish. Dis. 14, 185–197. 
-Evans, D.H., Piermarini, P.M., Choe, K.P., 2005. The multifunctional fish gill: dominant 
-site of gas exchange, osmoregulation, acid-base regulation, and excretion of 
-nitrogenous waste. Physiol. Rev. 85, 97–177. 
-Flajnik, M.F., Kasahara, M., 2010. Origin and evolution of the adaptive immune system: 
-genetic events and selective pressures. Nat. Rev. Genet. 11, 47. 
-Fujita, T., Matsushita, M., Endo, Y., 2004. The lectin-complement pathway–its role in 
-innate immunity and evolution. Immunol. Rev. 198, 185–202. 
-Goehlich, H., Sartoris, L., Wagner, K.-S., Wendling, C.C., Roth, O., 2021. Pipefish locally 
-adapted to low salinity in the Baltic Sea retain phenotypic plasticity to cope with 
-ancestral salinity levels. Front. Ecol. Evol. 9, 93. 
-Haase, D., Roth, O., Kalbe, M., Schmiedeskamp, G., Scharsack, J.P., Rosenstiel, P., 
-Reusch, T.B., 2013. Absence of major histocompatibility complex class II mediated 
-immunity in pipefish, Syngnathus typhle: evidence from deep transcriptome 
-sequencing. Biol. Lett. 9, 20130044. 
-Halpern, M., Izhaki, I., 2017. Fish as hosts of Vibrio cholerae. Front. Microbiol. 8, 282. 
-Hauschildt, S., Bessler, W.G., Scheipers, P., 1993. Engagement of major 
-histocompatibility complex class II molecules leads to nitrite production in bone 
-marrow-derived macrophages. Eur. J. Immunol. 23, 2988–2992. 
-Herald, E.S., 1959. From pipefish to seahorse-a study of phylogenetic relationships. Proc. 
-Calif. Acad. Sci. 29, 465–473. 
-Heumann, D., Roger, T., 2002. Initial responses to endotoxins and Gram-negative 
-bacteria. Clin. Chim. Acta 323, 59–72. 
-Hikida, M., Wakabayashi, H., Egusa, S., Masumura, K., 1979. Flexibacter sp., a gliding 
-bacterium pathogenic to some marine fishes in Japan. Nippon Suisan Gakk 45, 
-421–428. 
-Huang, D.W., Sherman, B.T., Lempicki, R.A., 2009. Systematic and integrative analysis of 
-large gene lists using DAVID bioinformatics resources. Nat. Protoc. 4, 44–57. 
-Huang, Q., Liu, D., Majewski, P., Schulte, L.C., Korn, J.M., Young, R.A., Lander, E.S., 
-Hacohen, N., 2001. The plasticity of dendritic cell responses to pathogens and their 
-components. Science 294, 870–875. 
-Irie, T., Watarai, S., Iwasaki, T., Kodama, H., 2005. Protection against experimental 
-Aeromonas salmonicida infection in carp by oral immunisation with bacterial antigen 
-entrapped liposomes. Fish Shellfish Immunol. 18, 235–242. 
-Iwasaki, A., Medzhitov, R., 2015. Control of adaptive immunity by the innate immune 
-system. Nat. Immunol. 16, 343–353. 
-Janeway Jr., C.A., Travers, P., Walport, M., Shlomchik, M.J., 2001. Principles of innate 
-and adaptive immunity. Immunobiology: the Immune System in Health and Disease, 
-fifth ed. Garland Science. 
-Jenner, R.G., Young, R.A., 2005. Insights into host responses against pathogens from 
-transcriptional profiling. Nat. Rev. Microbiol. 3, 281–294. 
-Jiang, H., Li, C., Zhang, B., Wu, Y., Lin, Q., 2022. Roles of interleukins in antibacterial 
-immune defense of the brood pouch in the lined seahorse Hippocampus erectus. 
-J. Oceanol. Limnol. 40, 235–244. 
-Joffre, O., Nolte, M.A., Sp¨orri, R., Reis e Sousa, C., 2009. Inflammatory signals in 
-dendritic cell activation and the induction of adaptive immunity. Immunol. Rev. 
-227, 234–247. 
-Kang, G., Choi, K.-M., Joo, M.-S., Woo, W.-S., Park, C.-I., 2022. A case report of 
-secondary infection by Vibrio splendidus associated with gas bubble disease in 
-syngnathid fishes (Syngnathus schlegeli and Hippocampus haema). Fish. Aquat. Sci. 25, 
-40–48. 
-Kanth, S.M., Gairhe, S., Torabi-Parizi, P., 2021. The role of semaphorins and their 
-receptors in innate immune responses and clinical diseases of acute inflammation. 
-Front. Immunol. 12, 672441. 
-Katoh, K., Standley, D.M., 2013. MAFFT multiple sequence alignment software version 7: 
-improvements in performance and usability. Mol. Biol. Evol. 30, 772–780. 
-Keller, I.S., Roth, O., 2020. Parental investment and immune dynamics in sex-role 
-reversed pipefishes. PLoS One 15, e0228974. 
-Kim, H.S., Sohn, H., Jang, S.W., Lee, G.R., 2019. The transcription factor NFIL3 controls 
-regulatory T-cell function and stability. Exp. Mol. Med. 51, 1–15. 
-Koppang, E.O., Kvellestad, A., Fischer, U., 2015. Fish Mucosal Immunity: Gill, Mucosal 
-Health in Aquaculture. Academic Press, pp. 93–133. 
-Kurtz, J., 2005. Specific memory within innate immune systems. Trends Immunol. 26, 
-186–192. 
-Lanier, L.L., Sun, J.C., 2009. Do the terms innate and adaptive immunity create 
-conceptual barriers? Nat. Rev. Immunol. 9, 302–303. 
-Lang, R., Hammer, M., Mages, J., 2006. DUSP meet immunology: dual specificity MAPK 
-phosphatases in control of the inflammatory response. J. Immunol. 177, 7497–7504. 
-Le Morvan, C., Clerton, P., Deschaux, P., Troutaud, D., 1997. Effects of environmental 
-temperature on macrophage activities in carp. Fish Shellfish Immunol. 7, 209–212. 
-Lenz, T.L., Eizaguirre, C., Rotter, B., Kalbe, M., Milinski, M., 2013. Exploring local 
-immunological adaptation of two stickleback ecotypes by experimental infection and 
-transcriptome-wide digital gene expression analysis. Mol. Ecol. 22, 774–786. 
-Libri, V., Schulte, D., van Stijn, A., Ragimbeau, J., Rogge, L., Pellegrini, S., 2008. 
-Jakmip1 is expressed upon T cell differentiation and has an inhibitory function in 
-cytotoxic T lymphocytes. J. Immunol. 181, 5847–5856. 
-Lillehaug, A., Ramstad, A., Bækken, K., Reitan, L.J., 1993. Protective immunity in 
-Atlantic salmon (Salmo salar L.) vaccinated at different water temperatures. Fish 
-Shellfish Immunol. 3, 143–156. 
-Lin, T., Zhang, D., Liu, X., Xiao, D., 2016. Variations of immune parameters in the lined 
-seahorse Hippocampus erectus after infection with enteritis pathogen of Vibrio 
-parahaemolyticus. Fish Shellfish Immunol. 50, 247–254. 
-Liu, X., Zhan, Z., Li, D., Xu, L., Ma, F., Zhang, P., Yao, H., Cao, X., 2011. Intracellular 
-MHC class II molecules promote TLR-triggered innate immune responses by 
-maintaining activation of the kinase Btk. Nat. Immunol. 12, 416–424. 
-Liu, Y., Qu, M., Jiang, H., Schneider, R., Qin, G., Luo, W., Yu, H., Zhang, B., Wang, X., 
-Zhang, Y., Zhang, H., 2022. Immunogenetic losses co-occurred with seahorse male 
-pregnancy and mutation in tlx1 accompanied functional asplenia. Nat. Commun. 13, 
-7610. 
-Lo, M.W., Woodruff, T.M., 2020. Complement: bridging the innate and adaptive immune 
-systems in sterile inflammation. J. Leukoc. Biol. 108, 339–351. 
-Lochmiller, R.L., Deerenberg, C., 2000. Trade-offs in evolutionary immunology: just 
-what is the cost of immunity? Oikos 88, 87–98. 
-Love, M.I., Huber, W., Anders, S., 2014. Moderated estimation of fold change and 
-dispersion for RNA-seq data with DESeq2. Genome Biol. 15, 550. 
-Luo, B.H., Carman, C.V., Springer, T.A., 2007. Structural basis of integrin regulation and 
-signaling. Annu. Rev. Immunol. 25, 619–647. 
-Luo, W., Wang, X., Qu, H., Qin, G., Zhang, H., Lin, Q., 2016. Genomic structure and 
-expression pattern of MHC IIα and IIβ genes reveal an unusual immune trait in lined 
-seahorse Hippocampus erectus. Fish Shellfish Immunol. 58, 521–529. 
-Luong, P., Hedl, M., Yan, J., Zuo, T., Fu, T.M., Jiang, X., Thiagarajah, J.R., Hansen, S.H., 
-Lesser, C.F., Wu, H., Abraham, C., 2018. INAVA-ARNO complexes bridge mucosal 
-barrier function with inflammatory signaling. Elife 7, e38539. 
-Magadan, S., Sunyer, O.J., Boudinot, P., 2015. Unique features of fish immune 
-repertoires: particularities of adaptive immunity within the largest group of 
-vertebrates, Pathogen-Host Interactions: antigenic Variation v. Somatic Adaptations. 
-Springer, pp. 235–264. 
-Magnad´ottir, B., 2010. Immunological control of fish diseases. Mar. Biotechnol. 12, 
-361–379. 
-Magnad´ottir, B., 2006. Innate immunity of fish (overview). Fish Shellfish Immunol. 20, 
-137–151. 
-Malmstrøm, M., Matschiner, M., Tørresen, O.K., Star, B., Snipen, L.G., Hansen, T.F., 
-Baalsrud, H.T., Nederbragt, A.J., Hanel, R., Salzburger, W., 2016. Evolution of the 
-immune system influences speciation rates in teleost fishes. Nat. Genet. 48, 
-1204–1210. 
-Manders, P.M., Hunter, P.J., Telaranta, A.I., Carr, J.M., Marshall, J.L., Carrasco, M., 
-Murakami, Y., Palmowski, M.J., Cerundolo, V., Kaech, S.M., Ahmed, R., 2005. 
-BCL6b mediates the enhanced magnitude of the secondary response of memory CD8 
-+ T lymphocytes. Proc. Natl. Acad. Sci. Unit. State Am. 102, 7418–7425. 
-Martins, M., Mouri˜no, J., Fezer, G., Buglione Neto, C., Garcia, P., Silva, B., Jatob´a, A., 
-Vieira, F., 2010. Isolation and experimental infection with Vibrio alginolyticus in the 
-sea horse, Hippocampus reidi Ginsburg, 1933 (Osteichthyes: Syngnathidae) in Brazil. 
-Braz. J. Biol. 70, 205–209. 
-Masumura, K., Wakabayashi, H., 1977. An outbreak of gliding bacterial disease in 
-hatchery-born red seabream (Pagrus major) and gilthead (Acanthopagrus schlegeli) fry 
-in Hiroshima. Fish Pathol. 12, 171–177. 
-Matsunaga, T., Rahman, A., 1998. What brought the adaptive immune system to 
-vertebrates?-The jaw hypothesis and the seahorse. Immunol. Rev. 166, 177–186. 
-Medzhitov, R., Janeway Jr., C., 2000. Innate immunity. N. Engl. J. Med. 343, 338–344. 
-Michielsen, L.A., Budding, K., Drop, D., Van de Graaf, E.A., Kardol-Hoefnagel, T., 
-Verhaar, M.C., Van Zuilen, A.D., Otten, H.G., 2018. Reduced expression of 
-membrane complement regulatory protein CD59 on leukocytes following lung 
-transplantation. Front. Immunol. 8, 2008. 
-Midtlyng, P., Reitan, L., Speilberg, L., 1996. Experimental studies on the efficacy and 
-side-effects of intraperitoneal vaccination of Atlantic salmon (Salmo salar L.) against 
-furunculosis. Fish Shellfish Immunol. 6, 335–350. 
-Mora, J.R., Von Andrian, U.H., 2006. Specificity and Plasticity of Memory Lymphocyte 
-Migration, pp. 83–116. Gut-Associated Lymphoid Tissues. Springer.  
-Mota, V.C., Nilsen, T.O., Gerwins, J., Gallo, M., Ytteborg, E., Baeverfjord, G., 
-Kolarevic, J., Summerfelt, S.T., Terjesen, B.F., 2019. The effects of carbon dioxide on 
-growth performance, welfare, and health of Atlantic salmon post-smolt (Salmo salar) 
-in recirculating aquaculture systems. Aquaculture 498, 578–586. 
-Mourad, W., Geha, R.S., Chatila, T., 1990. Engagement of major histocompatibility 
-complex class II molecules induces sustained, lymphocyte function-associated 
-molecule 1-dependent cell adhesion. J. Exp. Med. 172, 1513–1516. 
-Nau, G.J., Richmond, J.F., Schlesinger, A., Jennings, E.G., Lander, E.S., Young, R.A., 
-2002. Human macrophage activation programs induced by bacterial pathogens. 
-Proc. Natl. Acad. Sci. Unit. State Am. 99, 1503–1508. 
-Neefjes, J., Jongsma, M.L., Paul, P., Bakke, O., 2011. Towards a systems understanding of 
-MHC class I and MHC class II antigen presentation. Nat. Rev. Immunol. 11, 823–836. 
-Netea, M.G., Domínguez-Andr´es, J., Barreiro, L.B., Chavakis, T., Divangahi, M., Fuchs, E., 
-Joosten, L.A., van der Meer, J.W., Mhlanga, M.M., Mulder, W.J., 2020. Defining 
-trained immunity and its role in health and disease. Nat. Rev. Immunol. 20, 
-375–388. 
-Netea, M.G., Joosten, L.A., Latz, E., Mills, K.H., Natoli, G., Stunnenberg, H.G., O’Neill, L. 
-A., Xavier, R.J., 2016. Trained immunity: a program of innate immune memory in 
-health and disease. Science 352. 
-Netea, M.G., Quintin, J., Van Der Meer, J.W., 2011. Trained immunity: a memory for 
-innate host defense. Cell Host Microbe 9, 355–361. 
-Newson, J., Stables, M., Karra, E., Arce-Vargas, F., Quezada, S., Motwani, M., Mack, M., 
-Yona, S., Audzevich, T., Gilroy, D.W., 2014. Resolution of acute inflammation 
-bridges the gap between innate and adaptive immunity. Blood 124, 1748–1764. 
-J. Parker et al.                                                                                                                                                                                                                                   
-Developmental and Comparative Immunology 153 (2024) 105136
+Tail rings
+37
+Dorsal fin-rays
+16
+Pectoral fin-rays
 15
-Noonan, D.M., De Lerma Barbaro, A., Vannini, N., Mortara, L., Albini, A., 2008. 
-Inflammation, inflammatory cells and angiogenesis: decisions and indecisions. 
-Cancer Metastasis Rev. 27, 31–40. 
-Pappert, F.A., Wuest, V.A., Fontanes-Eguiguren, C., Roth, O., 2023. Surviving on Limited 
-Resources: Effects of Caloric Restriction on Growth, Gene Expression and Gut 
-Microbiota in a Species with Male Pregnancy (Hippocampus erectus) bioRxiv 2023- 
-10.  
-Parker, J., Dubin, A., Schneider, R., Wagner, K., Jentoft, S., B¨ohne, A., Bayer, T., Roth, O., 
-2023a. Immunological tolerance in the evolution of male pregnancy. Mol. Ecol. 32, 
-819–840. 
-Parker, J., Dubin, A., Roth, O., 2023b. Genome rearrangements, male pregnancy and 
-immunological tolerance - the curious case of the syngnathid immune system. Front. 
-Mar. Sci. 10, 1099231. 
-Parker, J., Guslund, N.C., Jentoft, S., Roth, O., 2022. Characterization of pipefish 
-immune cell populations through single-cell transcriptomics. Front. Immunol. 13, 
-820152. 
-Parker, J., Roth, O., 2022. Comparative assessment of immunological tolerance in fish 
-with natural immunodeficiency. Dev. Comp. Immunol. 132, 104393. 
-Peuss, R., Box, A.C., Chen, S., Wang, Y., Tsuchiya, D., Persons, J.L., Kenzior, A., 
-Maldonado, E., Krishnan, J., Scharsack, J.P., 2020. Adaptation to low parasite 
-abundance affects immune investment and immunopathological responses of 
-cavefish. Nat. Ecol. Evol. 4, 1416–1430. 
-Pribila, J.T., Quale, A.C., Mueller, K.L., Shimizu, Y., 2004. Integrins and T cell–mediated 
-immunity. Annu. Rev. Immunol. 22, 157–180. 
-Qin, G., Wang, X., Tan, S., Lin, Q., 2017. A bacterial infection by Vibrio harveyi causing 
-heavy reduction of cultured lined seahorse Hippocampus erectus. J. Fish. Dis. 40, 
-601–605. 
-Qin, G., Zhang, Y., Zhang, B., Zhang, Y., Liu, Y., Lin, Q., 2020. Environmental estrogens 
-and progestins disturb testis and brood pouch development with modifying 
-transcriptomes in male-pregnancy lined seahorse Hippocampus erectus. Sci. Total 
-Environ. 715, 136840. 
-Quintin, J., Saeed, S., Martens, J.H., Giamarellos-Bourboulis, E.J., Ifrim, D.C., Logie, C., 
-Jacobs, L., Jansen, T., Kullberg, B.-J., Wijmenga, C., 2012. Candida albicans infection 
-affords protection against reinfection via functional reprogramming of monocytes. 
-Cell Host Microbe 12, 223–232. 
-R Development Core Team, 2013. R: A Language and Environment for Statistical 
-Computing. 
-Raida, M.K., Buchmann, K., 2008. Development of adaptive immunity in rainbow trout, 
-Oncorhynchus mykiss (Walbaum) surviving an infection with Yersinia ruckeri. Fish 
-Shellfish Immunol. 25, 533–541. 
-Raida, M.K., Buchmann, K., 2009. Innate immune response in rainbow trout 
-(Oncorhynchus mykiss) against primary and secondary infections with Yersinia ruckeri 
-O1. Dev. Comp. Immunol. 33, 35–45. 
-Reilly, E.C., Lambert Emo, K., Buckley, P.M., Reilly, N.S., Smith, I., Chaves, F.A., 
-Yang, H., Oakes, P.W., Topham, D.J., 2020. TRM integrins CD103 and CD49a 
-differentially support adherence and motility after resolution of influenza virus 
-infection. Proc. Natl. Acad. Sci. Unit. State Am. 117, 12306–12314. 
-Ribatti, D., Crivellato, E., 2009. Immune cells and angiogenesis. J. Cell Mol. Med. 13, 
-2822–2833. 
-Rijkers, G., Frederix-Wolters, E., van Muiswinkel, W.B., 1980. The immune system of 
-cyprinid fish. The Effect of Antigen Dose and Route of Administration on the 
-Development of Immunological Memory in Carp (Cyprinus carpio), Phylogeny of 
-Immunological Memory. Elsevier, pp. 93–102. 
-Rodriguez, M., Wiens, G., Purcell, M., Palti, Y., 2005. Characterization of Toll-like 
-receptor 3 gene in rainbow trout (Oncorhynchus mykiss). Immunogenetics 57, 
-510–519. 
-Roth, O., Keller, I., Landis, S.H., Salzburger, W., Reusch, T.B., 2012a. Hosts are ahead in a 
-marine host–parasite coevolutionary arms race: innate immune system adaptation in 
-pipefish Syngnathus typhle against Vibrio phylotypes. Evolution 66, 2528–2539. 
-Roth, O., Klein, V., Beemelmanns, A., Scharsack, J.P., Reusch, T.B., 2012b. Male 
-pregnancy and biparental immune priming. Am. Nat. 180, 802–814. 
-Roth, O., Sadd, B.M., Schmid-Hempel, P., Kurtz, J., 2009. Strain-specific priming of 
-resistance in the red flour beetle, Tribolium castaneum. Proc. R. Soc. B: Biol. Sci. 276, 
-145–151. 
-Roth, O., Solbakken, M.H., Tørresen, O.K., Bayer, T., Matschiner, M., Baalsrud, H.T., 
-Hoff, S.N.K., Brieuc, M.S.O., Haase, D., Hanel, R., 2020. Evolution of male pregnancy 
-associated with remodeling of canonical vertebrate immunity in seahorses and 
-pipefishes. Proc. Natl. Acad. Sci. Unit. State Am. 117, 9431–9439. 
-Rückert, T., Lareau, C.A., Mashreghi, M.F., Ludwig, L.S., Romagnani, C., 2022. Clonal 
-expansion and epigenetic inheritance of long-lasting NK cell memory. Nat. Immunol. 
-23, 1551–1563. 
-Sadd, B.M., Schmid-Hempel, P., 2006. Insect immunity shows specificity in protection 
-upon secondary pathogen exposure. Curr. Biol. 16, 1206–1210. 
-Saeed, S., Quintin, J., Kerstens, H.H., Rao, N.A., Aghajanirefah, A., Matarese, F., 
-Cheng, S.-C., Ratter, J., Berentsen, K., van der Ent, M.A., 2014. Epigenetic 
-programming of monocyte-to-macrophage differentiation and trained innate 
-immunity. Science 345, 1251086. 
-Saha, N.R., Ota, T., Litman, G.W., Hansen, J., Parra, Z., Hsu, E., Buonocore, F., 
-Canapa, A., Cheng, J.F., Amemiya, C.T., 2014. Genome complexity in the coelacanth 
-is reflected in its adaptive immune system. J. Exp. Zool. B Mol. Dev. Evol. 322, 
-438–463. 
-Salinas, I., 2015. The mucosal immune system of teleost fish. Biology 4, 525–539. 
-Samaraweera, A.V., Sandamalika, W.G., Liyanage, D., Lee, S., Priyathilaka, T.T., Lee, J., 
-2019. Molecular characterization and functional analysis of glutathione S- 
-transferase kappa 1 (GSTκ1) from the big belly seahorse (Hippocampus abdominalis): 
-elucidation of its involvement in innate immune responses. Fish Shellfish Immunol. 
-92, 356–366. 
-Scharsack, J.P., Franke, F., 2022. Temperature effects on teleost immunity in the light of 
-climate change. J. Fish. Biol. 101, 780–796. 
-Sconocchia, T., Sconocchia, G., 2021. Regulation of the immune system in health and 
-disease by members of the bone morphogenetic protein family. Front. Immunol. 12, 
-802346. 
-Senderovich, Y., Izhaki, I., Halpern, M., 2010. Fish as reservoirs and vectors of Vibrio 
-cholerae. PLoS One 5, e8607. 
-Sheldon, B.C., Verhulst, S., 1996. Ecological immunology: costly parasite defences and 
-trade-offs in evolutionary ecology. Trends Ecol. Evol. 11, 317–321. 
-Sherman, B.T., Lempicki, R.A., 2009. Systematic and integrative analysis of large gene 
-lists using DAVID bioinformatics resources. Nat. Protoc. 4, 44. 
-Shi, G.X., Harrison, K., Wilson, G.L., Moratz, C., Kehrl, J.H., 2002. RGS13 regulates 
-germinal center B lymphocytes responsiveness to CXC chemokine ligand (CXCL) 12 
-and CXCL13. J. Immunol. Res. 169, 2507–2515. 
-Solbakken, M.H., Tørresen, O.K., Nederbragt, A.J., Seppola, M., Gregers, T.F., 
-Jakobsen, K.S., Jentoft, S., 2016. Evolutionary redesign of the Atlantic cod (Gadus 
-morhua L.) Toll-like receptor repertoire by gene losses and expansions. Sci. Rep. 6, 
-1–14. 
-Spertini, F., Chatila, T., Geha, R., 1992. Signals delivered via MHC class II molecules 
-synergize with signals delivered via TCR/CD3 to cause proliferation and cytokine 
-gene expression in T cells. J. Immunol. 149, 65–70. 
-Star, B., Nederbragt, A.J., Jentoft, S., Grimholt, U., Malmstrøm, M., Gregers, T.F., 
-Rounge, T.B., Paulsen, J., Solbakken, M.H., Sharma, A., 2011. The genome sequence 
-of Atlantic cod reveals a unique immune system. Nature 477, 207. 
-St¨olting, K.N., Wilson, A.B., 2007. Male pregnancy in seahorses and pipefish: beyond the 
-mammalian model. Bioessays 29, 884–896. 
-Suzuki, M., Nakagawa, Y., Harayama, S., Yamamoto, S., 2001. Phylogenetic analysis and 
-taxonomic study of marine Cytophaga-like bacteria: proposal for Tenacibaculum gen. 
-nov. with Tenacibaculum maritimum comb. nov. and Tenacibaculum ovolyticum comb. 
-nov., and description of Tenacibaculum mesophilum sp. nov. and Tenacibaculum 
-amylolyticum sp. nov. Int. J. Syst. Evol. Microbiol. 51, 1639–1652. 
-Swann, J.B., Holland, S.J., Petersen, M., Pietsch, T.W., Boehm, T., 2020. The 
-immunogenetics of sexual parasitism. Science 369, 1608–1615. 
-Takeda, K., Akira, S., 2004. TLR Signaling Pathways. Semin. Immunol. Elsevier, pp. 3–9. 
-Thompson, F.L., Iida, T., Swings, J., 2004. Biodiversity of vibrios. Microbiol. Mol. Biol. 
-Rev. 68, 403–431. 
-Tison, D.L., Seidler, R.J., 1983. Vibrio aestuarianus: a new species from estuarine waters 
-and shellfish. Int. J. Syst. Evol. Microbiol. 33, 699–702. 
-Toranzo, A., Santos, Y., Barja, J., 1997. Immunization with bacterial antigens: Vibrio 
-infections. Dev. Biol. Stand. 90, 93–105. 
-Venkatesh, B., Lee, A.P., Ravi, V., Maurya, K., Lian, M.M., Swann, J.B., Ohta, Y., 
-Flajnik, M.F., Sutoh, Y., Kasahara, M., Hoon, S., Gangu, V., Roy, S.W., Irimia, M., 
-Korzh, V., Kondrychyn, I., Lim, Z.W., Tay, B., Tohari, S., Kong, K.W., Ho, S., Lorente- 
-Galdos, B., Quilez, J., Marques-Bonet, T., Raney, B.J., Ingham, P.W., Tay, A., 
-Hillier, L.W., Minx, P., Boehm, T., Wilson, R.K., Brenner, S., Warren, W.C., 2014. 
-Elephant shark genome provides unique insights into gnathostome evolution. Nature 
-505, 174–179. 
-Vera Alvarez, R., Pongor, L.S., Mari˜no-Ramírez, L., Landsman, D., 2019. TPMCalculator: 
-one-step software to quantify mRNA abundance of genomic features. Bioinformatics 
-35, 1960–1962. 
-Vetvicka, V., Sima, P., Vannucci, L., 2021. Trained immunity as an adaptive branch of 
-innate immunity. Int. J. Mol. Sci. 22, 10684. 
-Viney, M.E., Riley, E.M., Buchanan, K.L., 2005. Optimal immune responses: 
-immunocompetence revisited. Trends Ecol. Evol. 20, 665–669. 
-Vivier, E., Raulet, D.H., Moretta, A., Caligiuri, M.A., Zitvogel, L., Lanier, L.L., 
-Yokoyama, W.M., Ugolini, S., 2011. Innate or adaptive immunity? The example of 
-natural killer cells. Science 331, 44–49. 
-Wahl, S., Hunt, D., Wong, H., Dougherty, S., McCartney-Francis, N., Wahl, L., 
-Ellingsworth, L., Schmidt, J., Hall, G., Roberts, A., 1988. Transforming growth 
-factor-beta is a potent immunosuppressive agent that inhibits IL-1-dependent 
-lymphocyte proliferation. J. Immunol. Res. 140, 3026–3032. 
-Wang, Y.-D., Wang, Y.-H., Hui, C.-F., Chen, J.-Y., 2016. Transcriptome analysis of the 
-effect of Vibrio alginolyticus infection on the innate immunity-related TLR5-mediated 
-induction of cytokines in Epinephelus lanceolatus. Fish Shellfish Immunol. 52, 31–43. 
-Xie, J., Bu, L., Jin, S., Wang, X., Zhao, Q., Zhou, S., Xu, Y., 2020. Outbreak of vibriosis 
-caused by Vibrio harveyi and Vibrio alginolyticus in farmed seahorse Hippocampus kuda 
-in China. Aquaculture 523, 735168. 
-Yoshioka, Y., Ono, M., Osaki, M., Konishi, I., Sakaguchi, S., 2012. Differential effects of 
-inhibition of bone morphogenic protein (BMP) signalling on T-cell activation and 
-differentiation. Eur. J. Immunol. 42, 749–759. 
-Young, M.R., 2012. Endothelial cells in the eyes of an immunologist. Cancer Immunol. 
-Immunother. 61, 1609–1616. 
-Zelensky, A.N., Gready, J.E., 2005. The C-type lectin-like domain superfamily. FEBS J. 
-272, 6179–6217. 
-Zhang, Y., Wei, F., Liu, C.J., 2015. Overexpression of ADAMTS-7 leads to accelerated 
-initiation and progression of collagen-induced arthritis in mice. Mol. Cell. Biochem. 
-404, 171–179. 
-Zhou, T., Li, N., Liu, S., Jin, Y., Fu, Q., Gao, S., Liu, Y., Liu, Z., 2017. The NCK and ABI 
-adaptor genes in catfish and their involvement in ESC disease response. Dev. Comp. 
-Immunol. 73, 119–123. 
-J. Parker et al.                                                                                                                                                                                                                                   
+SL (mm)
+105.2
+%SL
+Head length (HL)
+17.00
+Trunk length (TrL)
+29.40
+Tail length (TaL)
+53.60
+Trunk depth (TD4)
+6.70
+Trunk depth (TD9)
+8.80
+%HL
+Head depth (HD)
+53.97
+Snout length (SnL)
+40.74
+Post orbital (PO)
+38.10
+Coronet height (CH)
+34.92
+SnL%
+Snout depth (SnD)
+27.79
+Charles et al.
+338  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Discussion
+ 
+Despite its extensive geographic range, reports of its occurrence in the Red Sea remains sparse, primarily restricted 
+to the northern region of Egypt and Israel in the Gulf of Aqaba and the Gulf of Suez (GBIF, 2024; iNaturalist, 2024). 
+Museum records are restricted to specimens collected in the Gulf of Suez in Egypt between 1869-1933 (MNHN IC 
+0000-5632, 1869; MNHN IC 1966-0357, 1928; MNHN IC 1966-0359, 1928; MNHN IC 1966-0358, 1929; MNHN 
+IC 1966-0360, 1933). Photographic observations of H. kuda in the Red Sea, however, are more recent, all of which 
+have been recorded in Egypt and Israel in the 2000’s on iNaturalist (Table 2).
+Table 2. iNaturalist observations of H. kuda in the Red Sea 
+Location
+Country
+iNaturalist observation
+Year
+Gulf of Aqaba
+Egypt
+110831036
+2003
+Gifton Islands
+Egypt
+1485195
+2004
+Gifton Islands
+Egypt
+1443456
+2005
+Gulf of Aqaba
+Egypt
+110831031
+2010
+Gulf of Suez
+Egypt
+126860728
+2024
+Gulf of Suez
+Egypt
+1092696
+2004
+Gulf of Aqaba
+Israel
+146471415
+2007
+Gulf of Aqaba
+Israel
+124753659
+2019
+Gulf of Aqaba
+Israel
+121227875
+2021
+The first record of H. kuda in the Red Sea was recorded in Jeddah, Saudi Arabia in 1838. This record was 
+originally based on the first description of H. fuscus (Rüppell, 1840), which was later synonymized with H. kuda due 
+to the lack of discernible morphological, genetic, or geographic differences from H. kuda (type locality Singapore) 
+in a revision of Hippocampus (Lourie et al., 2016). The holotype of H. fuscus (specimen SMF 4914) is housed in the 
+fish collections at the Senckenberg Nature Museum, Frankfurt, Germany. Therefore, we treat all previous records of 
+H. fuscus in the Red Sea as H. kuda in this study. Similarly, H. suezensis, first described by Duncker in 1940 (type 
+locality Hurghada, Egypt) is considered synonymous with H. fuscus for the scope of this study.
+Our collected specimen represents the second record of H. kuda reported in Saudi Arabia and a new distributional 
+record in the south-central Red Sea. This new record expands the southern range of H. kuda within the Red Sea, 
+extending 367 kilometers further south from the first known record in Jeddah. Mehanna and Al-Mahdawi (2006) 
+reported the first record of H. kuda from the Yemeni coast of the Red Sea, which would extend the range of the 
+species to the southern extremity of the Red Sea. However, scrutiny of their study reveals numerous instances 
+of misidentification among the seahorse species listed in their study. Furthermore, the photographic images 
+accompanying their descriptions lack clarity, posing challenges in accurately identifying the species at the species 
+level.
+Meristic, morphometric, and morphological characters documented in our collected specimen of H. kuda agree 
+with those documented for H. kuda following the field identification guide by Lourie et al. (2004) and the taxonomic 
+revision of Hippocampus (Lourie et al., 2016) for this species. The general appearance of the specimen is quite 
+distinct from the other two species of seahorses, H. jayakari and H. debelius, occurring in the Red Sea, including 
+differences in the aforementioned characters and size. 
+Genetic analysis of the COI gene, as listed in Appendix 1, indicates minimal divergence between the sequences 
+obtained from our collected specimen and H. kuda originating from the Western Indian Ocean, including the Red 
+Sea and Persian Gulf. Specifically, the genetic variation ranges from 0.00 to 0.31 when compared to sequences from 
+South Africa. In contrast, divergence ranges from 0.0 to 0.61 when compared to sequences from Egypt and Israel in 
+the Red Sea. A sequence retrieved from Saudi Arabia in the Persian Gulf (Genbank accession number KU236029) 
+exhibits a divergence of 0.74 from our specimen.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  339
+Implications for conservation 
+ 
+In the Red Sea, there is currently no comprehensive data available on the trade or exploitation of seahorses. It 
+is essential to gather data on various aspects of this trade, including the species involved, trade routes, volumes 
+traded, and monetary values associated with syngnathid trade, particularly from countries bordering the Red Sea. 
+The existing records on the distribution of H. kuda in the Red Sea highlights the urgent need for further research 
+into the fishing impact on seahorses throughout the Red Sea, especially in areas like the southern Red Sea off 
+Al Qunfudah and Jizan, where shrimp trawlers operate. It is crucial to assess the effects of trawling on seahorse 
+populations and their sustainability. Efforts should be made to raise awareness among trawl fishermen about the 
+importance of conserving seahorse species. The fishermen should be educated about the significance of avoiding 
+seagrass beds during their harvesting activities, as this can significantly enhance the prospects of protecting this 
+vulnerable species in the Red Sea. Furthermore, expanding knowledge about the distribution of specific seahorse 
+species, such as H. kuda, in the Red Sea has significant conservation implications. Newly documented occurrences 
+should be considered in the formulation of conservation strategies and management efforts for seahorse populations 
+in the region.
+ 
+Acknowledgement
+The authors express their profound gratitude to the Ministry of Environment, Water and Agriculture of Saudi 
+Arabia for funding the project “Assessment and Management of Shrimp Trawl Fisheries in the Red Sea Waters 
+of the Kingdom” and for their continuous support in getting permits for surveys at sea. Thanks to Viktor Nunes 
+Peinemann (Red Sea Research Centre, KAUST), for his assistance in generating a COI sequence from the specimen. 
+Thanks to Rawiyah Alhassan for providing the sampling map. We also thank KAUST Beacon Development (KBD) 
+for providing the essential laboratory facilities, as well as the staff of the KBD Fisheries team. Fisheries Field 
+specialists Mr. Nawaf Alfaqi and Mr. Osama Alsheri, and the crew of the trawl vessel “Abu Salem 3” are gratefully 
+acknowledged for their assistance during the scientific surveys at sea. Special thanks to the staff of the Australian 
+University Museum for their assistance with logistics during the shipment of the sample.
+ 
+References
+Choo, C.K. & Liew, H.C. (2003) Spatial distribution, substrate assemblages and size composition of sea horses (Family 
+Syngnathidae) in the coastal waters of Peninsular Malaysia. Journal of the Marine Biological Association of the United 
+Kingdom, 83 (2), 271–276.
+	
+https://doi.org/10.1017/S0025315403007069h
+CITES (2003) Proposals for amendment of Appendices I and II at 12th meeting of Conference of the Parties—results. CITES 
+Secretariat, Geneva. [unknown pagination]
+Dody, S., Manuputty, G.D. & Limmon, G.V. (2021) Habitat characteristics and density of spotted seahorse Hippocampus kuda at 
+waters of Ternate Island and surroundings, Maluku Utara, Indonesia. In: IOP Conference Series: Earth and Environmental 
+Science. Vol. 805. No. 1. IOP Publishing, Bristol, 012006.
+	
+https://doi.org/10.1088/1755-1315/805/1/012006
+GBIF.org (2024) GBIF Occurrence Download. Available from: https://doi.org/10.15468/dl.w3u6c9 (accessed 8 April 2024)
+Hamilton, D.J., Wheeler, D.W., White, C.M., Rees, C.L., Komendantov, A.O., Bergamino, M. & Ascoli, G.A. (2017) Name-
+calling in the hippocampus (and beyond): coming to terms with neuron types and properties. Brain Informatics, 4 (1), 
+1–12. 
+	
+https://doi.org/10.1007/s40708-016-0053-3
+IUCN (2004) 2004 IUCN Red List of Threatened Species. The World Conservation Union, Gland. Available from: https://www.
+iucnredlist.org/ (accessed 30 July 2024) 
+iNaturalist (2024) Available from: https://www.inaturalist.org (accessed 30 April 2024)
+Kalisiak, J., Gray, I., Bruget, R. & Correia, M. (2022) The use of non-invasive sampling to estimate long-term abundance of 
+Hippocampus kuda in the Koh Sdach Archipelago, Cambodia. Cambodian Journal of Natural History, 47–58.
+Kumar, S., Nei, M., Dudley, J. & Tamura, K. (2008) MEGA: a biologist-centric software for evolutionary analysis of DNA and 
+protein sequences. Briefings in bioinformatics, 9 (4), 299–306.
+	
+https://doi.org/10.1093/bib/bbn017
+Charles et al.
+340  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Lipton, A.P. & Thangaraj, M. (2013) Distribution pattern of seahorse species (Genus: Hippocampus) in Tamilnadu and Kerala 
+coasts of India. Notulae Scientia Biologicae, 5 (1), 20–24.
+	
+https://doi.org/10.15835/nsb518298
+Lourie, S.A., Foster, S.J., Cooper, E.W. & Vincent, A.C. (2004) A guide to the identification of seahorses. Project Seahorse and 
+TRAFFIC North America, 114 (1), 1–120.
+Lourie, S.A., Pollom, R.A. & Foster, S.J. (2016) A global revision of the seahorses Hippocampus Rafinesque 1810 (Actinopterygii: 
+Syngnathiformes): taxonomy and biogeography with recommendations for further research. Zootaxa, 4146 (1), 1–66.
+	
+https://doi.org/10.11646/zootaxa.4146.1.1
+Mehanna, S.F. & Al-Mahdawi, G.J. (2006) First record for syngnathid species (seahorses and pipefishes, Family: Syngnathidae) 
+from Yemeni coast of the Red Sea. African Journal of Biological Sciences, 2 (2), 121–128.
+Rüppell, W.P.E.S. (1840) Neue Wirbelthiere zu der Fauna von Abyssinien gehörig Fische des Rothen Meeres. S. Schmerber, 
+Frankfurt am Main, 40 pp., 14 taf, 116 pp., 42 taf, 18 pp., 6 taf, 148 pp., 33 taf.
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  341
+Appendix 1.
+Hippocampus_
+kuda_PP992517_
+Saudi_Arabia
+Hippocampus_
+kuda_KU236029_
+Saudi_Arabia
+Hippocampus_
+fuscus_
+KY066107_Egypt
+Hippocampus_
+kuda_
+MF123924_Isreal
+Hippocampus_
+fuscus_
+MG875005_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875006_Red_
+Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_
+MG875008_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875009_Red_
+Sea
+Hippocampus_kuda_
+PP992517_Saudi_
+Arabia
+Hippocampus_kuda_
+KU236029_Saudi_
+Arabia
+0.0061
+Hippocampus_
+fuscus_KY066107_
+Egypt
+0.0032
+0.0095
+Hippocampus_kuda_
+MF123924_Isreal
+0
+0.0061
+0.0032
+Hippocampus_
+fuscus_MG875005_
+Red_Sea
+0.0032
+0.0078
+0.0033
+0.0032
+Hippocampus_
+fuscus_MG875006_
+Red_Sea
+0
+0.0047
+0.0033
+0
+0.0031
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+0.0016
+0.0062
+0.0016
+0.0016
+0.0015
+0.0015
+Hippocampus_
+fuscus_MG875008_
+Red_Sea
+0.0032
+0.0078
+0.0016
+0.0032
+0.0031
+0.0031
+0.0016
+Hippocampus_
+fuscus_MG875009_
+Red_Sea
+0.0016
+0.0062
+0.0049
+0.0016
+0.0047
+0.0016
+0.0031
+0.0047
+Hippocampus_
+fuscus_MG875011_
+Red_Sea
+0.0032
+0.0078
+0.0033
+0.0032
+0.0031
+0.0031
+0.0016
+0.0031
+0.0047
+Hippocampus_
+fuscus_MG8750010_
+Red_Sea
+0.0032
+0.0094
+0.0065
+0.0032
+0.0078
+0.0047
+0.0062
+0.0078
+0.0062
+Hippocampus_kuda_
+AB983272_Iran
+0.0032
+0.0032
+0.0067
+0.0032
+0.008
+0.0048
+0.0064
+0.008
+0.0064
+......continued on the next page
+Charles et al.
+342  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Appendix 1. (Continued)
+Hippocampus_
+kuda_PP992517_
+Saudi_Arabia
+Hippocampus_
+kuda_KU236029_
+Saudi_Arabia
+Hippocampus_
+fuscus_
+KY066107_Egypt
+Hippocampus_
+kuda_
+MF123924_Isreal
+Hippocampus_
+fuscus_
+MG875005_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875006_Red_
+Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_
+MG875008_Red_
+Sea
+Hippocampus_
+fuscus_
+MG875009_Red_
+Sea
+Hippocampus_kuda_
+ADC09-087_BOLD_
+South_Africa
+0.0031
+0.0095
+0.0063
+0.0031
+0.0065
+0.0032
+0.0048
+0.0048
+0.0048
+Hippocampus_kuda_
+GU805014_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805015_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805016_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_kuda_
+GU805017_South_
+Africa
+0
+0.0062
+0.0032
+0
+0.0032
+0
+0.0016
+0.0032
+0.0016
+Hippocampus_
+fuscus_GQ502132_
+Tanzania
+0.0015
+0.0077
+0.0047
+0.0015
+0.0048
+0.0016
+0.0032
+0.0048
+0.0032
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_kuda_
+PP992517_Saudi_
+Arabia
+Hippocampus_kuda_
+KU236029_Saudi_
+Arabia
+Hippocampus_
+fuscus_KY066107_
+Egypt
+Hippocampus_kuda_
+MF123924_Isreal
+......continued on the next page
+A new record of Hippocampus kuda from saudia arabia
+Zootaxa 5501 (2) © 2024 Magnolia Press  ·  343
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_
+fuscus_MG875005_
+Red_Sea
+Hippocampus_
+fuscus_MG875006_
+Red_Sea
+Hippocampus_
+fuscus_MG875007_
+Red_Sea
+Hippocampus_
+fuscus_MG875008_
+Red_Sea
+Hippocampus_
+fuscus_MG875009_
+Red_Sea
+Hippocampus_
+fuscus_MG875011_
+Red_Sea
+Hippocampus_
+fuscus_MG8750010_
+Red_Sea
+0.0078
+Hippocampus_kuda_
+AB983272_Iran
+0.008
+0.0096
+Hippocampus_kuda_
+ADC09-087_BOLD_
+South_Africa
+0.0065
+0.0065
+0.0067
+Hippocampus_kuda_
+GU805014_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+Hippocampus_kuda_
+GU805015_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+Hippocampus_kuda_
+GU805016_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+0
+......continued on the next page
+Charles et al.
+344  ·  Zootaxa 5501 (2) © 2024 Magnolia Press
+Appendix 1. (Continued)
+Hippocampus_
+fuscus_
+MG875011_Red_
+Sea
+Hippocampus_
+fuscus_
+MG8750010_Red_
+Sea
+Hippocampus_
+kuda_AB983272_
+Iran
+Hippocampus_
+kuda_ADC09-
+087_BOLD_
+South_Africa
+Hippocampus_
+kuda_GU805014_
+South_Africa
+Hippocampus_
+kuda_GU805015_
+South_Africa
+Hippocampus_
+kuda_GU805016_
+South_Africa
+Hippocampus_
+kuda_GU805017_
+South_Africa
+Hippocampus_
+fuscus_
+GQ502132_
+Tanzania
+Hippocampus_kuda_
+GU805017_South_
+Africa
+0.0032
+0.0032
+0.0033
+0.0031
+0
+0
+0
+Hippocampus_
+fuscus_GQ502132_
+Tanzania
+0.0048
+0.0048
+0.0049
+0.0047
+0.0015
+0.0015
+0.0015
+0.0015
 

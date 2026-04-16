@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './contributions_scraper.css'
 
-function ContributionsScraper() {
+function ContributionsScraper({ onOpenSettings }) {
     const [results, setResults] = useState([])
     const [fileNames, setFileNames] = useState([])
 
@@ -53,6 +53,7 @@ function ContributionsScraper() {
             console.error('Error:', err)
             setExportStatus('Error downloading')
         }
+
     }
 
 
@@ -96,10 +97,12 @@ function ContributionsScraper() {
                 {exportStatus && <p>{exportStatus}</p>} 
 
                 
-                <button className='download-results-btn' onClick={handleExport}>
-                    Export as Excel <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                <button className='download-results-btn' onClick={onOpenSettings}>
+                    
+                    <span className='download-txt'>Download</span><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
+
 
             <div className='title-contributions-header'>
                 <h3>Title</h3>
