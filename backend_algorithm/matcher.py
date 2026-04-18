@@ -1,36 +1,10 @@
 import pymupdf
 import os
-import platform
 import re
 import pandas as pd
 from pdfrw import PdfReader
+import io
 
-def get_downloads_folder():
-    """
-    Returns the path to the user's Downloads folder.
-    """
-    if platform.system() == "Windows":
-        # Uses the well-known folder ID for Downloads in Windows Registry
-        import winreg
-        try:
-            with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders") as key:
-                return winreg.QueryValueEx(key, "{374DE290-123F-4565-9164-39C4925E467B}")[0]
-        except Exception:
-            # Fallback for general cases, often "C:\\Users\\YourUser\\Downloads"
-            return os.path.join(os.path.expanduser('~'), 'Downloads')
-    elif platform.system() == "Darwin": # macOS
-        return os.path.join(os.path.expanduser('~'), 'Downloads')
-    elif platform.system() == "Linux":
-        # XDG user directories standard for Linux
-        try:
-            import subprocess
-            return subprocess.check_output(['xdg-user-dir', 'DOWNLOAD']).strip().decode('utf-8')
-        except (subprocess.CalledProcessError, FileNotFoundError):
-            # Fallback for general cases, often "~/Downloads"
-            return os.path.join(os.path.expanduser('~'), 'Downloads')
-    else:
-        # Generic fallback
-        return os.path.join(os.path.expanduser('~'), 'Downloads')
     
     
 def findContributions(files):
@@ -147,11 +121,27 @@ def findContributions(files):
 
 
 def exportExcel(results):
+    # i think i should handle both buttons in one function. 
+    # if is one button add this, else add this, idk how to do keywords yet
+    # if(shit = button 1 then)
     df = pd.DataFrame({
         'Title': [r['title'] for r in results],
         'DOI': [r['doi'] for r in results],
         'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
         'Seahorse Mentions': [r['seahorseMentions'] for r in results]
-    })
-    df.to_excel(get_downloads_folder() + "\\contribution_sharty.xlsx", index=False)
+        })
+    # elif(shit = button 2 then)
+    #     df = pd.DataFrame({
+    #         'Title': [r['title'] for r in results],
+    #         'DOI': [r['doi'] for r in results],
+    #         'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
+    #         'Seahorse Mentions': [r['seahorseMentions'] for r in results]
+    #     })
 
+    #if(keyqords)
+        #search for keywords....
+    
+    buffer = io.BytesIO()
+    df.to_excel(buffer, index=False)
+    buffer.seek(0)
+    return buffer

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './contributions_scraper.css'
 
-function ContributionsScraper({ onOpenSettings }) {
-    const [results, setResults] = useState([])
+function ContributionsScraper({ onOpenSettings, results, setResults }) {
+    
     const [fileNames, setFileNames] = useState([])
 
     const handleUpload = async (e) => {
@@ -33,28 +33,28 @@ function ContributionsScraper({ onOpenSettings }) {
     }
 
     
-    const [exportStatus, setExportStatus] = useState('') 
+    // const [exportStatus, setExportStatus] = useState('') 
 
-    const handleExport = async () => {
-        if(!results.length) return
+    // const handleExport = async () => {
+    //     if(!results.length) return
 
-        setExportStatus('Downloading...')
+    //     setExportStatus('Downloading...')
 
-        try {
-            const response = await fetch('http://127.0.0.1:5000/exportExcel', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(results)
-            })
-            const data = await response.json()
-            setExportStatus('Downloaded!')
-            setTimeout(() => setExportStatus(''), 3000) // clears after 3 seconds
-        } catch (err) {
-            console.error('Error:', err)
-            setExportStatus('Error downloading')
-        }
+    //     try {
+    //         const response = await fetch('http://127.0.0.1:5000/exportExcel', {
+    //             method: 'POST',
+    //             headers: { 'Content-Type': 'application/json' },
+    //             body: JSON.stringify(results)
+    //         })
+    //         const data = await response.json()
+    //         setExportStatus('Downloaded!')
+    //         setTimeout(() => setExportStatus(''), 3000) // clears after 3 seconds
+    //     } catch (err) {
+    //         console.error('Error:', err)
+    //         setExportStatus('Error downloading')
+    //     }
 
-    }
+    // }
 
 
   return (
@@ -75,7 +75,7 @@ function ContributionsScraper({ onOpenSettings }) {
                 />
 
                 <button className='upload-files-btn' onClick={() => document.getElementById('pdf-upload').click()}>
-                     <svg className='upload-files' xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                     <svg className='upload-files' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                 </button>
             </div>
 
@@ -92,14 +92,10 @@ function ContributionsScraper({ onOpenSettings }) {
         <div className='contributions-results-container'>
             <div className='contributions-header'>
                 <h2>Contributions</h2>
-
-                {/* temporary */}
-                {exportStatus && <p>{exportStatus}</p>} 
-
                 
                 <button className='download-results-btn' onClick={onOpenSettings}>
-                    
-                    <span className='download-txt'>Download</span><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
+                    <span className='download-txt'>Download</span>
                 </button>
             </div>
 

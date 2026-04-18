@@ -5,12 +5,19 @@ import ExportSettingsModal from './exportSettingsModal.jsx'
 
 function App() {
   const [openExportSettings, setOpenExportSettings] = useState(false)
+  const [results, setResults] = useState([])
 
   return (
     <>
-      <ContributionsScraper onOpenSettings={() => setOpenExportSettings(true)} />
+      <ContributionsScraper 
+      onOpenSettings={() => setOpenExportSettings(true)}
+      results={results}
+      setResults={setResults} />
       {openExportSettings && (
-        <ExportSettingsModal onClose={() => setOpenExportSettings(false)} />
+        <ExportSettingsModal onClose={() => setOpenExportSettings(false)}
+        results={results}
+        setResults={setResults} 
+         />
       )}
     </>
   )

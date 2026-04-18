@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
 import os
 import tempfile
-from matcher import findContributions
-from matcher import exportExcel as runExportExcel
+from matcher import findContributions, exportExcel
+
 
 # backend flask server that takes files and runs them through a python function findContributions 
 
@@ -38,14 +38,16 @@ def scrape():
 
 
 @app.route('/exportExcel', methods=['POST'])
-def exportExcel():
-    data = request.json
-
-    try:
-        runExportExcel(data)
-        return jsonify({'success': True})
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+def export_excel_route():
+    results = request.get_json()
+    buffer = exportExcel(results)
+    
+    return send_file(
+        buffer,
+        mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        as_attachment=True,
+        download_name='contributions.xlsx'  # fallback 
+    )
     
 
 if __name__ == '__main__':
