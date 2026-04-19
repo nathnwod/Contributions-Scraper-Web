@@ -75,6 +75,28 @@
     gap: 0.5rem;
 }
 
+.keyword-input-reset-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    /* align-items: center; */
+}
+
+.reset-keywords-btn {
+    padding: 0 0.5rem;
+    line-height: 1;
+}
+
+
+.spin-once {
+    animation: spin 0.3s ease;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .close-export-settings-btn, .close-export-settings-btn:hover{
     align-self: flex-end;
     border: none;
@@ -141,6 +163,7 @@
 .export-additional-rows-excel-btn{
 
 }
+
 
 .keywords-container{
     overflow-y: scroll;

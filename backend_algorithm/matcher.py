@@ -89,10 +89,7 @@ def findContributions(files):
                         pruned.append(z)
             detected_zoos = pruned
 
-            # only look for whole word matches of 'seahorse' or 'seahorses'
-            matches = re.findall(r"\bseahorses?\b", article)
-            seahorse_mentions = len(matches)
-            detected_seahorse = seahorse_mentions > 0
+
                  
                 
             text_block = []
@@ -108,39 +105,46 @@ def findContributions(files):
                 "title": name,
                 "doi": match.group(1) if match else "DOI not found",
                 "detected zoos/aquariums": block,
-                # "seahorseMentions": seahorse_mentions if detected_seahorse else 0,
+                "article": article
             })
 
     return results
 
 MODE_DEFAULT = 'default'
 MODE_EXPANDED = 'expanded'
-def exportExcel(results, mode='default'):
-    # i think i should handle both buttons in one function. 
-    # if is one button add this, else add this, idk how to do keywords yet
+def exportExcel(results, mode='default', keywords='None'):
+    if keywords is None:
+        keywords=[]
+
+    def countKeyword(article, keyword):
+        matches = re.findall(rf"\b{re.escape(keyword.lower())}\b", article)
+        return len(matches)
+    
     if(mode == 'default'):
-        df = pd.DataFrame({
+        data = {
             'Title': [r['title'] for r in results],
             'DOI': [r['doi'] for r in results],
             'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
-            # 'Seahorse Mentions': [r['seahorseMentions'] for r in results]
-            })
+        }
+        for keyword in keywords:
+            data[f'{keyword} mentions'] = [countKeyword(r['article'], keyword) for r in results]
+        df = pd.DataFrame(data)
+
     elif(mode == 'expanded'):
         # build one row per zoo
         expanded_rows = []
         for r in results:
             zoos = r['detected zoos/aquariums'].split(', ')
             for zoo in zoos:
-                expanded_rows.append({
+                row = {
                     'Title': r['title'],
                     'DOI': r['doi'],
                     'Detected Zoo/Aquarium': zoo,
-                    # 'Seahorse Mentions': r['seahorseMentions']
-                })
+                }
+                for keyword in keywords:
+                    row[f'{keyword} mentions'] = countKeyword(r['article'], keyword)
+                expanded_rows.append(row)
         df = pd.DataFrame(expanded_rows)
-
-    #if(keyqords)
-        #search for keywords....
     
     buffer = io.BytesIO()
     df.to_excel(buffer, index=False)

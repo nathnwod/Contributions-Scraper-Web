@@ -8,6 +8,7 @@ function ExportSettingsModal( {onClose, results}) {
     const[keywords, setKeywords] = useState([])
     const [exportStatus, setExportStatus] = useState({mode: '', status: ''}) 
     const [fileName, setFileName] = useState('contributions')
+    const [spin, setSpin] = useState(false)
 
 
     const handleAddKeyword = (e) => {
@@ -17,38 +18,38 @@ function ExportSettingsModal( {onClose, results}) {
         }
     }
 
-const handleExport = async (mode) => {
-    if (!results.length) return
+    const handleExport = async (mode) => {
+        if (!results.length) return
 
-    setExportStatus({ mode, status: 'Downloading...'})
+        setExportStatus({ mode, status: 'Downloading...'})
 
-    try {
-        const response = await fetch('http://127.0.0.1:5000/exportExcel', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({results, mode})
-        })
-        
-        // get file as binary blob
-        const blob = await response.blob()
-        
-        // trigger browser download with users chosen filename
-        const url = window.URL.createObjectURL(blob)
-        const link = document.createElement('a')
-        link.href = url
-        link.download = `${fileName || 'contributions'}.xlsx`
-        document.body.appendChild(link)
-        link.click()
-        link.remove()
-        window.URL.revokeObjectURL(url)
+        try {
+            const response = await fetch('http://127.0.0.1:5000/exportExcel', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({results, mode, keywords})
+            })
+            
+            // get file as binary blob
+            const blob = await response.blob()
+            
+            // trigger browser download with users chosen filename
+            const url = window.URL.createObjectURL(blob)
+            const link = document.createElement('a')
+            link.href = url
+            link.download = `${fileName || 'contributions'}.xlsx`
+            document.body.appendChild(link)
+            link.click()
+            link.remove()
+            window.URL.revokeObjectURL(url)
 
-        setExportStatus({ mode, status: 'Downloaded!' })
-        setTimeout(() => setExportStatus({ mode: '', status: '' }), 3000)
-    } catch (err) {
-        console.error('Error:', err)
-        setExportStatus({ mode, status: 'Error downloading' })
+            setExportStatus({ mode, status: 'Downloaded!' })
+            setTimeout(() => setExportStatus({ mode: '', status: '' }), 3000)
+        } catch (err) {
+            console.error('Error:', err)
+            setExportStatus({ mode, status: 'Error downloading' })
+        }
     }
-}
 
     const isReady = results.length > 0
 
@@ -119,6 +120,9 @@ const handleExport = async (mode) => {
                             <span className='search-text-label'>Search for Keywords</span>
                             <svg className='search-svg' xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#242424"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
                         </p>
+
+
+                    <div className='keyword-input-reset-wrapper'>
                         <input 
                             className='keyword-input'
                             type="text" 
@@ -127,7 +131,28 @@ const handleExport = async (mode) => {
                             onChange={(e) => setKeyword(e.target.value)}
                             onKeyDown={handleAddKeyword}
                         />
+                        <button 
+                            className="reset-keywords-btn" 
+                            onClick={() => {
+                                setKeywords([])
+                                setKeyword('')
+                                setSpin(true)
+                                setTimeout(() => setSpin(false), 500)
+                            }}
+                        >
+                            <svg 
+                                className={spin ? 'spin-once' : ''}
+                                xmlns="http://www.w3.org/2000/svg" 
+                                height="18px" 
+                                viewBox="0 -960 960 960" 
+                                width="18px" 
+                                fill="#242424"
+                            >
+                                <path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/>
+                            </svg>
+                        </button>
                     </div>
+       
 
                     <div className="keywords-container">
                         {keywords.map((keyword, index) => (
@@ -138,6 +163,7 @@ const handleExport = async (mode) => {
                     </div>
                 </div>
             </div>
+        </div>
         </>
     )
 }

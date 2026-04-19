@@ -42,7 +42,8 @@ def export_excel_route():
     data = request.get_json()
     results = data['results']
     mode = data.get('mode', 'default') #falls back to 'default'
-    buffer = exportExcel(results, mode)
+    keywords = data.get('keywords', [])
+    buffer = exportExcel(results, mode, keywords)
     
     return send_file(
         buffer,
