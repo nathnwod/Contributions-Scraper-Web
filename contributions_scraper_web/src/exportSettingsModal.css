@@ -67,6 +67,8 @@
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
+    min-width: 0;
+    flex: 1;
 }
 
 .keyword-input-group {
