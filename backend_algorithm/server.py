@@ -39,8 +39,10 @@ def scrape():
 
 @app.route('/exportExcel', methods=['POST'])
 def export_excel_route():
-    results = request.get_json()
-    buffer = exportExcel(results)
+    data = request.get_json()
+    results = data['results']
+    mode = data.get('mode', 'default') #falls back to 'default'
+    buffer = exportExcel(results, mode)
     
     return send_file(
         buffer,

@@ -93,50 +93,51 @@ def findContributions(files):
             matches = re.findall(r"\bseahorses?\b", article)
             seahorse_mentions = len(matches)
             detected_seahorse = seahorse_mentions > 0
-            
-            #if detected_seahorse:
-            #    print("The word seahorse is mentioned in article", seahorse_mentions, "times")
-            #else:
-            #    print("The word seahorse is not mentioned in article")               
+                 
                 
-        text_block = []
-        #results.append("File Name: " + os.path.basename(f) + "\n")
-        if detected_zoos:
-            for zoo in detected_zoos:
-                text_block.append(zoo)
-        else:
-            text_block.append("None Found")
+            text_block = []
+            if detected_zoos:
+                for zoo in detected_zoos:
+                    text_block.append(zoo)
+            else:
+                text_block.append("None Found")
 
+            block = ", ".join(text_block)
 
-        block = ", ".join(text_block)
-
-        results.append({
-            "title": name,
-            "doi": match.group(1) if match else "DOI not found",
-            "detected zoos/aquariums": block,
-            "seahorseMentions": seahorse_mentions if detected_seahorse else 0
-        })
+            results.append({
+                "title": name,
+                "doi": match.group(1) if match else "DOI not found",
+                "detected zoos/aquariums": block,
+                # "seahorseMentions": seahorse_mentions if detected_seahorse else 0,
+            })
 
     return results
 
-
-def exportExcel(results):
+MODE_DEFAULT = 'default'
+MODE_EXPANDED = 'expanded'
+def exportExcel(results, mode='default'):
     # i think i should handle both buttons in one function. 
     # if is one button add this, else add this, idk how to do keywords yet
-    # if(shit = button 1 then)
-    df = pd.DataFrame({
-        'Title': [r['title'] for r in results],
-        'DOI': [r['doi'] for r in results],
-        'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
-        'Seahorse Mentions': [r['seahorseMentions'] for r in results]
-        })
-    # elif(shit = button 2 then)
-    #     df = pd.DataFrame({
-    #         'Title': [r['title'] for r in results],
-    #         'DOI': [r['doi'] for r in results],
-    #         'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
-    #         'Seahorse Mentions': [r['seahorseMentions'] for r in results]
-    #     })
+    if(mode == 'default'):
+        df = pd.DataFrame({
+            'Title': [r['title'] for r in results],
+            'DOI': [r['doi'] for r in results],
+            'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
+            # 'Seahorse Mentions': [r['seahorseMentions'] for r in results]
+            })
+    elif(mode == 'expanded'):
+        # build one row per zoo
+        expanded_rows = []
+        for r in results:
+            zoos = r['detected zoos/aquariums'].split(', ')
+            for zoo in zoos:
+                expanded_rows.append({
+                    'Title': r['title'],
+                    'DOI': r['doi'],
+                    'Detected Zoo/Aquarium': zoo,
+                    # 'Seahorse Mentions': r['seahorseMentions']
+                })
+        df = pd.DataFrame(expanded_rows)
 
     #if(keyqords)
         #search for keywords....

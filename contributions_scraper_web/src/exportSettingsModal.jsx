@@ -6,7 +6,7 @@ import ExcelIcon from './excel-icon.svg'
 function ExportSettingsModal( {onClose, results}) {
     const[keyword, setKeyword] = useState('')
     const[keywords, setKeywords] = useState([])
-    const [exportStatus, setExportStatus] = useState('') 
+    const [exportStatus, setExportStatus] = useState({mode: '', status: ''}) 
     const [fileName, setFileName] = useState('contributions')
 
 
@@ -17,16 +17,16 @@ function ExportSettingsModal( {onClose, results}) {
         }
     }
 
-const handleExport = async () => {
+const handleExport = async (mode) => {
     if (!results.length) return
 
-    setExportStatus('Downloading...')
+    setExportStatus({ mode, status: 'Downloading...'})
 
     try {
         const response = await fetch('http://127.0.0.1:5000/exportExcel', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(results)
+            body: JSON.stringify({results, mode})
         })
         
         // get file as binary blob
@@ -52,15 +52,16 @@ const handleExport = async () => {
 
     const isReady = results.length > 0
 
-    let subText = ''
-    if (exportStatus === 'Downloading...') {
-        subText = '.xlsx ⋅ in progress'
-    } else if (exportStatus === 'Downloaded!') {
-        subText = '.xlsx ⋅ complete'
-    } else if (isReady) {
-        subText = '.xlsx ⋅ ready'
-    } else {
-        subText = '.xlsx ⋅ upload files first'
+    const getSubText = (buttonMode) => {
+        // only show status text if this button is the one downloading
+        if (exportStatus.mode === buttonMode) {
+            if (exportStatus.status === 'Downloading...') return '.xlsx ⋅ in progress'
+            if (exportStatus.status === 'Downloaded!') return '.xlsx ⋅ complete'
+            if (exportStatus.status === 'Error downloading') return '.xlsx ⋅ failed'
+        }
+        // else fall back to the idle state
+        if (isReady) return '.xlsx ⋅ ready'
+        return '.xlsx ⋅ upload files first'
     }
 
     return (
@@ -88,20 +89,29 @@ const handleExport = async () => {
 
                     <button 
                         className='export-default-excel-btn' 
-                        onClick={handleExport}
+                        onClick={() => handleExport('default')}
                         // disabled={!isReady}
                     >
                         <img className='excel-icon' src={ExcelIcon} width="32" height="32" />
                         <div className='export-btn-text'>
-                            {!exportStatus && <span>Export as Excel</span>}
-                            {exportStatus && <p>{exportStatus}</p>}
-                            <span className='export-btn-sub'>{subText}</span>
+                            {exportStatus.mode === 'default' && exportStatus.status
+                                ? <p>{exportStatus.status}</p>
+                                : <span>Export as Excel</span>}
+                            <span className='export-btn-sub'>{getSubText('default')}</span>
                         </div>
                     </button>
 
-                    <button className='export-additional-rows-excel-btn'>
+                    <button 
+                        className='export-additional-rows-excel-btn'
+                        onClick={() => handleExport('expanded')}
+                    >
                         <img className='excel-icon' src={ExcelIcon} width="32" height="32" />
-                        <span>Export as Excel (expanded)</span>
+                        <div className='export-btn-text'>
+                            {exportStatus.mode === 'expanded' && exportStatus.status
+                                ? <p>{exportStatus.status}</p>
+                                : <span>Export as Excel (expanded)</span>}
+                            <span className='export-btn-sub'>{getSubText('expanded')}</span>
+                        </div>
                     </button>
 
                     <div className='keyword-input-group'>
