@@ -110,7 +110,7 @@ function ContributionsScraper({ onOpenSettings, results, setResults }) {
             {fileNames.map((fileName, index) => (
                 <React.Fragment key={fileName}>
                     <div className='results'>
-                        <h3>{fileName.replace(".pdf", "")}</h3>
+                        <h3 className='title'>{fileName.replace(".pdf", "")}</h3>
                         {/* insert logic for each aquarim contribution */}
                         <h3 className={results[index]?.["detected zoos/aquariums"] === "None Found" ? 'none-found' : 'contributions'}>
                             {results[index]?.["detected zoos/aquariums"]}

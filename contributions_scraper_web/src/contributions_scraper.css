@@ -68,14 +68,8 @@
     justify-content: space-between;
     padding: 0 1rem;
     gap: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    min-width: 0;
 }
-
-.download-results-btn{
-
-}
-
 
 
 .article-filename-header {
@@ -85,8 +79,8 @@
     /* font-size: clamp(0.75rem, 1.5vw, 1rem); */
     padding: .45rem .25rem;
     margin: 0.25rem 0;
-    transition: background-color 0.05s ease;
-    transition: transform 0.2s ease;
+    transition: background-color 0.05s ease, transform 0.2s ease;
+
     border-radius: 5px;
     /* background-color: rgba(228, 228, 228, 0.315); */
 }
@@ -109,16 +103,26 @@
     flex-shrink: 0;
 }
 
+.title {
+    /* text-align: left; */
+    flex: 1;          
+    min-width: 0;
+    max-width: 50%;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
 .none-found{
     color:rgb(212, 58, 58);
     text-align: right;
 }
 
 .contributions{
-    max-width: 450px;
-    /* overflow: hidden; */
+    flex: 1;           
+    min-width: 0;
+    max-width: 50%;
     text-align: right;
-
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 550px) {
@@ -136,5 +140,13 @@
 @media (max-width: 450px) {
     .download-txt{
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-container {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
     }
 }
