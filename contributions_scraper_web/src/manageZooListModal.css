@@ -1,0 +1,101 @@
+.manage-zoolist-container{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aqua;
+    z-index: 1000;
+
+    padding: 1rem;
+    overflow: hidden;
+
+    width: 65%;
+    max-width: 600px;
+    max-height: 500px;
+    
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.close-zoolist-btn, .close-zoolist-btn:hover{
+    align-self: flex-end;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(245, 245, 245);
+    padding: .5rem;
+}
+
+.add-institution-wrapper{
+    display: flex;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+.add-institution-wrapper input {
+    flex: 1;
+    min-width: 0;
+    border-radius: 5px;
+}
+
+.add-institution-btn{
+    padding: .5rem;
+}
+
+.delete-institution-btn{
+    padding: .15rem;
+}
+
+.import-export-institutions-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(211, 226, 231);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin: 0 -1rem;
+    padding: 0 1rem;
+}
+
+.import-export-btn-wrapper{
+    display: flex;
+    gap: .5rem;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+.zoo-aquarium-list{
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow-y: scroll;
+    margin: 0 -1rem;/* cancels horizontal padding */
+    padding: 1rem;
+    gap: .5rem;
+    
+}
+
+.institution{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.institution:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}

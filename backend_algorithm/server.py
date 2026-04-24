@@ -44,14 +44,18 @@ def export_excel_route():
     mode = data.get('mode', 'default') #falls back to 'default'
     keywords = data.get('keywords', [])
     buffer = exportExcel(results, mode, keywords)
-    
     return send_file(
         buffer,
         mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
         as_attachment=True,
         download_name='contributions.xlsx'  # fallback 
     )
-    
 
+@app.route('/institutions', methods=['GET'])
+def get_institutions():
+    with open('zoo_aquarium_list.txt', 'r', encoding='utf8') as f:
+        return jsonify([line.strip() for line in f if line.strip()])
+    
+    
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

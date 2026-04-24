@@ -41,16 +41,23 @@
 
 }
 
-.separator-line{
-    background-color: rgb(228, 228, 228);
-    height: 2px;
-}
+
 
 .contributions-header{
     display: flex;
     justify-content: space-between;
     gap: 0.75rem;
     align-items: center;
+}
+
+.contributions-header-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.manage-zoo-list-btn{
+    padding: 0.25rem;
 }
 
 .title-contributions-header{
