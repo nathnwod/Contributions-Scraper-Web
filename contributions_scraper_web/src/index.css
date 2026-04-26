@@ -57,6 +57,7 @@ body {
 .separator-line{
     background-color: rgb(228, 228, 228);
     height: 2px;
+    margin: .5rem;
 }
 
 button{
@@ -77,6 +78,7 @@ button{
 button:hover {
   cursor: pointer;
   background-color: rgb(206, 219, 224);
+
   border-radius: 5px;
   border: 1px solid #242424;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
