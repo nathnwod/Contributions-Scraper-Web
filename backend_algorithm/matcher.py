@@ -1,152 +1,195 @@
 import pymupdf
 import os
 import re
+import unicodedata
 import pandas as pd
 from pdfrw import PdfReader
 import io
 
-    
-    
-def findContributions(files):
+
+# Bare entries that are too generic to safely match. They cause false
+# positives any time the common word appears in an article, and they're
+# already covered by their specific city/location versions elsewhere in
+# the list.
+_GENERIC_DENYLIST = {
+    "aquarium",
+    "zoo",
+    "sea life",
+    "sea world",
+    "marine world",
+    "marineland",
+    "oceanarium",
+    "atlantis",
+}
+
+
+def _normalize(text):
+    text = text.lower()
+    text = text.replace("\u2019", "'").replace("\u2018", "'")
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("'", "")
+    # Strip diacritics so "Cabárceno" and "Cabarceno" normalize to the
+    # same string. NFD decomposes accented letters into base + combining
+    # mark; we then drop the combining marks (Unicode category Mn).
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(c for c in text if unicodedata.category(c) != "Mn")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _renameFileToPDFTitle(fileName):
+    fallback = os.path.basename(fileName)
+    try:
+        info = PdfReader(fileName).Info
+        title = info.Title if info else None
+        if not title:
+            return fallback
+        words = str(title).split()
+        new = " ".join(words[:4])
+        new = re.sub(r"[^a-zA-Z0-9' ]", "", new).strip("()").strip()
+        return (new + ".pdf") if new else fallback
+    except Exception:
+        return fallback
+
+
+def _extractRawText(pdfPath):
+    """Lowercased, hyphenation fixed. Preserves newlines so cross-line
+    false matches can be avoided downstream. Spaces and tabs are still
+    collapsed within each line."""
+    doc = pymupdf.open(pdfPath)
+    parts = [page.get_text() for page in doc]
+    doc.close()
+    raw = "\n".join(parts)
+    raw = re.sub(r"-\s*\n\s*", "", raw)  # rejoin hyphenated line breaks
+    raw = re.sub(r"[ \t]+", " ", raw)    # collapse spaces/tabs only
+    raw = re.sub(r"\n+", "\n", raw)      # collapse blank lines
+    return raw.lower()
+
+
+def _loadZooList(path):
+    seen = set()
+    out = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            n = _normalize(line)
+            if not n or n in seen:
+                continue
+            if n in _GENERIC_DENYLIST:
+                continue
+            seen.add(n)
+            out.append(n)
+    return out
+
+
+def _findMatches(rawText, zooList):
+    """Match per-line. Each line of the extracted PDF is normalized and
+    searched independently, so a name can never match across a line
+    break (e.g. 'Duisburg Zoo' followed by 'Miami Seaquarium' will not
+    falsely match 'Zoo Miami'). Trailing s? allows possessives/plurals.
+    Output preserves zooList order."""
+    lines = [_normalize(line) for line in rawText.split("\n")]
+    lines = [l for l in lines if l]
+    matches = []
+    for zoo in zooList:
+        pattern = r"\b" + re.escape(zoo) + r"s?\b"
+        for line in lines:
+            if re.search(pattern, line):
+                matches.append(zoo)
+                break
+    return matches
+
+
+def _pruneSubphrases(matches):
+    kept = []
+    for m in matches:
+        m_padded = " " + m + " "
+        is_subphrase = any(
+            other != m and m_padded in (" " + other + " ")
+            for other in matches
+        )
+        if not is_subphrase:
+            kept.append(m)
+    return kept
+
+
+def findContributions(files, listPath="zoo_aquarium_list.txt"):
+    zooList = _loadZooList(listPath)
+    doiPattern = r"\b(10\.\d{4,}/[^\s]+)\b"
     results = []
 
-    def renameFileToPDFTitle(fileName):
-        fullName = fileName
-        fallback_name = os.path.basename(fileName)
-        # Extract pdf title from pdf file
-
-        try:
-            info = PdfReader(fullName).Info
-            newName = info.Title if info else None
-            if not newName:
-                return fallback_name
-
-            newNameSplit = str(newName).split()
-        except Exception:
-            return fallback_name
-
-        else:
-            # Remove surrounding brackets that some pdf titles have, only take first four words
-            newName = " ".join(newNameSplit[:4])
-            newName = re.sub(r'[^a-zA-Z0-9\' ]', '', newName)
-            newName = newName.strip('()')
-            if not newName:
-                return fallback_name
-
-            newName = newName + '.pdf'
-
-        return newName
-
     for f in files:
-        doc = pymupdf.open(f)
-        out = open("output.txt", "wb") # create a text output
-        for page in doc: # iterate the document pages
-            text = page.get_text().encode("utf8") # get plain text (is in UTF-8)
-            out.write(text) # write text of page
-            out.write(bytes((12,))) # write page delimiter (form feed 0x0C)
-        out.close()
-        print(f)
-        name = renameFileToPDFTitle(f)
+        rawText = _extractRawText(f)         # newlines preserved
+        article = _normalize(rawText)        # flattened, used for keyword counts
+        name = _renameFileToPDFTitle(f)
 
-        #zoo_list = []
+        doiMatch = re.search(doiPattern, rawText, re.IGNORECASE)
+        doi = doiMatch.group(1) if doiMatch else "DOI not found"
 
-        # Transform the zoo list from leon's world to an array of names
-        with open("zoo_aquarium_list.txt", 'r', encoding='utf8') as zoos:
-            # normalize zoo names: lowercase, replace hyphens with spaces, collapse whitespace
-            zoo_list = [re.sub(r"\s+", " ", z.strip().lower().replace("-", " ")).strip() for z in zoos]
+        detected = _pruneSubphrases(_findMatches(rawText, zooList))
+        block = ", ".join(detected) if detected else "None Found"
 
-        # Parse the article txt and search for matches with every zoo name from leon
-        file_name = "output.txt"
-        with open(file_name, 'r', encoding='utf8') as file:
-
-            # Join lines, fix hyphenation and normalize punctuation/whitespace
-            article = " ".join(line.rstrip() for line in file)
-            # remove hyphen-newline artifacts from line breaks (word splits)
-            article = article.replace("-\n", "")
-            # replace remaining hyphens with spaces so names like 'Sea-Life' -> 'sea life'
-            article = article.replace("-", " ")
-            article = re.sub(r"\s+", " ", article).lower()
-            
-            # Extract DOI from the PDF text
-            text = article
-            # Regular expression to find a DOI
-            # This pattern is a common way to identify DOIs
-            doi_pattern = r'\b(10\.\d{4,}\/[^\s]+)\b'
-            match = re.search(doi_pattern, text, re.IGNORECASE)
- 
-            
-            detected_zoos = []
-            for zoo in zoo_list:
-                if zoo in article:
-                    detected_zoos.append(zoo)
-            
-            # only keep most specific zoo matches so that Ex: 
-            # 'oceanarium' is not reported if 'oceanarium of xyz' is found
-            pruned = []
-            for z in detected_zoos:
-                if not any(z != other and z in other for other in detected_zoos):
-                    if z not in pruned:
-                        pruned.append(z)
-            detected_zoos = pruned
-
-
-                 
-                
-            text_block = []
-            if detected_zoos:
-                for zoo in detected_zoos:
-                    text_block.append(zoo)
-            else:
-                text_block.append("None Found")
-
-            block = ", ".join(text_block)
-
-            results.append({
-                "title": name,
-                "doi": match.group(1) if match else "DOI not found",
-                "detected zoos/aquariums": block,
-                "article": article
-            })
+        results.append({
+            "title": name,
+            "doi": doi,
+            "detected zoos/aquariums": block,
+            "article": article,
+        })
 
     return results
 
-MODE_DEFAULT = 'default'
-MODE_EXPANDED = 'expanded'
-def exportExcel(results, mode='default', keywords='None'):
-    if keywords is None:
-        keywords=[]
 
-    def countKeyword(article, keyword):
-        matches = re.findall(rf"\b{re.escape(keyword.lower())}\b", article)
-        return len(matches)
-    
-    if(mode == 'default'):
+MODE_DEFAULT = "default"
+MODE_EXPANDED = "expanded"
+
+
+def exportExcel(results, mode="default", keywords=None):
+    if keywords is None:
+        keywords = []
+
+    def countKeyword(article, kw):
+        return len(re.findall(rf"\b{re.escape(kw.lower())}\b", article))
+
+    if mode == MODE_DEFAULT:
         data = {
-            'Title': [r['title'] for r in results],
-            'DOI': [r['doi'] for r in results],
-            'Detected Zoos/Aquariums': [r['detected zoos/aquariums'] for r in results],
+            "Title": [r["title"] for r in results],
+            "DOI": [r["doi"] for r in results],
+            "Detected Zoos/Aquariums": [r["detected zoos/aquariums"] for r in results],
         }
-        for keyword in keywords:
-            data[f'{keyword} mentions'] = [countKeyword(r['article'], keyword) for r in results]
+        for kw in keywords:
+            data[f"{kw} mentions"] = [countKeyword(r["article"], kw) for r in results]
         df = pd.DataFrame(data)
 
-    elif(mode == 'expanded'):
-        # build one row per zoo
-        expanded_rows = []
+    elif mode == MODE_EXPANDED:
+        rows = []
         for r in results:
-            zoos = r['detected zoos/aquariums'].split(', ')
+            zoos = r["detected zoos/aquariums"].split(", ")
             for zoo in zoos:
                 row = {
-                    'Title': r['title'],
-                    'DOI': r['doi'],
-                    'Detected Zoo/Aquarium': zoo,
+                    "Title": r["title"],
+                    "DOI": r["doi"],
+                    "Detected Zoo/Aquarium": zoo,
                 }
-                for keyword in keywords:
-                    row[f'{keyword} mentions'] = countKeyword(r['article'], keyword)
-                expanded_rows.append(row)
-        df = pd.DataFrame(expanded_rows)
-    
+                for kw in keywords:
+                    row[f"{kw} mentions"] = countKeyword(r["article"], kw)
+                rows.append(row)
+        df = pd.DataFrame(rows)
+
+    else:
+        raise ValueError(f"Unknown mode: {mode}")
+
     buffer = io.BytesIO()
     df.to_excel(buffer, index=False)
     buffer.seek(0)
     return buffer
+
+
+if __name__ == "__main__":
+    results = findContributions(
+        ["/mnt/user-data/outputs/algorithm_test.pdf"],
+        listPath="/mnt/user-data/uploads/zoo_aquarium_list_default.txt",
+    )
+    for r in results:
+        print("TITLE:", r["title"])
+        print("DOI:", r["doi"])
+        print("DETECTED:", r["detected zoos/aquariums"])
