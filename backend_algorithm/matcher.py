@@ -7,10 +7,10 @@ from pdfrw import PdfReader
 import io
 
 
-# Bare entries that are too generic to safely match. They cause false
+#bare entries that are too generic to safely match. They can cause false
 # positives any time the common word appears in an article, and they're
 # already covered by their specific city/location versions elsewhere in
-# the list.
+# the list anyways
 _GENERIC_DENYLIST = {
     "aquarium",
     "zoo",

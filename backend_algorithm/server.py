@@ -51,10 +51,26 @@ def export_excel_route():
         download_name='contributions.xlsx'  # fallback 
     )
 
-@app.route('/institutions', methods=['GET'])
+def save_institutions(institutions):
+    with open('zoo_aquarium_list.txt', 'w', encoding='utf8') as f:
+        f.write('\n'.join(institutions))
+    
+
+@app.route('/institutions', methods=['GET', 'POST'])
 def get_institutions():
-    with open('zoo_aquarium_list.txt', 'r', encoding='utf8') as f:
-        return jsonify([line.strip() for line in f if line.strip()])
+    if request.method == 'GET':
+        with open('zoo_aquarium_list.txt', 'r', encoding='utf8') as f:
+            return jsonify([line.strip() for line in f if line.strip()])
+        
+    if request.method == 'POST':
+        new_list = request.get_json()
+        save_institutions(new_list)
+        return jsonify({'status': 'ok'})
+    
+@app.route('/institutions/default', methods=['GET'])
+def get_default_list():
+     with open('zoo_aquarium_list_default.txt', 'r', encoding='utf8') as f:
+            return jsonify([line.strip() for line in f if line.strip()])
     
     
 if __name__ == '__main__':

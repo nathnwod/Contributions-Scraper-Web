@@ -132,6 +132,8 @@
     overflow-wrap: break-word;
 }
 
+
+
 @media (max-width: 550px) {
     .article-upload-header{
         flex-direction: column;
@@ -150,10 +152,22 @@
     }
 }
 
+@media (max-width: 975px) {
+    .upload-text{
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
     .main-container {
         margin: 0;
         width: 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 645px) {
+    .manage-list-text{
+        display: none;
     }
 }

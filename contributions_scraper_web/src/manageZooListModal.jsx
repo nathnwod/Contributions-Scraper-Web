@@ -1,18 +1,47 @@
 import { useState, useEffect, useRef } from "react"
 import "./manageZooListModal.css"
 
-function ManageZooListModal({onClose}){
+function ManageZooListModal({onClose, onSaved}){
     const [institutions, setInstitutions] = useState([])
     const [institutionToAdd, setInstitutionToAdd] = useState('')
     const fileInputRef = useRef(null)
+    const [isSaving, setIsSaving] = useState(false)
+    const [importOptionsIsOpen, setImportOptionsIsOpen] = useState(false)
+    const [importMode, setImportMode] = useState('replace')
+
+
+    async function restoreDefault() {
+        const res = await fetch('http://127.0.0.1:5000/institutions/default')
+        const list = await res.json()
+        setInstitutions([...new Set(list)])
+    }
+
+    async function loadInstitutions() {
+        const res = await fetch('http://127.0.0.1:5000/institutions')
+        const list = await res.json()
+        setInstitutions([...new Set(list)])
+    }
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/institutions')
-            .then(response => response.json())
-            .then(list => setInstitutions([...new Set(list)]))
-            
+        loadInstitutions()
     }, [])
 
+    async function handleSave() {
+        setIsSaving(true)
+        try {
+            await fetch('http://127.0.0.1:5000/institutions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(institutions)
+            })
+            if (onSaved) await onSaved()
+            onClose()
+        }  catch (err) {
+            setIsSaving(false)
+        }
+    }
+
+    
     function deleteInstitution(name) {
         setInstitutions(prev => prev.filter(institution => institution !== name));
     }
@@ -46,10 +75,42 @@ function ManageZooListModal({onClose}){
         seen.add(key)
         return true
     })
-        setInstitutions(unique)
 
-        e.target.value = ''  
+    if (importMode === 'replace') {
+        setInstitutions(unique)
+    } else if (importMode === 'merge') {
+        setInstitutions(prev => {
+            const combined = [...unique, ...prev]
+            const merged = new Set()
+            return combined.filter(line => {
+                const key = line.toLowerCase()
+                if (merged.has(key)) return false
+                merged.add(key)
+                return true
+            })
+        })
     }
+
+    e.target.value = ''
+}
+
+
+    function exportTxtFile() {
+        console.log("function ran...")
+        const text = institutions.join('\n')
+        const blob = new Blob([text], { type: 'text/plain' })
+        const url = URL.createObjectURL(blob)
+        
+        const link = document.createElement('a')
+        link.href = url
+        link.download = 'institutions.txt'
+        link.click()
+
+        URL.revokeObjectURL(url)
+    }
+
+
+
 
 
 
@@ -63,11 +124,14 @@ function ManageZooListModal({onClose}){
 
             <div className="content-wrapper">
                 <h2 className="manage-zoolist-header">Manage zoo/aquarium list</h2>
+                <h4>Default list generated from "Leon's World Map of Parks, Zoos and Aquariums".</h4>
+                <div className="whitespace"></div>
                 <h3 className="manage-zoolist-subheader">Add or remove institutions to compare against.</h3>
+                
                 <div className="separator-line"></div>
 
                 <div className="add-institution-wrapper">
-                    <input
+                    <input className="add-institution-input"
                             type='text'  
                             value={institutionToAdd}
                             placeholder="Add an institution"
@@ -79,10 +143,15 @@ function ManageZooListModal({onClose}){
                         <span>Add</span>
                     </button>
                 </div>
+
                 <div className="separator-line"></div>
 
                 <div className="import-export-institutions-wrapper">
-                    <h3>{institutions.length} institution(s)</h3>
+                    <h3 
+                        className="info-wrapper"
+                        >
+                        {institutions.length} institution(s) 
+                    </h3>
                     <div className="import-export-btn-wrapper">
                         <input 
                             type="file"
@@ -91,17 +160,59 @@ function ManageZooListModal({onClose}){
                             style={{ display: 'none' }}
                             onChange={handleImport}
                         />
+                        <div className="import-btn-wrapper">
+                            <button 
+                                className="import-institutions-btn"
+                                onClick={() => setImportOptionsIsOpen(true)}
+                                >
+                                    Import .txt
+                            </button>
+
+                        {importOptionsIsOpen && ( 
+                            <>
+                            <div className="background-shadow-2"></div> 
+                            <div className="import-popup-box">
+                                
+                                <div className="checkbox-wrapper">
+                                    <label>
+                                        <input 
+                                            type="radio"
+                                            name="importMode"
+                                            value="merge"
+                                            checked={importMode === 'merge'}
+                                            onChange={(e) => setImportMode(e.target.value)}
+                                
+                                         />
+                                        &nbsp;Merge List
+                                    </label>
+                                    <label>
+                                        <input 
+                                             type="radio"
+                                            name="importMode"
+                                            value="replace"
+                                            checked={importMode === 'replace'}
+                                            onChange={(e) => setImportMode(e.target.value)}
+                                        />
+                                        &nbsp;Replace List
+                                    </label>
+                                </div>
+                                <button onClick={() => {
+                                    setImportOptionsIsOpen(false)
+                                    fileInputRef.current.click()
+                                }}>Import</button>
+                                <button onClick={() => setImportOptionsIsOpen(false)}>Cancel</button>
+                            </div>
+                            </>
+                        )}
+                        </div>
+                        
+
                         <button 
-                            className="import-institutions-btn"
-                            onClick={() => {
-                                fileInputRef.current.click()
-                                setInstitutionToAdd('')
-                            }}
-                            
+                            className="export-institutions-btn"
+                            onClick={exportTxtFile}
                             >
-                                Import
+                                Export .txt
                         </button>
-                        <button className="export-institutions-btn">Export</button>
                     </div>
                 </div>
 
@@ -117,9 +228,25 @@ function ManageZooListModal({onClose}){
 
                 <div className="separator-line"></div>
 
+
                 <div className="cancel-save-btn-wrapper">
-                    <button className="cancel-edits-btn">Cancel</button>
-                    <button className="save-edits.btn">Save Changes</button>
+                    <button 
+                        className="reset-default-btn"
+                        onClick={restoreDefault}
+                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#242424"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></svg>
+                        <span>Restore Default</span>
+                    </button>
+
+                    <button className="cancel-edits-btn" onClick={onClose} disabled={isSaving}>Cancel</button>
+
+                    <button 
+                        className="save-edits-btn"
+                        onClick={handleSave}
+                        disabled={isSaving}
+                        >
+                        {isSaving ? <span className="saving-dots">Scraping</span> : 'Save Changes'}
+                    </button>
                 </div>
 
             </div>

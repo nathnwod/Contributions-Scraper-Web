@@ -1,4 +1,3 @@
-ザ スタジアム
 Dublin Zoo
 Everland
 S.E.A. Aquarium
@@ -86,6 +85,7 @@ Seaworld San Antonio
 SeaWorld San Diego
 Busch Gardens Tampa Bay
 Busch Gardens Williamsburg
+SEA LIFE Centre London Aquarium
 WILD LIFE Sydney Zoo
 Le PAL
 Zoobotánico Jerez
@@ -146,10 +146,12 @@ Dolphin Village Dammam
 Toronto Zoo
 Kansas City Zoo
 Topeka Zoo & Conservation Center
+Houston Zoo
 Ripley's Aquarium of the Smokies
 Ripley's Aquarium of Myrtle Beach
 Ripley's Aquarium of Canada
 Acuario de Veracruz
+St. Louis Aquarium at Union Station
 uShaka Marine World
 Chester Zoo
 Columbus Zoo and Aquarium
@@ -161,6 +163,7 @@ Nausicaá - Centre national de la Mer
 Ostrava Zoo
 San Diego Zoo
 Southwick's Zoo
+Zoobotánico Jerez
 Mississippi Aquarium
 SeaQuest Utah
 SeaQuest Las Vegas
@@ -188,6 +191,7 @@ Oklahoma City Zoo
 Orange County Zoo
 Palm Beach Zoo & Conservation Society
 Sedgwick County Zoo
+Zoosafari
 Zoosafari
 Aquàrium Barcelona
 Planet Ocean World
@@ -295,7 +299,10 @@ Izu Mito Sea Paradise
 Numazu Deep Sea Aquarium
 Marine Science Center, Social Education Center, Tokai University
 Shimoda Underwater Aquarium
+Saitama Aquarium
+Lake Biwa Museum
 Nakagawa Aquatic Park
+ザ スタジアム
 Sunshine Aquarium
 Tokyo Sea Life Park
 Shinagawa Aquarium
@@ -349,6 +356,7 @@ Cebu Ocean Park
 Manila Ocean Park
 Johannesburg Zoo
 National Zoological Gardens of South Africa
+Aquarium
 Crocworld
 Hoedspruit Reptile Centre
 Umgeni River Bird Park
@@ -393,6 +401,7 @@ The Chattanooga Zoo at Warner Park
 Memphis Zoo
 Zoo Knoxville
 Nashville Zoo at Grassmere
+Aquarium Restaurant
 Cabrillo Marine Aquarium
 Aqua Planet Yeosu
 Aqua Planet 63
@@ -424,6 +433,7 @@ Yehliu Ocean World
 Xpark
 Penghu Aquarium
 Agricultural Biotechnology Park
+Kaohsiung City Shou Shan Zoo
 Altina Wildlife Park
 Auburn Botanic Gardens
 Walkabout Wildlife Sanctuary
