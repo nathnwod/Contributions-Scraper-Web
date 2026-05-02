@@ -77,7 +77,7 @@ function ManageZooListModal({onClose, onSaved}){
     })
 
     if (importMode === 'replace') {
-        setInstitutions(unique).sort()
+        setInstitutions(unique.sort((a, b) => a.localeCompare(b)))
     } else if (importMode === 'merge') {
         setInstitutions(prev => {
             const combined = [...unique, ...prev]
@@ -87,8 +87,8 @@ function ManageZooListModal({onClose, onSaved}){
                 if (merged.has(key)) return false
                 merged.add(key)
                 return true
-            })
-        }).sort((a, b) => a.localeCompare(b))
+            }).sort((a, b) => a.localeCompare(b))
+        })
     }
 
     e.target.value = ''
