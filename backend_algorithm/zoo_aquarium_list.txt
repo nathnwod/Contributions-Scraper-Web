@@ -1,4 +1,3 @@
-ザ スタジアム
 Dublin Zoo
 Everland
 S.E.A. Aquarium
@@ -296,6 +295,7 @@ Numazu Deep Sea Aquarium
 Marine Science Center, Social Education Center, Tokai University
 Shimoda Underwater Aquarium
 Nakagawa Aquatic Park
+ザ スタジアム
 Sunshine Aquarium
 Tokyo Sea Life Park
 Shinagawa Aquarium

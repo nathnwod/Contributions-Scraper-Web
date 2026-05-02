@@ -13,13 +13,13 @@ function ManageZooListModal({onClose, onSaved}){
     async function restoreDefault() {
         const res = await fetch('http://127.0.0.1:5000/institutions/default')
         const list = await res.json()
-        setInstitutions([...new Set(list)])
+        setInstitutions([...new Set(list)].sort((a, b) => a.localeCompare(b)))
     }
 
     async function loadInstitutions() {
         const res = await fetch('http://127.0.0.1:5000/institutions')
         const list = await res.json()
-        setInstitutions([...new Set(list)])
+        setInstitutions([...new Set(list)].sort((a, b) => a.localeCompare(b)))
     }
 
     useEffect(() => {
@@ -43,14 +43,14 @@ function ManageZooListModal({onClose, onSaved}){
 
     
     function deleteInstitution(name) {
-        setInstitutions(prev => prev.filter(institution => institution !== name));
+        setInstitutions(prev => prev.filter(institution => institution !== name).sort((a, b) => a.localeCompare(b)))
     }
 
     function addInstitution() {
         const trimmed = institutionToAdd.trim()
         const normalized = trimmed.toLowerCase()
         if (normalized && !institutions.some(inst => inst.toLowerCase() === normalized)) {
-            setInstitutions(prev => [trimmed, ...prev])
+            setInstitutions(prev => [trimmed, ...prev].sort((a, b) => a.localeCompare(b)))
             setInstitutionToAdd('')
         }
     }
@@ -77,7 +77,7 @@ function ManageZooListModal({onClose, onSaved}){
     })
 
     if (importMode === 'replace') {
-        setInstitutions(unique)
+        setInstitutions(unique).sort()
     } else if (importMode === 'merge') {
         setInstitutions(prev => {
             const combined = [...unique, ...prev]
@@ -88,7 +88,7 @@ function ManageZooListModal({onClose, onSaved}){
                 merged.add(key)
                 return true
             })
-        })
+        }).sort((a, b) => a.localeCompare(b))
     }
 
     e.target.value = ''
