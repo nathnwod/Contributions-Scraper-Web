@@ -11,13 +11,13 @@ function ManageZooListModal({onClose, onSaved}){
 
 
     async function restoreDefault() {
-        const res = await fetch('http://127.0.0.1:5000/institutions/default')
+        const res = await fetch('https://contributions-scraper-api.onrender.com/institutions/default')
         const list = await res.json()
         setInstitutions([...new Set(list)].sort((a, b) => a.localeCompare(b)))
     }
 
     async function loadInstitutions() {
-        const res = await fetch('http://127.0.0.1:5000/institutions')
+        const res = await fetch('https://contributions-scraper-api.onrender.com/institutions')
         const list = await res.json()
         setInstitutions([...new Set(list)].sort((a, b) => a.localeCompare(b)))
     }
@@ -29,7 +29,7 @@ function ManageZooListModal({onClose, onSaved}){
     async function handleSave() {
         setIsSaving(true)
         try {
-            await fetch('http://127.0.0.1:5000/institutions', {
+            await fetch('https://contributions-scraper-api.onrender.com/institutions', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(institutions)

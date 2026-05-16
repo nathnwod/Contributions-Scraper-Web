@@ -24,7 +24,7 @@ function App() {
         const formData = new FormData()
         for (let file of files) formData.append('pdfs', file)
 
-      const response = await fetch('http://127.0.0.1:5000/scrape', {
+      const response = await fetch('https://contributions-scraper-api.onrender.com/scrape', {
         method: 'POST',
         body: formData
         })
