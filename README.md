@@ -2,7 +2,7 @@
 
 A web app that scans academic PDFs for mentions of zoos and aquariums, then exports results to Excel. Built for the SEZARC research program.
 
-**Live demo:** https://YOUR-SITE.netlify.app
+**Live demo:** [https://YOUR-SITE.netlify.app](https://contributions-scraper.netlify.app/)
 
 ---
 
