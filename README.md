@@ -178,6 +178,6 @@ Never commit `.env` files. Add them to `.gitignore`.
 
 ## Credits
 
-Built by Nathan Wood for the SEZARC research program at the University of Delaware (CISC499).
+Built by Nathan Wood and Jacob Johnson for the SEZARC research program at the University of Delaware (CISC499).
 
 Default institution list adapted from Leon's World Map of Parks, Zoos and Aquariums.
