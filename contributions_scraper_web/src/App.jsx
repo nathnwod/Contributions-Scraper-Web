@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import './App.css'
 import ContributionsScraper from './contributions_scraper.jsx'  
 import ExportSettingsModal from './exportSettingsModal.jsx'
 import ManageZooListModal from './manageZooListModal.jsx'
