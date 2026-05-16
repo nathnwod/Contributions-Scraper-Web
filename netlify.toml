@@ -1,0 +1,4 @@
+[build]
+  base = "contributions_scraper_web"
+  command = "npm run build"
+  publish = "contributions_scraper_web/dist"
