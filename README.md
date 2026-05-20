@@ -108,7 +108,7 @@ Runs on `http://localhost:5173`.
 3. Settings:
    - Root Directory: `backend_algorithm`
    - Build Command: `pip install -r ../requirements.txt`
-   - Start Command: `gunicorn server:app`
+   - Start Command: `gunicorn server:app --timeout 300 --workers 1`
 
 ### Frontend (Netlify)
 
